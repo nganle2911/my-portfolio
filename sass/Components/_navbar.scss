@@ -22,49 +22,48 @@
                 }
 
                 .navbar-collapse {
-                    position: relative;
+                    justify-content: end;
 
-                    .nav {
-                        position: absolute;
-                        right: 0;
-
-                        .nav-item {
+                    .navbar-nav {
+                        .nav-link {
                             position: relative;
-                            margin-right: $margin-1;
+                            margin-right: 15px;
+                            padding-left: 0;
+                            color: $turquoise-2;
+                            font-size: 16px;
+                            font-weight: 500;
+                            transition: all .3s ease-in-out;
 
-                            .nav-link {
-                                padding: 0;
-                                margin: 0;
-                                text-decoration: none;
-                                color: $turquoise-2;
-                                font-size: $fs-3;
-                                font-weight: $fw-2;
-                                transition: all 0.3s ease-in-out;
-
-                                &::before {
-                                    position: absolute;
-                                    content: "";
-                                    width: 0;
-                                    height: 2px;
-                                    background-color: $turquoise-1;
-                                    left: 0;
-                                    bottom: -3px;
-                                    visibility: hidden;
-                                    transition: all 0.3s ease-in-out;
-                                }
-
-                                &:hover::before,
-                                &.active::before {
-                                    visibility: visible;
-                                    width: 50%;
-                                }
-
-                                &:hover,
-                                &.active {
-                                    color: $turquoise-1;
-                                    font-weight: $fw-4;
-                                }
+                            &.active, &:hover {
+                                color: yellow;
                             }
+
+                            // &::before {
+                            //     position: absolute;
+                            //     content: "";
+                            //     width: 0;
+                            //     height: 2px;
+                            //     background-color: $turquoise-1;
+                            //     left: 0;
+                            //     bottom: 5px;
+                            //     visibility: visible;
+                            //     transition: all .3s ease-in-out;
+                            // }
+
+                            // &:hover::before,
+                            // &.active::before,
+                            // &.active, &:hover {
+                            //     visibility: visible;
+                            //     width: 82%;
+                            //     color: $turquoise-1;
+                            //     font-weight: 700;
+                            // }
+
+                            // &.active, 
+                            // &:hover {
+                            //     color: $turquoise-1;
+                            //     font-weight: 700;
+                            // }
                         }
                     }
                 }

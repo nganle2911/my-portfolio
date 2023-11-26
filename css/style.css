@@ -49,43 +49,19 @@ section.section-show {
   background-color: white;
 }
 .navMenu .container .navbar .container-fluid .navbar-collapse {
+  justify-content: end;
+}
+.navMenu .container .navbar .container-fluid .navbar-collapse .navbar-nav .nav-link {
   position: relative;
-}
-.navMenu .container .navbar .container-fluid .navbar-collapse .nav {
-  position: absolute;
-  right: 0;
-}
-.navMenu .container .navbar .container-fluid .navbar-collapse .nav .nav-item {
-  position: relative;
-  margin-right: 30px;
-}
-.navMenu .container .navbar .container-fluid .navbar-collapse .nav .nav-item .nav-link {
-  padding: 0;
-  margin: 0;
-  text-decoration: none;
+  margin-right: 15px;
+  padding-left: 0;
   color: rgba(23, 133, 129, 0.469);
   font-size: 16px;
   font-weight: 500;
   transition: all 0.3s ease-in-out;
 }
-.navMenu .container .navbar .container-fluid .navbar-collapse .nav .nav-item .nav-link::before {
-  position: absolute;
-  content: "";
-  width: 0;
-  height: 2px;
-  background-color: #178582;
-  left: 0;
-  bottom: -3px;
-  visibility: hidden;
-  transition: all 0.3s ease-in-out;
-}
-.navMenu .container .navbar .container-fluid .navbar-collapse .nav .nav-item .nav-link:hover::before, .navMenu .container .navbar .container-fluid .navbar-collapse .nav .nav-item .nav-link.active::before {
-  visibility: visible;
-  width: 50%;
-}
-.navMenu .container .navbar .container-fluid .navbar-collapse .nav .nav-item .nav-link:hover, .navMenu .container .navbar .container-fluid .navbar-collapse .nav .nav-item .nav-link.active {
-  color: #178582;
-  font-weight: 700;
+.navMenu .container .navbar .container-fluid .navbar-collapse .navbar-nav .nav-link.active, .navMenu .container .navbar .container-fluid .navbar-collapse .navbar-nav .nav-link:hover {
+  color: yellow;
 }
 
 .home {

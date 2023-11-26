@@ -1,0 +1,79 @@
+// Animation 
+@mixin animation($name-animation, $duration, $iteration-count) {
+    animation: $name-animation $duration $iteration-count; 
+}
+
+// h2.title
+@mixin title ($left) {
+    font-size: $fs-6;
+    text-transform: uppercase;
+    font-weight: $fw-2;
+    margin-bottom: $margin-5;
+    letter-spacing: 2px;
+    color: $gold-2;
+    position: relative;
+
+    &::before {
+        position: absolute;
+        content: "";
+        width: $num-5;
+        height: 1px;
+        background-color: $turquoise-1;
+        top: 7px;
+        left: $left;
+    }
+}
+
+// p.text
+@mixin text {
+    text-transform: uppercase;
+    font-size: $fs-5;
+    font-weight: $fw-3;
+    color: $gold-1;
+    margin-top: $margin-7;
+}
+
+// background 
+@mixin background {
+    padding: $padding-2;
+    background-color: $dark-3;
+}
+
+// h3.topic 
+@mixin topic {
+    font-size: $fs-2 + 2;
+    font-weight: $fw-4;
+    text-transform: capitalize;
+    margin: $margin-5 0;
+    color: $gold-1;
+}
+
+// Responsive 
+
+// Small screen
+@mixin small-screen {
+    @media (max-width: map-get($breakpoints, sm)) {
+        @content;
+    }
+}
+
+// Medium screen
+@mixin medium-screen {
+    @media (min-width: map-get($breakpoints, sm)) and (max-width: map-get($breakpoints, lg)) {
+        @content;
+    }
+}
+
+// Large screen
+@mixin large-screen {
+    @media (min-width: map-get($breakpoints, lg)) and (max-width: map-get($breakpoints, xl)) {
+        @content;
+    }
+}
+
+// Extra Large screen
+@mixin extra-large-screen {
+    @media (max-width: map-get($breakpoints, xl)) {
+        @content;
+    }
+}

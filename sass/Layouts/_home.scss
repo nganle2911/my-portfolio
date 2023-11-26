@@ -1,0 +1,71 @@
+.home {
+    height: $height-1;
+    display: flex;
+    align-items: center;
+    .container {
+        .row {
+            display: flex;
+            align-items: center;
+            .home__left {
+                .home__name {
+                    font-size: $fs-1;
+                    font-weight: $fw-5;
+
+                    @include small-screen {
+                        font-size: $fs-7;
+                    }
+
+                    a {
+                        text-decoration: none;
+                        color: $gold-1;
+                    }
+                }
+                .home__text {
+                    margin-top: $margin-5;
+                    margin-bottom: $margin-3;
+                    font-size: $fs-2;
+                    color: $gold-2;
+                    
+                    span {
+                        color: $gold-1;
+                        font-weight: $fw-2;
+                        border-bottom: 2px solid $gold-1;
+                    }
+                }
+                .nav {}
+                .home__socialMedia {
+                    margin-top: $margin-3;
+                    a {
+                        font-size: $fs-3;
+                        color: $white-1;
+                        margin-right: $margin-4;
+                        display: inline-block;
+                        width: $num-1;
+                        height: $num-1;
+                        background-color: $white-2;
+                        border-radius: 50%;
+                        line-height: $num-1;
+                        text-align: center;
+                        transition: all 0.3s ease-in-out;
+
+                        &:hover {
+                            background-color: $turquoise-1;
+                            color: $gold-1;
+                            font-weight: $fw-3;
+                            font-size: $fs-4;
+                        }
+                    }
+                }
+            }
+            .home__right {
+                padding: 0;
+                display: flex;
+                justify-content: right;
+                img {
+                    width: 80%;
+                    @include animation(moveImage, 5s, infinite);
+                }
+            }
+        }
+    }
+}

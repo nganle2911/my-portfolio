@@ -1,0 +1,154 @@
+.about {
+    .container {
+
+        // About Me
+        .aboutMe {
+            @include background;
+
+            .aboutMe__title {
+                h2.title {
+                    @include title($num-4);
+                }
+
+                p {
+                    @include text;
+                }
+            }
+
+            .aboutMe__info {
+                .row {
+                    .info__photo {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+
+                        img {
+                            height: auto;
+                            max-width: 80%;
+                        }
+                    }
+
+                    .info__content {
+                        color: $white-1;
+
+                        .info__title {
+                            color: $turquoise-1;
+                            font-weight: $fw-3;
+                        }
+
+                        .info__text {}
+
+                        .info__perso {
+                            ul {
+                                li {
+                                    list-style: none;
+                                    margin-bottom: $margin-6;
+
+                                    i {
+                                        color: $turquoise-1;
+                                        margin-right: $margin-6 - 5;
+                                    }
+
+                                    strong {
+                                        margin-right: $margin-6;
+                                    }
+
+                                    span {}
+                                }
+                            }
+                        }
+
+                        .info__present {}
+                    }
+                }
+            }
+        }
+
+        // Skills 
+        .skills {
+            @include background;
+
+            .skills__title {
+                h2.title {
+                    @include title($num-4);
+                }
+            }
+
+            .skills__content {
+                .row {
+                    .skills__info {
+                        margin-bottom: $margin-6;
+
+                        .skills__name {
+                            display: flex;
+                            justify-content: space-between;
+
+                            p {
+                                color: $gold-1;
+                                font-weight: $fw-2;
+                                font-size: $fs-6;
+                                text-transform: uppercase;
+                                padding: $padding-3 0;
+                                margin: 0;
+                            }
+                        }
+
+                        .progress {
+                            height: $num-3;
+                            background-color: $white-2;
+
+                            .progress-bar {
+                                background-color: $turquoise-1;
+                                // width: 85%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        // Interests
+        .interest {
+            @include background;
+
+            .interest__title {
+                h2.title {
+                    @include title($num-2);
+                }
+            }
+
+            .interest__content {
+                display: grid;
+                grid-template-columns: auto auto auto auto;
+                gap: $num-6;
+
+                .interest__item {
+                    .item__box {
+                        padding: $padding-5;
+                        background-color: $white-4;
+                        display: flex;
+                        align-items: center;
+                        transition: all .3s ease-in-out;
+
+                        &:hover {
+                            transform: scale(1.07);
+                            background-color: $white-2;
+                        }
+
+                        i {
+                            font-size: $fs-5 - 4;
+                            padding-right: $padding-3;
+                        }
+
+                        span {
+                            font-size: $fs-3;
+                            font-weight: $fw-4;
+                            color: $white-1;
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+}

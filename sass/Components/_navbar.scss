@@ -1,0 +1,75 @@
+.navMenu {
+    position: fixed;
+    width: 100%;
+    overflow: hidden;
+    top: 0;
+
+    .container {
+        .navbar {
+            background-color: $dark-1;
+
+            .container-fluid {
+                padding: 0;
+
+                .navbar-brand {
+                    font-size: $fs-5;
+                    font-weight: $fw-3;
+                    color: $gold-1;
+                }
+
+                .navbar-toggler {
+                    background-color: white;
+                }
+
+                .navbar-collapse {
+                    position: relative;
+
+                    .nav {
+                        position: absolute;
+                        right: 0;
+
+                        .nav-item {
+                            position: relative;
+                            margin-right: $margin-1;
+
+                            .nav-link {
+                                padding: 0;
+                                margin: 0;
+                                text-decoration: none;
+                                color: $turquoise-2;
+                                font-size: $fs-3;
+                                font-weight: $fw-2;
+                                transition: all 0.3s ease-in-out;
+
+                                &::before {
+                                    position: absolute;
+                                    content: "";
+                                    width: 0;
+                                    height: 2px;
+                                    background-color: $turquoise-1;
+                                    left: 0;
+                                    bottom: -3px;
+                                    visibility: hidden;
+                                    transition: all 0.3s ease-in-out;
+                                }
+
+                                &:hover::before,
+                                &.active::before {
+                                    visibility: visible;
+                                    width: 50%;
+                                }
+
+                                &:hover,
+                                &.active {
+                                    color: $turquoise-1;
+                                    font-weight: $fw-4;
+                                }
+                            }
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+}

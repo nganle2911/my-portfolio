@@ -1,0 +1,67 @@
+.resume {
+    .container {
+        .myResume {
+            @include background;
+            .myResume__title {
+                h2.title {
+                    @include title($num-7);
+                }
+                p.text {
+                    @include text;
+                }
+            }
+            .myResume__info {
+                .row {
+                    h3.topic {
+                        @include topic;
+                    }
+                    .myResume__item {
+                        padding-left: $padding-5;
+                        border-left: 2px solid $turquoise-3;
+                        position: relative;
+
+                        &::before {
+                            content: "";
+                            width: $num-6;
+                            height: $num-6;
+                            border-radius: 50%;
+                            background-color: $turquoise-1;
+                            position: absolute;
+                            left: -8px;
+                            top: 0;
+                        }
+
+                        .item__title {
+                            font-size: $fs-4 - 2;
+                            font-weight: $fw-3;
+                            text-transform: uppercase;
+                            margin-bottom: $margin-6;
+                            color: $turquoise-1;
+                        }
+
+                        .item__year {
+                            font-size: $fs-3;
+                            background-color: $white-2;
+                            padding: $padding-7 $padding-4;
+                            display: inline-block;
+                            font-weight: $fw-3;
+                            margin-bottom: $margin-6;
+                            color: $white-6;
+                        }
+
+                        .item__text {
+                            color: $white-1;
+                        }
+                        .item__list {
+
+                            li {
+                                color: $white-1;
+                                padding-bottom: $padding-3;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

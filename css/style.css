@@ -11,10 +11,6 @@ body {
   background-color: #F8F7F4;
 }
 
-section.section-show {
-  padding-top: 40px;
-}
-
 @keyframes moveImage {
   0% {
     transform: rotate(3deg) translate(3px, 3px);
@@ -35,8 +31,6 @@ section.section-show {
   width: 100%;
   overflow: hidden;
   top: 0;
-}
-.navMenu .container .navbar {
   background-color: #F8F7F4;
 }
 .navMenu .container .navbar .container-fluid {
@@ -122,34 +116,28 @@ section.section-show {
   width: 50%;
 }
 
-.about .container .aboutMe {
+.about .container {
   padding: 30px;
-  background-color: #AE8D92;
+  background-color: #704f5b;
+  padding: 48px 30px;
 }
 .about .container .aboutMe .aboutMe__title h2.title {
-  font-size: 14px;
-  text-transform: uppercase;
+  font-size: 48px;
+  text-transform: capitalize;
   font-weight: 500;
   margin-bottom: 20px;
   letter-spacing: 2px;
-  color: yellow;
+  color: #F8F7F4;
   position: relative;
 }
 .about .container .aboutMe .aboutMe__title h2.title::before {
   position: absolute;
   content: "";
-  width: 150px;
-  height: 1px;
-  background-color: green;
-  top: 7px;
-  left: 65px;
-}
-.about .container .aboutMe .aboutMe__title p {
-  text-transform: uppercase;
-  font-size: 36px;
-  font-weight: 600;
-  color: yellow;
-  margin-top: -15px;
+  width: 200px;
+  height: 2px;
+  background-color: #F8F7F4;
+  top: 30px;
+  left: 220px;
 }
 .about .container .aboutMe .aboutMe__info .row .info__photo {
   display: flex;
@@ -160,187 +148,97 @@ section.section-show {
   height: auto;
   max-width: 80%;
 }
-.about .container .aboutMe .aboutMe__info .row .info__content {
-  color: #F8F7F4;
+.about .container .aboutMe .aboutMe__info .row .info__content .info__text {
+  font-size: 20px;
+  color: #E3D8D4;
 }
-.about .container .aboutMe .aboutMe__info .row .info__content .info__title {
-  color: green;
-  font-weight: 600;
-}
-.about .container .aboutMe .aboutMe__info .row .info__content .info__perso ul li {
-  list-style: none;
-  margin-bottom: 10px;
-}
-.about .container .aboutMe .aboutMe__info .row .info__content .info__perso ul li i {
-  color: green;
-  margin-right: 5px;
-}
-.about .container .aboutMe .aboutMe__info .row .info__content .info__perso ul li strong {
-  margin-right: 10px;
-}
-.about .container .skills {
-  padding: 30px;
-  background-color: #AE8D92;
-}
-.about .container .skills .skills__title h2.title {
-  font-size: 14px;
-  text-transform: uppercase;
-  font-weight: 500;
-  margin-bottom: 20px;
-  letter-spacing: 2px;
-  color: yellow;
-  position: relative;
-}
-.about .container .skills .skills__title h2.title::before {
-  position: absolute;
-  content: "";
-  width: 150px;
-  height: 1px;
-  background-color: green;
-  top: 7px;
-  left: 65px;
-}
-.about .container .skills .skills__content .row .skills__info {
-  margin-bottom: 10px;
-}
-.about .container .skills .skills__content .row .skills__info .skills__name {
-  display: flex;
-  justify-content: space-between;
-}
-.about .container .skills .skills__content .row .skills__info .skills__name p {
-  color: yellow;
-  font-weight: 500;
-  font-size: 14px;
-  text-transform: uppercase;
-  padding: 10px 0;
-  margin: 0;
-}
-.about .container .skills .skills__content .row .skills__info .progress {
-  height: 10px;
-  background-color: #F8F7F4;
-}
-.about .container .skills .skills__content .row .skills__info .progress .progress-bar {
-  background-color: green;
-}
-.about .container .interest {
-  padding: 30px;
-  background-color: #AE8D92;
-}
-.about .container .interest .interest__title h2.title {
-  font-size: 14px;
-  text-transform: uppercase;
-  font-weight: 500;
-  margin-bottom: 20px;
-  letter-spacing: 2px;
-  color: yellow;
-  position: relative;
-}
-.about .container .interest .interest__title h2.title::before {
-  position: absolute;
-  content: "";
-  width: 150px;
-  height: 1px;
-  background-color: green;
-  top: 7px;
-  left: 100px;
-}
-.about .container .interest .interest__content {
-  display: grid;
-  grid-template-columns: auto auto auto auto;
-  gap: 15px;
-}
-.about .container .interest .interest__content .interest__item .item__box {
-  padding: 20px;
-  background-color: #F8F7F4;
+.about .container .aboutMe .aboutMe__info .row .info__content .info__signature {
   display: flex;
   align-items: center;
+  margin-top: 60px;
+}
+.about .container .aboutMe .aboutMe__info .row .info__content .info__signature .info__cv a {
+  background-color: #F8F7F4;
+  border-radius: 10px;
+  padding: 12px 24px;
+  font-weight: 600;
+  font-size: 18px;
+  color: #704f5b;
   transition: all 0.3s ease-in-out;
 }
-.about .container .interest .interest__content .interest__item .item__box:hover {
-  transform: scale(1.07);
-  background-color: #F8F7F4;
+.about .container .aboutMe .aboutMe__info .row .info__content .info__signature .info__cv a i {
+  font-size: 20px;
 }
-.about .container .interest .interest__content .interest__item .item__box i {
-  font-size: 32px;
-  padding-right: 10px;
-}
-.about .container .interest .interest__content .interest__item .item__box span {
-  font-size: 16px;
-  font-weight: 700;
+.about .container .aboutMe .aboutMe__info .row .info__content .info__signature .info__cv a:hover {
+  background-color: #AE8D92;
   color: #F8F7F4;
 }
-
-.resume .container .myResume {
-  padding: 30px;
-  background-color: #AE8D92;
+.about .container .aboutMe .aboutMe__info .row .info__content .info__signature .signature {
+  margin-left: 48px;
 }
-.resume .container .myResume .myResume__title h2.title {
-  font-size: 14px;
-  text-transform: uppercase;
+
+.skills {
+  padding-top: 30px;
+}
+.skills .container {
+  padding: 48px 30px;
+}
+.skills .container .skills__title .title {
+  font-size: 48px;
+  text-transform: capitalize;
   font-weight: 500;
   margin-bottom: 20px;
   letter-spacing: 2px;
-  color: yellow;
+  color: #704f5b;
   position: relative;
 }
-.resume .container .myResume .myResume__title h2.title::before {
+.skills .container .skills__title .title::before {
   position: absolute;
   content: "";
-  width: 150px;
-  height: 1px;
-  background-color: green;
-  top: 7px;
-  left: 75px;
+  width: 200px;
+  height: 2px;
+  background-color: #704f5b;
+  top: 30px;
+  left: 172px;
 }
-.resume .container .myResume .myResume__title p.text {
-  text-transform: uppercase;
-  font-size: 36px;
-  font-weight: 600;
-  color: yellow;
-  margin-top: -15px;
+.skills .container .mySkills {
+  display: grid;
+  grid-template-columns: repeat(5, auto);
+  grid-gap: 30px;
 }
-.resume .container .myResume .myResume__info .row h3.topic {
-  font-size: 26px;
-  font-weight: 700;
-  text-transform: capitalize;
-  margin: 20px 0;
-  color: yellow;
-}
-.resume .container .myResume .myResume__info .row .myResume__item {
-  padding-left: 20px;
-  border-left: 2px solid green;
+.skills .container .mySkills .skills__content {
   position: relative;
+  text-align: center;
+  padding: 24px 0;
+  background-color: #E3D8D4;
+  transition: all 0.3s ease-in-out;
 }
-.resume .container .myResume .myResume__info .row .myResume__item::before {
-  content: "";
-  width: 15px;
-  height: 15px;
-  border-radius: 50%;
-  background-color: green;
+.skills .container .mySkills .skills__content .skills__logo img {
+  opacity: 1;
+  transition: all 0.3s ease-in-out;
+}
+.skills .container .mySkills .skills__content .middle {
   position: absolute;
-  left: -8px;
-  top: 0;
+  top: 35%;
+  left: 35%;
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
 }
-.resume .container .myResume .myResume__info .row .myResume__item .item__title {
-  font-size: 18px;
-  font-weight: 600;
+.skills .container .mySkills .skills__content .middle .skills__text {
+  font-size: 20px;
+  font-weight: 500;
   text-transform: uppercase;
-  margin-bottom: 10px;
-  color: green;
-}
-.resume .container .myResume .myResume__info .row .myResume__item .item__year {
-  font-size: 16px;
-  background-color: white;
-  padding: 5px 15px;
-  display: inline-block;
-  font-weight: 600;
-  margin-bottom: 10px;
-  color: white;
-}
-.resume .container .myResume .myResume__info .row .myResume__item .item__text {
+  padding: 6px 12px;
+  background-color: #704f5b;
   color: #F8F7F4;
 }
-.resume .container .myResume .myResume__info .row .myResume__item .item__list li {
-  color: #F8F7F4;
-  padding-bottom: 10px;
+.skills .container .mySkills .skills__content:hover .skills__logo img {
+  opacity: 0.3;
+}
+.skills .container .mySkills .skills__content:hover .middle {
+  opacity: 1;
+}
+.skills .container .mySkills .skills__content:nth-child(3) .middle {
+  top: 35%;
+  left: 23%;
 }

@@ -1,22 +1,21 @@
 .about {
+
     .container {
+        @include background;
+        padding: $num-9 $num-7;
 
         // About Me
         .aboutMe {
-            @include background;
 
             .aboutMe__title {
                 h2.title {
-                    @include title(65px);
-                }
-
-                p {
-                    @include text;
+                    @include title(220px, $white-1);
                 }
             }
 
             .aboutMe__info {
                 .row {
+                    
                     .info__photo {
                         display: flex;
                         align-items: center;
@@ -29,126 +28,46 @@
                     }
 
                     .info__content {
-                        color: $white-1;
-
-                        .info__title {
-                            color: green;
-                            font-weight: 600;
+                        .info__text {
+                            font-size: $num-5;
+                            color: $brown-1;
                         }
 
-                        .info__text {}
+                        .info__signature {
+                            display: flex;
+                            align-items: center;
+                            margin-top: $num-10;
 
-                        .info__perso {
-                            ul {
-                                li {
-                                    list-style: none;
-                                    margin-bottom: 10px;
+                            .info__cv {
+                                
+                                a {
+                                    background-color: $white-1;
+                                    border-radius: $num-3;
+                                    padding: $num-3 + 2 $num-6 - 1;
+                                    font-weight: $fw-5;
+                                    font-size: $num-4 + 3;
+                                    color: $brown-4;
+                                    transition: all .3s ease-in-out;
 
                                     i {
-                                        color: green;
-                                        margin-right: 10px - 5;
+                                        font-size: $num-5;
                                     }
 
-                                    strong {
-                                        margin-right: 10px;
+                                    &:hover {
+                                        background-color: $brown-3;
+                                        color: $white-1;
                                     }
-
-                                    span {}
                                 }
                             }
-                        }
-
-                        .info__present {}
-                    }
-                }
-            }
-        }
-
-        // Skills 
-        .skills {
-            @include background;
-
-            .skills__title {
-                h2.title {
-                    @include title(65px);
-                }
-            }
-
-            .skills__content {
-                .row {
-                    .skills__info {
-                        margin-bottom: 10px;
-
-                        .skills__name {
-                            display: flex;
-                            justify-content: space-between;
-
-                            p {
-                                color: yellow;
-                                font-weight: 500;
-                                font-size: 14px;
-                                text-transform: uppercase;
-                                padding: 10px 0;
-                                margin: 0;
+    
+                            .signature {
+                                margin-left: $num-9;
                             }
-                        }
-
-                        .progress {
-                            height: 10px;
-                            background-color: $white-1;
-
-                            .progress-bar {
-                                background-color: green;
-                                // width: 85%;
-                            }
-                        }
+                            
+                        }                        
                     }
                 }
             }
         }
-
-        // Interests
-        .interest {
-            @include background;
-
-            .interest__title {
-                h2.title {
-                    @include title(100px);
-                }
-            }
-
-            .interest__content {
-                display: grid;
-                grid-template-columns: auto auto auto auto;
-                gap: 15px;
-
-                .interest__item {
-                    .item__box {
-                        padding: 20px;
-                        background-color: $white-1;
-                        display: flex;
-                        align-items: center;
-                        transition: all .3s ease-in-out;
-
-                        &:hover {
-                            transform: scale(1.07);
-                            background-color: $white-1;
-                        }
-
-                        i {
-                            font-size: 36px - 4;
-                            padding-right: 10px;
-                        }
-
-                        span {
-                            font-size: 16px;
-                            font-weight: 700;
-                            color: $white-1;
-                        }
-                    }
-                }
-            }
-        }
-
     }
 }

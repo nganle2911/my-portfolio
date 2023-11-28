@@ -3,11 +3,10 @@
     width: 100%;
     overflow: hidden;
     top: 0;
+    background-color: $white-1;
 
     .container {
         .navbar {
-            background-color: $white-1;
-
             .container-fluid {
                 padding: 0;
                 align-items: center;

@@ -101,40 +101,17 @@ section.section-show {
 }
 .home .container .row .home__left .home__name a {
   text-decoration: none;
-  color: yellow;
+  color: #704f5b;
 }
 .home .container .row .home__left .home__text {
   margin-top: 20px;
-  margin-bottom: 40px;
   font-size: 24px;
-  color: yellow;
+  color: #AE8D92;
 }
 .home .container .row .home__left .home__text span {
-  color: yellow;
-  font-weight: 500;
-  border-bottom: 2px solid yellow;
-}
-.home .container .row .home__left .home__socialMedia {
-  margin-top: 40px;
-}
-.home .container .row .home__left .home__socialMedia a {
-  font-size: 16px;
-  color: #F8F7F4;
-  margin-right: 8px;
-  display: inline-block;
-  width: 40px;
-  height: 40px;
-  background-color: white;
-  border-radius: 50%;
-  line-height: 40px;
-  text-align: center;
-  transition: all 0.3s ease-in-out;
-}
-.home .container .row .home__left .home__socialMedia a:hover {
-  background-color: green;
-  color: yellow;
+  color: #704f5b;
   font-weight: 600;
-  font-size: 20px;
+  border-bottom: 2px solid #704f5b;
 }
 .home .container .row .home__right {
   padding: 0;
@@ -142,8 +119,7 @@ section.section-show {
   justify-content: right;
 }
 .home .container .row .home__right img {
-  width: 80%;
-  animation: moveImage 5s infinite;
+  width: 50%;
 }
 
 .about .container .aboutMe {

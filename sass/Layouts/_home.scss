@@ -2,14 +2,16 @@
     height: 100vh;
     display: flex;
     align-items: center;
+
     .container {
         .row {
             display: flex;
             align-items: center;
+
             .home__left {
                 .home__name {
-                    font-size: 48px;
-                    font-weight: 800;
+                    font-size: $num-9;
+                    font-weight: $fw-7;
 
                     @include small-screen {
                         font-size: 28px;
@@ -17,53 +19,31 @@
 
                     a {
                         text-decoration: none;
-                        color: yellow;
+                        color: $brown-4;
                     }
                 }
-                .home__text {
-                    margin-top: 20px;
-                    margin-bottom: 40px;
-                    font-size: 24px;
-                    color: yellow;
-                    
-                    span {
-                        color: yellow;
-                        font-weight: 500;
-                        border-bottom: 2px solid yellow;
-                    }
-                }
-                .nav {}
-                .home__socialMedia {
-                    margin-top: 40px;
-                    a {
-                        font-size: 16px;
-                        color: $white-1;
-                        margin-right: 8px;
-                        display: inline-block;
-                        width: 40px;
-                        height: 40px;
-                        background-color: white;
-                        border-radius: 50%;
-                        line-height: 40px;
-                        text-align: center;
-                        transition: all 0.3s ease-in-out;
 
-                        &:hover {
-                            background-color: green;
-                            color: yellow;
-                            font-weight: 600;
-                            font-size: 20px;
-                        }
+                .home__text {
+                    margin-top: $num-5;
+                    font-size: $num-6 - 1;
+                    color: $brown-3;
+
+                    span {
+                        color: $brown-4;
+                        font-weight: $fw-5;
+                        border-bottom: 2px solid $brown-4;
                     }
                 }
             }
+
             .home__right {
                 padding: 0;
                 display: flex;
                 justify-content: right;
+
                 img {
-                    width: 80%;
-                    @include animation(moveImage, 5s, infinite);
+                    width: 50%;
+                    // @include animation(moveImage, 5s, infinite);
                 }
             }
         }

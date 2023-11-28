@@ -34,36 +34,27 @@
                             font-weight: 500;
                             transition: all .3s ease-in-out;
 
-                            &.active, &:hover {
-                                color: yellow;
+                            &::before {
+                                position: absolute;
+                                content: "";
+                                width: 0;
+                                height: 2px;
+                                background-color: $turquoise-1;
+                                left: 0;
+                                bottom: 5px;
+                                visibility: visible;
+                                transition: all .3s ease-in-out;
                             }
 
-                            // &::before {
-                            //     position: absolute;
-                            //     content: "";
-                            //     width: 0;
-                            //     height: 2px;
-                            //     background-color: $turquoise-1;
-                            //     left: 0;
-                            //     bottom: 5px;
-                            //     visibility: visible;
-                            //     transition: all .3s ease-in-out;
-                            // }
-
-                            // &:hover::before,
-                            // &.active::before,
-                            // &.active, &:hover {
-                            //     visibility: visible;
-                            //     width: 82%;
-                            //     color: $turquoise-1;
-                            //     font-weight: 700;
-                            // }
-
-                            // &.active, 
-                            // &:hover {
-                            //     color: $turquoise-1;
-                            //     font-weight: 700;
-                            // }
+                            &:hover::before,
+                            &.active::before,
+                            &.active,
+                            &:hover {
+                                visibility: visible;
+                                width: 82%;
+                                color: $turquoise-1;
+                                font-weight: 700;
+                            }
                         }
                     }
                 }

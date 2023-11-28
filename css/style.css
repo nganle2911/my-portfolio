@@ -60,8 +60,22 @@ section.section-show {
   font-weight: 500;
   transition: all 0.3s ease-in-out;
 }
-.navMenu .container .navbar .container-fluid .navbar-collapse .navbar-nav .nav-link.active, .navMenu .container .navbar .container-fluid .navbar-collapse .navbar-nav .nav-link:hover {
-  color: yellow;
+.navMenu .container .navbar .container-fluid .navbar-collapse .navbar-nav .nav-link::before {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 2px;
+  background-color: #178582;
+  left: 0;
+  bottom: 5px;
+  visibility: visible;
+  transition: all 0.3s ease-in-out;
+}
+.navMenu .container .navbar .container-fluid .navbar-collapse .navbar-nav .nav-link:hover::before, .navMenu .container .navbar .container-fluid .navbar-collapse .navbar-nav .nav-link.active::before, .navMenu .container .navbar .container-fluid .navbar-collapse .navbar-nav .nav-link.active, .navMenu .container .navbar .container-fluid .navbar-collapse .navbar-nav .nav-link:hover {
+  visibility: visible;
+  width: 82%;
+  color: #178582;
+  font-weight: 700;
 }
 
 .home {

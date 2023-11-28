@@ -7,7 +7,7 @@
 
             .aboutMe__title {
                 h2.title {
-                    @include title($num-4);
+                    @include title(65px);
                 }
 
                 p {
@@ -32,8 +32,8 @@
                         color: $white-1;
 
                         .info__title {
-                            color: $turquoise-1;
-                            font-weight: $fw-3;
+                            color: green;
+                            font-weight: 600;
                         }
 
                         .info__text {}
@@ -42,15 +42,15 @@
                             ul {
                                 li {
                                     list-style: none;
-                                    margin-bottom: $margin-6;
+                                    margin-bottom: 10px;
 
                                     i {
-                                        color: $turquoise-1;
-                                        margin-right: $margin-6 - 5;
+                                        color: green;
+                                        margin-right: 10px - 5;
                                     }
 
                                     strong {
-                                        margin-right: $margin-6;
+                                        margin-right: 10px;
                                     }
 
                                     span {}
@@ -70,35 +70,35 @@
 
             .skills__title {
                 h2.title {
-                    @include title($num-4);
+                    @include title(65px);
                 }
             }
 
             .skills__content {
                 .row {
                     .skills__info {
-                        margin-bottom: $margin-6;
+                        margin-bottom: 10px;
 
                         .skills__name {
                             display: flex;
                             justify-content: space-between;
 
                             p {
-                                color: $gold-1;
-                                font-weight: $fw-2;
-                                font-size: $fs-6;
+                                color: yellow;
+                                font-weight: 500;
+                                font-size: 14px;
                                 text-transform: uppercase;
-                                padding: $padding-3 0;
+                                padding: 10px 0;
                                 margin: 0;
                             }
                         }
 
                         .progress {
-                            height: $num-3;
-                            background-color: $white-2;
+                            height: 10px;
+                            background-color: $white-1;
 
                             .progress-bar {
-                                background-color: $turquoise-1;
+                                background-color: green;
                                 // width: 85%;
                             }
                         }
@@ -113,36 +113,36 @@
 
             .interest__title {
                 h2.title {
-                    @include title($num-2);
+                    @include title(100px);
                 }
             }
 
             .interest__content {
                 display: grid;
                 grid-template-columns: auto auto auto auto;
-                gap: $num-6;
+                gap: 15px;
 
                 .interest__item {
                     .item__box {
-                        padding: $padding-5;
-                        background-color: $white-4;
+                        padding: 20px;
+                        background-color: $white-1;
                         display: flex;
                         align-items: center;
                         transition: all .3s ease-in-out;
 
                         &:hover {
                             transform: scale(1.07);
-                            background-color: $white-2;
+                            background-color: $white-1;
                         }
 
                         i {
-                            font-size: $fs-5 - 4;
-                            padding-right: $padding-3;
+                            font-size: 36px - 4;
+                            padding-right: 10px;
                         }
 
                         span {
-                            font-size: $fs-3;
-                            font-weight: $fw-4;
+                            font-size: 16px;
+                            font-weight: 700;
                             color: $white-1;
                         }
                     }

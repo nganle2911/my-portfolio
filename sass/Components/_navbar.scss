@@ -6,19 +6,20 @@
 
     .container {
         .navbar {
-            background-color: $dark-1;
+            background-color: $white-1;
 
             .container-fluid {
                 padding: 0;
+                align-items: center;
 
                 .navbar-brand {
-                    font-size: $fs-5;
-                    font-weight: $fw-3;
-                    color: $gold-1;
+                    font-size: $num-8;
+                    font-weight: $fw-5;
+                    color: $brown-4;
                 }
 
                 .navbar-toggler {
-                    background-color: white;
+                    background-color: $white-1;
                 }
 
                 .navbar-collapse {
@@ -27,21 +28,21 @@
                     .navbar-nav {
                         .nav-link {
                             position: relative;
-                            margin-right: 15px;
+                            margin-right: $num-4;
                             padding-left: 0;
-                            color: $turquoise-2;
-                            font-size: 16px;
-                            font-weight: 500;
+                            color: $brown-3;
+                            font-size: $num-5;
+                            font-weight: $fw-4;
                             transition: all .3s ease-in-out;
 
                             &::before {
                                 position: absolute;
                                 content: "";
                                 width: 0;
-                                height: 2px;
-                                background-color: $turquoise-1;
+                                height: $num-1 - 1;
+                                background-color: $brown-4;
                                 left: 0;
-                                bottom: 5px;
+                                bottom: $num-2;
                                 visibility: visible;
                                 transition: all .3s ease-in-out;
                             }
@@ -52,8 +53,8 @@
                             &:hover {
                                 visibility: visible;
                                 width: 82%;
-                                color: $turquoise-1;
-                                font-weight: 700;
+                                color: $brown-4;
+                                font-weight: $fw-6;
                             }
                         }
                     }

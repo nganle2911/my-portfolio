@@ -1,16 +1,18 @@
+/*  white: #F8F7F4 - light-brown: #BBA7A1
+    lighter-brown: #E3D8D4 - brown: #AE8D92 */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Playfair Display", serif;
+  font-family: "Inconsolata", monospace;
 }
 
 body {
-  background-color: #0A1828;
+  background-color: #F8F7F4;
 }
 
 section.section-show {
-  padding-top: 100px;
+  padding-top: 40px;
 }
 
 @keyframes moveImage {
@@ -35,18 +37,19 @@ section.section-show {
   top: 0;
 }
 .navMenu .container .navbar {
-  background-color: #0A1828;
+  background-color: #F8F7F4;
 }
 .navMenu .container .navbar .container-fluid {
   padding: 0;
+  align-items: center;
 }
 .navMenu .container .navbar .container-fluid .navbar-brand {
   font-size: 36px;
   font-weight: 600;
-  color: #deb992;
+  color: #704f5b;
 }
 .navMenu .container .navbar .container-fluid .navbar-toggler {
-  background-color: white;
+  background-color: #F8F7F4;
 }
 .navMenu .container .navbar .container-fluid .navbar-collapse {
   justify-content: end;
@@ -55,8 +58,8 @@ section.section-show {
   position: relative;
   margin-right: 15px;
   padding-left: 0;
-  color: rgba(23, 133, 129, 0.469);
-  font-size: 16px;
+  color: #AE8D92;
+  font-size: 20px;
   font-weight: 500;
   transition: all 0.3s ease-in-out;
 }
@@ -65,7 +68,7 @@ section.section-show {
   content: "";
   width: 0;
   height: 2px;
-  background-color: #178582;
+  background-color: #704f5b;
   left: 0;
   bottom: 5px;
   visibility: visible;
@@ -74,7 +77,7 @@ section.section-show {
 .navMenu .container .navbar .container-fluid .navbar-collapse .navbar-nav .nav-link:hover::before, .navMenu .container .navbar .container-fluid .navbar-collapse .navbar-nav .nav-link.active::before, .navMenu .container .navbar .container-fluid .navbar-collapse .navbar-nav .nav-link.active, .navMenu .container .navbar .container-fluid .navbar-collapse .navbar-nav .nav-link:hover {
   visibility: visible;
   width: 82%;
-  color: #178582;
+  color: #704f5b;
   font-weight: 700;
 }
 
@@ -98,38 +101,38 @@ section.section-show {
 }
 .home .container .row .home__left .home__name a {
   text-decoration: none;
-  color: #deb992;
+  color: yellow;
 }
 .home .container .row .home__left .home__text {
   margin-top: 20px;
   margin-bottom: 40px;
   font-size: 24px;
-  color: rgba(222, 185, 146, 0.65);
+  color: yellow;
 }
 .home .container .row .home__left .home__text span {
-  color: #deb992;
+  color: yellow;
   font-weight: 500;
-  border-bottom: 2px solid #deb992;
+  border-bottom: 2px solid yellow;
 }
 .home .container .row .home__left .home__socialMedia {
   margin-top: 40px;
 }
 .home .container .row .home__left .home__socialMedia a {
   font-size: 16px;
-  color: #869ba9;
+  color: #F8F7F4;
   margin-right: 8px;
   display: inline-block;
   width: 40px;
   height: 40px;
-  background-color: rgba(134, 155, 169, 0.3);
+  background-color: white;
   border-radius: 50%;
   line-height: 40px;
   text-align: center;
   transition: all 0.3s ease-in-out;
 }
 .home .container .row .home__left .home__socialMedia a:hover {
-  background-color: #178582;
-  color: #deb992;
+  background-color: green;
+  color: yellow;
   font-weight: 600;
   font-size: 20px;
 }
@@ -145,7 +148,7 @@ section.section-show {
 
 .about .container .aboutMe {
   padding: 30px;
-  background-color: #081521;
+  background-color: #AE8D92;
 }
 .about .container .aboutMe .aboutMe__title h2.title {
   font-size: 14px;
@@ -153,7 +156,7 @@ section.section-show {
   font-weight: 500;
   margin-bottom: 20px;
   letter-spacing: 2px;
-  color: rgba(222, 185, 146, 0.65);
+  color: yellow;
   position: relative;
 }
 .about .container .aboutMe .aboutMe__title h2.title::before {
@@ -161,7 +164,7 @@ section.section-show {
   content: "";
   width: 150px;
   height: 1px;
-  background-color: #178582;
+  background-color: green;
   top: 7px;
   left: 65px;
 }
@@ -169,7 +172,7 @@ section.section-show {
   text-transform: uppercase;
   font-size: 36px;
   font-weight: 600;
-  color: #deb992;
+  color: yellow;
   margin-top: -15px;
 }
 .about .container .aboutMe .aboutMe__info .row .info__photo {
@@ -182,10 +185,10 @@ section.section-show {
   max-width: 80%;
 }
 .about .container .aboutMe .aboutMe__info .row .info__content {
-  color: #869ba9;
+  color: #F8F7F4;
 }
 .about .container .aboutMe .aboutMe__info .row .info__content .info__title {
-  color: #178582;
+  color: green;
   font-weight: 600;
 }
 .about .container .aboutMe .aboutMe__info .row .info__content .info__perso ul li {
@@ -193,7 +196,7 @@ section.section-show {
   margin-bottom: 10px;
 }
 .about .container .aboutMe .aboutMe__info .row .info__content .info__perso ul li i {
-  color: #178582;
+  color: green;
   margin-right: 5px;
 }
 .about .container .aboutMe .aboutMe__info .row .info__content .info__perso ul li strong {
@@ -201,7 +204,7 @@ section.section-show {
 }
 .about .container .skills {
   padding: 30px;
-  background-color: #081521;
+  background-color: #AE8D92;
 }
 .about .container .skills .skills__title h2.title {
   font-size: 14px;
@@ -209,7 +212,7 @@ section.section-show {
   font-weight: 500;
   margin-bottom: 20px;
   letter-spacing: 2px;
-  color: rgba(222, 185, 146, 0.65);
+  color: yellow;
   position: relative;
 }
 .about .container .skills .skills__title h2.title::before {
@@ -217,7 +220,7 @@ section.section-show {
   content: "";
   width: 150px;
   height: 1px;
-  background-color: #178582;
+  background-color: green;
   top: 7px;
   left: 65px;
 }
@@ -229,7 +232,7 @@ section.section-show {
   justify-content: space-between;
 }
 .about .container .skills .skills__content .row .skills__info .skills__name p {
-  color: #deb992;
+  color: yellow;
   font-weight: 500;
   font-size: 14px;
   text-transform: uppercase;
@@ -238,14 +241,14 @@ section.section-show {
 }
 .about .container .skills .skills__content .row .skills__info .progress {
   height: 10px;
-  background-color: rgba(134, 155, 169, 0.3);
+  background-color: #F8F7F4;
 }
 .about .container .skills .skills__content .row .skills__info .progress .progress-bar {
-  background-color: #178582;
+  background-color: green;
 }
 .about .container .interest {
   padding: 30px;
-  background-color: #081521;
+  background-color: #AE8D92;
 }
 .about .container .interest .interest__title h2.title {
   font-size: 14px;
@@ -253,7 +256,7 @@ section.section-show {
   font-weight: 500;
   margin-bottom: 20px;
   letter-spacing: 2px;
-  color: rgba(222, 185, 146, 0.65);
+  color: yellow;
   position: relative;
 }
 .about .container .interest .interest__title h2.title::before {
@@ -261,7 +264,7 @@ section.section-show {
   content: "";
   width: 150px;
   height: 1px;
-  background-color: #178582;
+  background-color: green;
   top: 7px;
   left: 100px;
 }
@@ -272,14 +275,14 @@ section.section-show {
 }
 .about .container .interest .interest__content .interest__item .item__box {
   padding: 20px;
-  background-color: rgba(134, 155, 169, 0.082);
+  background-color: #F8F7F4;
   display: flex;
   align-items: center;
   transition: all 0.3s ease-in-out;
 }
 .about .container .interest .interest__content .interest__item .item__box:hover {
   transform: scale(1.07);
-  background-color: rgba(134, 155, 169, 0.3);
+  background-color: #F8F7F4;
 }
 .about .container .interest .interest__content .interest__item .item__box i {
   font-size: 32px;
@@ -288,12 +291,12 @@ section.section-show {
 .about .container .interest .interest__content .interest__item .item__box span {
   font-size: 16px;
   font-weight: 700;
-  color: #869ba9;
+  color: #F8F7F4;
 }
 
 .resume .container .myResume {
   padding: 30px;
-  background-color: #081521;
+  background-color: #AE8D92;
 }
 .resume .container .myResume .myResume__title h2.title {
   font-size: 14px;
@@ -301,7 +304,7 @@ section.section-show {
   font-weight: 500;
   margin-bottom: 20px;
   letter-spacing: 2px;
-  color: rgba(222, 185, 146, 0.65);
+  color: yellow;
   position: relative;
 }
 .resume .container .myResume .myResume__title h2.title::before {
@@ -309,7 +312,7 @@ section.section-show {
   content: "";
   width: 150px;
   height: 1px;
-  background-color: #178582;
+  background-color: green;
   top: 7px;
   left: 75px;
 }
@@ -317,7 +320,7 @@ section.section-show {
   text-transform: uppercase;
   font-size: 36px;
   font-weight: 600;
-  color: #deb992;
+  color: yellow;
   margin-top: -15px;
 }
 .resume .container .myResume .myResume__info .row h3.topic {
@@ -325,11 +328,11 @@ section.section-show {
   font-weight: 700;
   text-transform: capitalize;
   margin: 20px 0;
-  color: #deb992;
+  color: yellow;
 }
 .resume .container .myResume .myResume__info .row .myResume__item {
   padding-left: 20px;
-  border-left: 2px solid rgba(23, 133, 129, 0.196);
+  border-left: 2px solid green;
   position: relative;
 }
 .resume .container .myResume .myResume__info .row .myResume__item::before {
@@ -337,7 +340,7 @@ section.section-show {
   width: 15px;
   height: 15px;
   border-radius: 50%;
-  background-color: #178582;
+  background-color: green;
   position: absolute;
   left: -8px;
   top: 0;
@@ -347,21 +350,21 @@ section.section-show {
   font-weight: 600;
   text-transform: uppercase;
   margin-bottom: 10px;
-  color: #178582;
+  color: green;
 }
 .resume .container .myResume .myResume__info .row .myResume__item .item__year {
   font-size: 16px;
-  background-color: rgba(134, 155, 169, 0.3);
+  background-color: white;
   padding: 5px 15px;
   display: inline-block;
   font-weight: 600;
   margin-bottom: 10px;
-  color: rgba(204, 243, 238, 0.718);
+  color: white;
 }
 .resume .container .myResume .myResume__info .row .myResume__item .item__text {
-  color: #869ba9;
+  color: #F8F7F4;
 }
 .resume .container .myResume .myResume__info .row .myResume__item .item__list li {
-  color: #869ba9;
+  color: #F8F7F4;
   padding-bottom: 10px;
 }

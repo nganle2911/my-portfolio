@@ -1,75 +1,29 @@
-// Colors
-$dark-1: #0A1828;
-$dark-2: rgba(0,31,51,.9);
-$dark-3: #081521; 
-$dark-4: #001F32;
-$turquoise-1: #178582;
-$turquoise-2: rgba(23, 133, 129, 0.469); 
-$turquoise-3: rgba(23, 133, 129, 0.196);
-$gold-1: #deb992;
-$gold-2: rgba(222, 185, 146, 0.650);
-$white-1: #869ba9; 
-// $white-1: #CCF3EE;
-$white-2: rgba(134, 155, 169, 0.3); 
-$white-3: rgba(134, 155, 169, 0.708); 
-$white-4: rgba(134, 155, 169, 0.082); 
-$white-5: #CCF3EE;
-$white-6: rgba(204, 243, 238, 0.718); 
+// COLORS
+$white-1: #F8F7F4;
+$brown-1: #E3D8D4;
+$brown-2: #BBA7A1;
+$brown-3: #AE8D92;
+$brown-4: #704f5b;
 
-// Padding 
-$padding-1: 300px;
-$padding-2: 30px;
-$padding-3: 10px;
-$padding-4: 15px;
-$padding-5: 20px; 
-$padding-6: 100px;
-$padding-7: 5px; 
-
-// Margin
-$margin-1: 30px; 
-$margin-2: 35px; 
-$margin-3: 40px;
-$margin-4: 8px;
-$margin-5: 20px;
-$margin-6: 10px;
-$margin-7: -15px; 
-$margin-8: 100px;
-$margin-9: 50px; 
-
-// Height
-$height-1: 100vh;
-
-// Width - Heighe 
-$num-1: 40px; 
-$num-2: 100px;
+// NUMBERS
+$num-1: 3px;
+$num-2: 5px;
 $num-3: 10px;
-$num-4: 65px;
-$num-5: 150px;
-$num-6: 15px;
-$num-7: 75px; 
+$num-4: 15px;
+$num-5: 20px; 
+$num-6: 25px;
+$num-7: 30px;
+$num-8: 36px; 
 
+// FONT-WEIGHT
+$fw-1: 200;
+$fw-2: 300;
+$fw-3: 400;
+$fw-4: 500;
+$fw-5: 600;
+$fw-6: 700;
+$fw-7: 800;
 
-// Font-size
-$fs-1: 48px; 
-$fs-2: 24px;
-$fs-3: 16px;
-$fs-4: 20px; 
-$fs-5: 36px;
-$fs-6: 14px;
-$fs-7: 28px; 
-
-// Font-weight
-$fw-1: 400;
-$fw-2: 500;
-$fw-3: 600;
-$fw-4: 700;
-$fw-5: 800;
-
-// breakpoints 
-// $sm: 576px;
-// $md: 768px;
-// $lg: 992px;
-// $xl: 1200px;
 
 $breakpoints: (
   sm: 576px,

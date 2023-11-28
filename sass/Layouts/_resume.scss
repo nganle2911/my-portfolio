@@ -4,7 +4,7 @@
             @include background;
             .myResume__title {
                 h2.title {
-                    @include title($num-7);
+                    @include title(75px);
                 }
                 p.text {
                     @include text;
@@ -16,37 +16,37 @@
                         @include topic;
                     }
                     .myResume__item {
-                        padding-left: $padding-5;
-                        border-left: 2px solid $turquoise-3;
+                        padding-left: 20px;
+                        border-left: 2px solid green;
                         position: relative;
 
                         &::before {
                             content: "";
-                            width: $num-6;
-                            height: $num-6;
+                            width: 15px;
+                            height: 15px;
                             border-radius: 50%;
-                            background-color: $turquoise-1;
+                            background-color: green;
                             position: absolute;
                             left: -8px;
                             top: 0;
                         }
 
                         .item__title {
-                            font-size: $fs-4 - 2;
-                            font-weight: $fw-3;
+                            font-size: 20px - 2;
+                            font-weight: 600;
                             text-transform: uppercase;
-                            margin-bottom: $margin-6;
-                            color: $turquoise-1;
+                            margin-bottom: 10px;
+                            color: green;
                         }
 
                         .item__year {
-                            font-size: $fs-3;
-                            background-color: $white-2;
-                            padding: $padding-7 $padding-4;
+                            font-size: 16px;
+                            background-color: white;
+                            padding: 5px 15px;
                             display: inline-block;
-                            font-weight: $fw-3;
-                            margin-bottom: $margin-6;
-                            color: $white-6;
+                            font-weight: 600;
+                            margin-bottom: 10px;
+                            color: white;
                         }
 
                         .item__text {
@@ -56,7 +56,7 @@
 
                             li {
                                 color: $white-1;
-                                padding-bottom: $padding-3;
+                                padding-bottom: 10px;
                             }
                         }
                     }

@@ -1,5 +1,5 @@
 .home {
-    height: $height-1;
+    height: 100vh;
     display: flex;
     align-items: center;
     .container {
@@ -8,51 +8,51 @@
             align-items: center;
             .home__left {
                 .home__name {
-                    font-size: $fs-1;
-                    font-weight: $fw-5;
+                    font-size: 48px;
+                    font-weight: 800;
 
                     @include small-screen {
-                        font-size: $fs-7;
+                        font-size: 28px;
                     }
 
                     a {
                         text-decoration: none;
-                        color: $gold-1;
+                        color: yellow;
                     }
                 }
                 .home__text {
-                    margin-top: $margin-5;
-                    margin-bottom: $margin-3;
-                    font-size: $fs-2;
-                    color: $gold-2;
+                    margin-top: 20px;
+                    margin-bottom: 40px;
+                    font-size: 24px;
+                    color: yellow;
                     
                     span {
-                        color: $gold-1;
-                        font-weight: $fw-2;
-                        border-bottom: 2px solid $gold-1;
+                        color: yellow;
+                        font-weight: 500;
+                        border-bottom: 2px solid yellow;
                     }
                 }
                 .nav {}
                 .home__socialMedia {
-                    margin-top: $margin-3;
+                    margin-top: 40px;
                     a {
-                        font-size: $fs-3;
+                        font-size: 16px;
                         color: $white-1;
-                        margin-right: $margin-4;
+                        margin-right: 8px;
                         display: inline-block;
-                        width: $num-1;
-                        height: $num-1;
-                        background-color: $white-2;
+                        width: 40px;
+                        height: 40px;
+                        background-color: white;
                         border-radius: 50%;
-                        line-height: $num-1;
+                        line-height: 40px;
                         text-align: center;
                         transition: all 0.3s ease-in-out;
 
                         &:hover {
-                            background-color: $turquoise-1;
-                            color: $gold-1;
-                            font-weight: $fw-3;
-                            font-size: $fs-4;
+                            background-color: green;
+                            color: yellow;
+                            font-weight: 600;
+                            font-size: 20px;
                         }
                     }
                 }

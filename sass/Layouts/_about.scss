@@ -6,13 +6,6 @@
 
         // About Me
         .aboutMe {
-
-            .aboutMe__title {
-                h2.title {
-                    @include title(220px, $white-1);
-                }
-            }
-
             .aboutMe__info {
                 .row {
                     

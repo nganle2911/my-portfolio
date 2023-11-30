@@ -11,6 +11,44 @@ body {
   background-color: #F8F7F4;
 }
 
+.sectionTitle h2.title_white {
+  font-size: 48px;
+  text-transform: capitalize;
+  font-weight: 500;
+  margin-bottom: 20px;
+  color: #F8F7F4;
+  letter-spacing: 2px;
+  position: relative;
+}
+.sectionTitle h2.title_white::before {
+  position: absolute;
+  content: "";
+  background-color: #F8F7F4;
+  width: 200px;
+  height: 2px;
+  top: 30px;
+  left: 150px;
+}
+
+.sectionTitle h2.title_brown {
+  font-size: 48px;
+  text-transform: capitalize;
+  font-weight: 500;
+  margin-bottom: 20px;
+  color: #704f5b;
+  letter-spacing: 2px;
+  position: relative;
+}
+.sectionTitle h2.title_brown::before {
+  position: absolute;
+  content: "";
+  background-color: #704f5b;
+  width: 200px;
+  height: 2px;
+  top: 30px;
+  left: 170px;
+}
+
 @keyframes moveImage {
   0% {
     transform: rotate(3deg) translate(3px, 3px);
@@ -121,24 +159,6 @@ body {
   background-color: #704f5b;
   padding: 48px 30px;
 }
-.about .container .aboutMe .aboutMe__title h2.title {
-  font-size: 48px;
-  text-transform: capitalize;
-  font-weight: 500;
-  margin-bottom: 20px;
-  letter-spacing: 2px;
-  color: #F8F7F4;
-  position: relative;
-}
-.about .container .aboutMe .aboutMe__title h2.title::before {
-  position: absolute;
-  content: "";
-  width: 200px;
-  height: 2px;
-  background-color: #F8F7F4;
-  top: 30px;
-  left: 220px;
-}
 .about .container .aboutMe .aboutMe__info .row .info__photo {
   display: flex;
   align-items: center;
@@ -183,48 +203,30 @@ body {
 .skills .container {
   padding: 48px 30px;
 }
-.skills .container .skills__title .title {
-  font-size: 48px;
-  text-transform: capitalize;
-  font-weight: 500;
-  margin-bottom: 20px;
-  letter-spacing: 2px;
-  color: #704f5b;
-  position: relative;
-}
-.skills .container .skills__title .title::before {
-  position: absolute;
-  content: "";
-  width: 200px;
-  height: 2px;
-  background-color: #704f5b;
-  top: 30px;
-  left: 172px;
-}
-.skills .container .mySkills {
+.skills .container .mySkills .mySkills__content {
   display: grid;
   grid-template-columns: repeat(5, auto);
   grid-gap: 30px;
 }
-.skills .container .mySkills .skills__content {
+.skills .container .mySkills .mySkills__content .skills__content {
   position: relative;
   text-align: center;
   padding: 24px 0;
   background-color: #E3D8D4;
   transition: all 0.3s ease-in-out;
 }
-.skills .container .mySkills .skills__content .skills__logo img {
+.skills .container .mySkills .mySkills__content .skills__content .skills__logo img {
   opacity: 1;
   transition: all 0.3s ease-in-out;
 }
-.skills .container .mySkills .skills__content .middle {
+.skills .container .mySkills .mySkills__content .skills__content .middle {
   position: absolute;
   top: 35%;
   left: 35%;
   opacity: 0;
   transition: all 0.3s ease-in-out;
 }
-.skills .container .mySkills .skills__content .middle .skills__text {
+.skills .container .mySkills .mySkills__content .skills__content .middle .skills__text {
   font-size: 16px;
   font-weight: 500;
   text-transform: uppercase;
@@ -232,17 +234,17 @@ body {
   background-color: #704f5b;
   color: #F8F7F4;
 }
-.skills .container .mySkills .skills__content:hover .skills__logo img {
+.skills .container .mySkills .mySkills__content .skills__content:hover .skills__logo img {
   opacity: 0.3;
 }
-.skills .container .mySkills .skills__content:hover .middle {
+.skills .container .mySkills .mySkills__content .skills__content:hover .middle {
   opacity: 1;
 }
-.skills .container .mySkills .skills__content:nth-child(2) .middle, .skills .container .mySkills .skills__content:nth-child(7) .middle, .skills .container .mySkills .skills__content:nth-child(19) .middle {
+.skills .container .mySkills .mySkills__content .skills__content:nth-child(2) .middle, .skills .container .mySkills .mySkills__content .skills__content:nth-child(7) .middle, .skills .container .mySkills .mySkills__content .skills__content:nth-child(19) .middle {
   top: 35%;
   left: 38%;
 }
-.skills .container .mySkills .skills__content:nth-child(3) .middle, .skills .container .mySkills .skills__content:nth-child(6) .middle, .skills .container .mySkills .skills__content:nth-child(8) .middle, .skills .container .mySkills .skills__content:nth-child(10) .middle, .skills .container .mySkills .skills__content:nth-child(22) .middle, .skills .container .mySkills .skills__content:nth-child(23) .middle {
+.skills .container .mySkills .mySkills__content .skills__content:nth-child(3) .middle, .skills .container .mySkills .mySkills__content .skills__content:nth-child(6) .middle, .skills .container .mySkills .mySkills__content .skills__content:nth-child(8) .middle, .skills .container .mySkills .mySkills__content .skills__content:nth-child(10) .middle, .skills .container .mySkills .mySkills__content .skills__content:nth-child(22) .middle, .skills .container .mySkills .mySkills__content .skills__content:nth-child(23) .middle {
   top: 35%;
   left: 28%;
 }

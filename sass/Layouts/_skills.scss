@@ -5,79 +5,77 @@
         padding: $num-9 $num-7;
 
         .mySkills {
-
             .mySkills__content {
-                display: grid;
-                grid-template-columns: repeat(5, auto);
-                grid-gap: $num-7;
-    
-                
-    
-                .skills__content {
-                    position: relative;
-                    text-align: center;
-                    padding: 24px 0;
-                    background-color: $brown-1;
-                    transition: all .3s ease-in-out;
-    
-                    .skills__logo {
-                        img {
-                            opacity: 1;
-                            transition: all .3s ease-in-out;
-                        }
-                    }
-    
-                    .middle {
-                        position: absolute;
-                        top: 35%;
-                        left: 35%;
-                        opacity: 0;
-                        transition: all .3s ease-in-out;
-    
-                        .skills__text {
-                            font-size: 16px;
-                            font-weight: 500;
-                            text-transform: uppercase;
-                            padding: 6px 12px;
-                            background-color: $brown-4;
-                            color: $white-1;
-                        }
-                    }
-    
-                    &:hover {
-                        .skills__logo {
-                            img {
-                                opacity: 0.3;
+                .mySkills__collapse {
+                    .btnSkills {}
+
+                    .collapse {
+                        margin-top: 20px;
+                        .card {
+                            display: grid;
+                            grid-template-columns: repeat(5, auto);
+                            grid-gap: 20px;
+
+                            .mySkills__item {
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                background-color: $white-1;
+                                padding: $num-5 $num-7;
+                                background: $white-1;
+                                border-radius: $num-4;
+                                // position: relative;
+
+                                .item__text {
+                                    margin-bottom: 0;
+                                    margin-left: $num-3;
+                                    text-transform: uppercase;
+                                    font-weight: $fw-5;
+                                    font-size: $num-4 + 3;
+                                }
+
+                                // &::before {
+                                //     position: absolute;
+                                //     content: "";
+                                //     top: -0.25em;
+                                //     left: -0.25em;
+                                //     background: linear-gradient(51deg, #F8F7F4, #AE8D92, #BBA7A1, #704f5b);
+                                //     z-index: -1;
+                                //     width: calc(100% + 0.5em);
+                                //     height: calc(100% + 0.5em);
+                                //     border-radius: 15px;
+                                //     animation: gradient 5s ease infinite;
+                                //     background-size: 350% 350% !important;
+                                //     box-shadow: 0 8px 12px #BBA7A1;
+                                //     transition: 0.5s ease-in-out;
+                                // }
+
+                                // &:hover::before {
+                                //     animation: gradient 5s ease infinite;
+                                // }
                             }
-                        }
-    
-                        .middle {
-                            opacity: 1;
-                        }
-                    }
-    
-                    &:nth-child(2),
-                    &:nth-child(7),
-                    &:nth-child(19) {
-                        .middle {
-                            top: 35%;
-                            left: 38%;
-                        }
-                    }
-    
-                    &:nth-child(3),
-                    &:nth-child(6), 
-                    &:nth-child(8),
-                    &:nth-child(10),
-                    &:nth-child(22),
-                    &:nth-child(23) {
-                        .middle {
-                            top: 35%;
-                            left: 28%;
                         }
                     }
                 }
             }
-        } 
+        }
     }
 }
+
+// @keyframes gradient {
+//     0% {
+//         background-position: 0% 50%;
+//         /* box-shadow: 0px 0px 15px #4eafff; */
+//         box-shadow: 0px 0px 15px #704f5b;
+//     }
+
+//     50% {
+//         background-position: 100% 50%;
+//         box-shadow: 0 0px 10px #704f5b;
+//     }
+
+//     100% {
+//         background-position: 0% 50%;
+//         box-shadow: 0px 0px 20px #704f5b;
+//     }
+// }

@@ -203,48 +203,27 @@ body {
 .skills .container {
   padding: 48px 30px;
 }
-.skills .container .mySkills .mySkills__content {
+.skills .container .mySkills .mySkills__content .mySkills__collapse .collapse {
+  margin-top: 20px;
+}
+.skills .container .mySkills .mySkills__content .mySkills__collapse .collapse .card {
   display: grid;
   grid-template-columns: repeat(5, auto);
-  grid-gap: 30px;
+  grid-gap: 20px;
 }
-.skills .container .mySkills .mySkills__content .skills__content {
-  position: relative;
-  text-align: center;
-  padding: 24px 0;
-  background-color: #E3D8D4;
-  transition: all 0.3s ease-in-out;
+.skills .container .mySkills .mySkills__content .mySkills__collapse .collapse .card .mySkills__item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #F8F7F4;
+  padding: 20px 30px;
+  background: #F8F7F4;
+  border-radius: 15px;
 }
-.skills .container .mySkills .mySkills__content .skills__content .skills__logo img {
-  opacity: 1;
-  transition: all 0.3s ease-in-out;
-}
-.skills .container .mySkills .mySkills__content .skills__content .middle {
-  position: absolute;
-  top: 35%;
-  left: 35%;
-  opacity: 0;
-  transition: all 0.3s ease-in-out;
-}
-.skills .container .mySkills .mySkills__content .skills__content .middle .skills__text {
-  font-size: 16px;
-  font-weight: 500;
+.skills .container .mySkills .mySkills__content .mySkills__collapse .collapse .card .mySkills__item .item__text {
+  margin-bottom: 0;
+  margin-left: 10px;
   text-transform: uppercase;
-  padding: 6px 12px;
-  background-color: #704f5b;
-  color: #F8F7F4;
-}
-.skills .container .mySkills .mySkills__content .skills__content:hover .skills__logo img {
-  opacity: 0.3;
-}
-.skills .container .mySkills .mySkills__content .skills__content:hover .middle {
-  opacity: 1;
-}
-.skills .container .mySkills .mySkills__content .skills__content:nth-child(2) .middle, .skills .container .mySkills .mySkills__content .skills__content:nth-child(7) .middle, .skills .container .mySkills .mySkills__content .skills__content:nth-child(19) .middle {
-  top: 35%;
-  left: 38%;
-}
-.skills .container .mySkills .mySkills__content .skills__content:nth-child(3) .middle, .skills .container .mySkills .mySkills__content .skills__content:nth-child(6) .middle, .skills .container .mySkills .mySkills__content .skills__content:nth-child(8) .middle, .skills .container .mySkills .mySkills__content .skills__content:nth-child(10) .middle, .skills .container .mySkills .mySkills__content .skills__content:nth-child(22) .middle, .skills .container .mySkills .mySkills__content .skills__content:nth-child(23) .middle {
-  top: 35%;
-  left: 28%;
+  font-weight: 600;
+  font-size: 18px;
 }

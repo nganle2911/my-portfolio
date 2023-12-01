@@ -69,7 +69,9 @@ body {
   width: 100%;
   overflow: hidden;
   top: 0;
+  left: 0;
   background-color: #F8F7F4;
+  z-index: 1000;
 }
 .navMenu .container .navbar .container-fluid {
   padding: 0;
@@ -154,6 +156,9 @@ body {
   width: 50%;
 }
 
+.about {
+  margin-top: 50px;
+}
 .about .container {
   padding: 30px;
   background-color: #704f5b;
@@ -198,21 +203,47 @@ body {
 }
 
 .skills {
-  padding-top: 30px;
+  margin-top: 50px;
 }
 .skills .container {
   padding: 48px 30px;
 }
-.skills .container .mySkills .mySkills__content .mySkills__collapse .collapse {
+.skills .container .mySkills .mySkills__content .mySkills__collapse {
+  display: flex;
+}
+.skills .container .mySkills .mySkills__content .mySkills__collapse .btnSkills {
+  display: flex;
+  align-items: center;
+  background-color: #704f5b;
+  border: 2px solid #704f5b;
+  padding: 12px 24px;
+  font-size: 18px;
+  font-weight: 500;
+  text-transform: capitalize;
+  margin-right: 15px;
+  transition: all 0.3s ease;
+}
+.skills .container .mySkills .mySkills__content .mySkills__collapse .btnSkills i {
+  margin-left: 10px;
+  transition: all 0.3s ease;
+}
+.skills .container .mySkills .mySkills__content .mySkills__collapse .btnSkills:hover {
+  background-color: #F8F7F4;
+  color: #704f5b;
+}
+.skills .container .mySkills .mySkills__content .mySkills__collapse .btnSkills:hover i {
+  transform: translateY(8px);
+}
+.skills .container .mySkills .mySkills__content .collapse {
   margin-top: 20px;
 }
-.skills .container .mySkills .mySkills__content .mySkills__collapse .collapse .card {
+.skills .container .mySkills .mySkills__content .collapse .card {
   display: grid;
   grid-template-columns: repeat(5, auto);
   grid-gap: 20px;
   padding: 20px;
 }
-.skills .container .mySkills .mySkills__content .mySkills__collapse .collapse .card .mySkills__item {
+.skills .container .mySkills .mySkills__content .collapse .card .mySkills__item {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -220,17 +251,16 @@ body {
   padding: 20px 30px;
   background: #F8F7F4;
   border-radius: 15px;
-  position: relative;
   transition: all 0.3s ease-in-out;
 }
-.skills .container .mySkills .mySkills__content .mySkills__collapse .collapse .card .mySkills__item .item__text {
+.skills .container .mySkills .mySkills__content .collapse .card .mySkills__item .item__text {
   margin-bottom: 0;
   margin-left: 10px;
   text-transform: uppercase;
   font-weight: 600;
   font-size: 16px;
 }
-.skills .container .mySkills .mySkills__content .mySkills__collapse .collapse .card .mySkills__item:hover {
+.skills .container .mySkills .mySkills__content .collapse .card .mySkills__item:hover {
   background-color: #E3D8D4;
   transform: scale(1.1);
 }

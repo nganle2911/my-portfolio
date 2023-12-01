@@ -1,5 +1,6 @@
 .skills {
-    padding-top: $num-7;
+    margin-top: $num-9 + 2;
+    // padding-top: $num-7;
 
     .container {
         padding: $num-9 $num-7;
@@ -7,39 +8,67 @@
         .mySkills {
             .mySkills__content {
                 .mySkills__collapse {
-                    .btnSkills {}
+                    display: flex;
+            
+                    .btnSkills {
+                        display: flex;
+                        align-items: center;
+                        background-color: $brown-4;
+                        border: 2px solid $brown-4;
+                        padding: $num-3 + 2 $num-6 - 1;
+                        font-size: $num-5 - 2;
+                        font-weight: $fw-4;
+                        text-transform: capitalize;
+                        margin-right: $num-4;
+                        transition: all .3s ease;
 
-                    .collapse {
-                        margin-top: 20px;
-                        .card {
-                            display: grid;
-                            grid-template-columns: repeat(5, auto);
-                            grid-gap: 20px;
-                            padding: 20px;
+                        i {
+                            margin-left: $num-3;
+                            transition: all .3s ease;
+                        }
+                        
 
-                            .mySkills__item {
-                                display: flex;
-                                align-items: center;
-                                justify-content: center;
-                                background-color: $white-1;
-                                padding: $num-5 $num-7;
-                                background: $white-1;
-                                border-radius: $num-4;
-                                position: relative;
-                                transition: all .3s ease-in-out;
+                        &:hover {
+                            background-color: $white-1;
+                            color: $brown-4;
+                            i {
+                                transform: translateY(8px);
+                            }
+                        }
 
-                                .item__text {
-                                    margin-bottom: 0;
-                                    margin-left: $num-3;
-                                    text-transform: uppercase;
-                                    font-weight: $fw-5;
-                                    font-size: $num-4 + 1;
-                                }
+                    }
+                }
 
-                                &:hover {
-                                    background-color: $brown-1;
-                                    transform: scale(1.1);
-                                }
+                .collapse {
+                    margin-top: $num-5;
+
+                    .card {
+                        display: grid;
+                        grid-template-columns: repeat(5, auto);
+                        grid-gap: $num-5;
+                        padding: $num-5;
+
+                        .mySkills__item {
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            background-color: $white-1;
+                            padding: $num-5 $num-7;
+                            background: $white-1;
+                            border-radius: $num-4;
+                            transition: all .3s ease-in-out;
+
+                            .item__text {
+                                margin-bottom: 0;
+                                margin-left: $num-3;
+                                text-transform: uppercase;
+                                font-weight: $fw-5;
+                                font-size: $num-4 + 1;
+                            }
+
+                            &:hover {
+                                background-color: $brown-1;
+                                transform: scale(1.1);
                             }
                         }
                     }

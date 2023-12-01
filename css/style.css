@@ -49,6 +49,38 @@ body {
   left: 170px;
 }
 
+.btnWhite {
+  background-color: #F8F7F4;
+  border-radius: 10px;
+  padding: 12px 24px;
+  font-weight: 600;
+  font-size: 18px;
+  color: #704f5b;
+  border: 2px solid #F8F7F4;
+  transition: all 0.3s ease-in-out;
+}
+.btnWhite:hover {
+  background-color: #AE8D92;
+  color: #F8F7F4;
+  border-color: #AE8D92;
+}
+
+.btnBrown {
+  background-color: #704f5b;
+  border-radius: 10px;
+  padding: 12px 24px;
+  font-weight: 600;
+  font-size: 18px;
+  color: #F8F7F4;
+  border: 2px solid #704f5b;
+  transition: all 0.3s ease-in-out;
+}
+.btnBrown:hover {
+  background-color: #F8F7F4;
+  color: #704f5b;
+  border-color: #704f5b;
+}
+
 @keyframes moveImage {
   0% {
     transform: rotate(3deg) translate(3px, 3px);
@@ -157,12 +189,15 @@ body {
 }
 
 .about {
-  margin-top: 50px;
+  padding-top: 100px;
 }
 .about .container {
   padding: 30px;
   background-color: #704f5b;
   padding: 48px 30px;
+}
+.about .container .aboutMe .aboutMe__info {
+  padding: 48px 0;
 }
 .about .container .aboutMe .aboutMe__info .row .info__photo {
   display: flex;
@@ -182,31 +217,21 @@ body {
   align-items: center;
   margin-top: 60px;
 }
-.about .container .aboutMe .aboutMe__info .row .info__content .info__signature .info__cv a {
-  background-color: #F8F7F4;
-  border-radius: 10px;
-  padding: 12px 24px;
-  font-weight: 600;
-  font-size: 18px;
-  color: #704f5b;
-  transition: all 0.3s ease-in-out;
-}
 .about .container .aboutMe .aboutMe__info .row .info__content .info__signature .info__cv a i {
   font-size: 20px;
-}
-.about .container .aboutMe .aboutMe__info .row .info__content .info__signature .info__cv a:hover {
-  background-color: #AE8D92;
-  color: #F8F7F4;
 }
 .about .container .aboutMe .aboutMe__info .row .info__content .info__signature .signature {
   margin-left: 48px;
 }
 
 .skills {
-  margin-top: 50px;
+  padding-top: 100px;
 }
 .skills .container {
   padding: 48px 30px;
+}
+.skills .container .mySkills .mySkills__content {
+  padding: 48px 0;
 }
 .skills .container .mySkills .mySkills__content .mySkills__collapse {
   display: flex;
@@ -214,22 +239,12 @@ body {
 .skills .container .mySkills .mySkills__content .mySkills__collapse .btnSkills {
   display: flex;
   align-items: center;
-  background-color: #704f5b;
-  border: 2px solid #704f5b;
-  padding: 12px 24px;
-  font-size: 18px;
-  font-weight: 500;
   text-transform: capitalize;
   margin-right: 15px;
-  transition: all 0.3s ease;
 }
 .skills .container .mySkills .mySkills__content .mySkills__collapse .btnSkills i {
   margin-left: 10px;
   transition: all 0.3s ease;
-}
-.skills .container .mySkills .mySkills__content .mySkills__collapse .btnSkills:hover {
-  background-color: #F8F7F4;
-  color: #704f5b;
 }
 .skills .container .mySkills .mySkills__content .mySkills__collapse .btnSkills:hover i {
   transform: translateY(8px);
@@ -263,4 +278,54 @@ body {
 .skills .container .mySkills .mySkills__content .collapse .card .mySkills__item:hover {
   background-color: #E3D8D4;
   transform: scale(1.1);
+}
+
+.projects {
+  padding-top: 100px;
+}
+.projects .container {
+  padding: 30px;
+  background-color: #704f5b;
+  padding: 48px 30px;
+}
+.projects .container .sectionTitle .title_white::before {
+  left: 225px;
+}
+.projects .container .projects__content {
+  padding: 48px 0;
+}
+.projects .container .projects__content .projects__item {
+  margin-bottom: 25px;
+}
+.projects .container .projects__content .projects__item .card {
+  background: #F8F7F4;
+}
+.projects .container .projects__content .projects__item .card .card-body div {
+  margin-bottom: 10px;
+}
+.projects .container .projects__content .projects__item .card .card-body div .card-title {
+  font-weight: 600;
+  text-transform: capitalize;
+  margin-bottom: 0;
+}
+.projects .container .projects__content .projects__item .card .card-body div .card-title .card-text {
+  font-weight: 400;
+}
+.projects .container .projects__content .projects__item .card .card-body .tech .card-title {
+  margin-bottom: 10px;
+}
+.projects .container .projects__content .projects__item .card .card-body .tech .tech__item {
+  background: #E3D8D4;
+  text-decoration: none;
+  color: #704f5b;
+  padding: 6px 12px;
+  border-radius: 10px;
+}
+.projects .container .projects__content .projects__item .card .card-footer {
+  background: #F8F7F4;
+}
+.projects .container .projects__content .projects__item .card .card-footer .btnBrown {
+  padding: 6px 12px;
+  font-size: 16px;
+  text-transform: uppercase;
 }

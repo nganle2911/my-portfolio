@@ -1,36 +1,28 @@
 .skills {
-    margin-top: $num-9 + 2;
-    // padding-top: $num-7;
+    padding-top: $num-12;
 
     .container {
         padding: $num-9 $num-7;
 
         .mySkills {
             .mySkills__content {
+                padding: $num-9 0;
+
                 .mySkills__collapse {
                     display: flex;
             
                     .btnSkills {
                         display: flex;
                         align-items: center;
-                        background-color: $brown-4;
-                        border: 2px solid $brown-4;
-                        padding: $num-3 + 2 $num-6 - 1;
-                        font-size: $num-5 - 2;
-                        font-weight: $fw-4;
                         text-transform: capitalize;
                         margin-right: $num-4;
-                        transition: all .3s ease;
-
+                        
                         i {
                             margin-left: $num-3;
                             transition: all .3s ease;
                         }
                         
-
                         &:hover {
-                            background-color: $white-1;
-                            color: $brown-4;
                             i {
                                 transform: translateY(8px);
                             }

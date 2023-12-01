@@ -1,5 +1,6 @@
 .about {
-    margin-top: 50px;
+   padding-top: $num-12;
+   
     
     .container {
         @include background;
@@ -8,6 +9,8 @@
         // About Me
         .aboutMe {
             .aboutMe__info {
+                padding: $num-9 0;
+
                 .row {
                     
                     .info__photo {
@@ -35,21 +38,8 @@
                             .info__cv {
                                 
                                 a {
-                                    background-color: $white-1;
-                                    border-radius: $num-3;
-                                    padding: $num-3 + 2 $num-6 - 1;
-                                    font-weight: $fw-5;
-                                    font-size: $num-4 + 3;
-                                    color: $brown-4;
-                                    transition: all .3s ease-in-out;
-
                                     i {
                                         font-size: $num-5;
-                                    }
-
-                                    &:hover {
-                                        background-color: $brown-3;
-                                        color: $white-1;
                                     }
                                 }
                             }

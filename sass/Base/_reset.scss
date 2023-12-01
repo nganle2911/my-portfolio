@@ -20,3 +20,11 @@ body {
         @include title(170px, $brown-4);
     }
 }
+
+.btnWhite {
+    @include btnStyle($white-1, $brown-4, $brown-3, $white-1, $white-1, $brown-3);
+}
+
+.btnBrown {
+    @include btnStyle($brown-4, $white-1, $white-1, $brown-4, $brown-4, $brown-4);
+}

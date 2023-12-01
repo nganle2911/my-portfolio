@@ -24,10 +24,28 @@
     }
 }
 
-// background 
+// background_brown 
 @mixin background {
     padding: 30px;
     background-color: $brown-4;
+}
+
+// button (white or brown) 
+@mixin btnStyle ($bgColor, $textColor, $bgHover, $textHover, $border, $borderHover) {
+    background-color: $bgColor;
+    border-radius: $num-3;
+    padding: $num-3 + 2 $num-6 - 1;
+    font-weight: $fw-5;
+    font-size: $num-5 - 2;
+    color: $textColor;
+    border: 2px solid $border;
+    transition: all .3s ease-in-out;
+
+    &:hover {
+        background-color: $bgHover;
+        color: $textHover;
+        border-color: $borderHover;
+    }
 }
 
 // Responsive 

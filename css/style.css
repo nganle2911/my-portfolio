@@ -190,10 +190,9 @@ body {
 
 .about {
   padding-top: 100px;
+  background-color: #704f5b;
 }
 .about .container {
-  padding: 30px;
-  background-color: #704f5b;
   padding: 48px 30px;
 }
 .about .container .aboutMe .aboutMe__info {
@@ -282,10 +281,9 @@ body {
 
 .projects {
   padding-top: 100px;
+  background-color: #704f5b;
 }
 .projects .container {
-  padding: 30px;
-  background-color: #704f5b;
   padding: 48px 30px;
 }
 .projects .container .sectionTitle .title_white::before {
@@ -336,4 +334,36 @@ body {
   padding: 6px 12px;
   font-size: 16px;
   text-transform: uppercase;
+}
+
+.contact {
+  padding-top: 100px;
+}
+.contact .container {
+  padding: 48px 30px;
+}
+.contact .container .sectionTitle .title_brown::before {
+  left: 200px;
+}
+.contact .container .contact__content .row .contact__social {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.contact .container .contact__content .row .contact__social .social__item a {
+  background: #704f5b;
+  width: 70px;
+  height: 70px;
+  line-height: 70px;
+  display: inline-block;
+  text-align: center;
+  border-radius: 50%;
+  font-size: 25px;
+  color: #F8F7F4;
+  transition: all 0.5s ease;
+}
+.contact .container .contact__content .row .contact__social .social__item a:hover {
+  background: #F8F7F4;
+  color: #704f5b;
+  border: 2px solid #704f5b;
 }

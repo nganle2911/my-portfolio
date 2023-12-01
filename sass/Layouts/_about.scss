@@ -1,9 +1,8 @@
 .about {
    padding-top: $num-12;
-   
+   @include background;
     
     .container {
-        @include background;
         padding: $num-9 $num-7;
 
         // About Me

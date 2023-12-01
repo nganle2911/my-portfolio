@@ -299,6 +299,7 @@ body {
 }
 .projects .container .projects__content .projects__item .card {
   background: #F8F7F4;
+  border: none;
 }
 .projects .container .projects__content .projects__item .card .card-body div {
   margin-bottom: 10px;
@@ -314,12 +315,19 @@ body {
 .projects .container .projects__content .projects__item .card .card-body .tech .card-title {
   margin-bottom: 10px;
 }
-.projects .container .projects__content .projects__item .card .card-body .tech .tech__item {
+.projects .container .projects__content .projects__item .card .card-body .tech .tech__content {
+  display: flex;
+  flex-wrap: wrap;
+}
+.projects .container .projects__content .projects__item .card .card-body .tech .tech__content .tech__item {
   background: #E3D8D4;
   text-decoration: none;
   color: #704f5b;
   padding: 6px 12px;
+  margin-right: 5px;
+  margin-bottom: 5px;
   border-radius: 10px;
+  text-transform: capitalize;
 }
 .projects .container .projects__content .projects__item .card .card-footer {
   background: #F8F7F4;

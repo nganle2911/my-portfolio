@@ -7,7 +7,7 @@
 
         .sectionTitle {
             .title_white::before {
-                left: 225px;
+                left: $num-14 + $num-6;
             }
         }
 
@@ -20,6 +20,8 @@
                 
                 .card {
                     background: $white-1;
+                    border: none;
+
                     img {}
 
                     .card-body {
@@ -41,16 +43,27 @@
                         }
 
                         .tech {
+                            
                             .card-title {
                                 margin-bottom: $num-3;
                             }
-                            .tech__item {
-                                background: $brown-1;
-                                text-decoration: none;
-                                color: $brown-4;
-                                padding: 6px 12px;
-                                border-radius: 10px;
+                            
+                            .tech__content {
+                                display: flex;
+                                flex-wrap: wrap;
+
+                                .tech__item {
+                                    background: $brown-1;
+                                    text-decoration: none;
+                                    color: $brown-4;
+                                    padding: $num-2 + 1 $num-3 + 2;
+                                    margin-right: $num-2;
+                                    margin-bottom: $num-2;
+                                    border-radius: $num-3;
+                                    text-transform: capitalize
+                                }
                             }
+                            
                         }
                     }
 

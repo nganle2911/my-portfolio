@@ -1,0 +1,80 @@
+.dark-mode {
+    background-color: $dark-1;
+    color: $white-1;
+
+    .navMenu {
+        background-color: $dark-1;
+        color: $white-1;
+
+        .navbar {
+            #navbarNav {
+                .nav-link {
+                    color: $brown-2;
+
+                    &::before {
+                        background-color: $white-1;
+                        color: $white-1;
+                    }
+
+                    &:hover::before,
+                    &.active::before,
+                    &.active,
+                    &:hover {
+                        color: $white-1;
+                    }
+                }
+            }
+            #myIcon {
+                color: $brown-1;
+            }
+        }
+    }
+
+    #home {
+        .home__left {
+            .home__name {
+                a {
+                    color: $brown-1;
+                }
+            }
+            .home__text {
+                color: $brown-2;
+                span {
+                    color: $white-1;
+                    border-bottom: 2px solid $white-1;
+                }
+            }
+        }
+    }
+
+    #skills {
+        .sectionTitle {
+            .title_brown {
+                color: $white-1;
+
+                &::before {
+                    background-color: $white-1;
+                }
+            }
+        }
+        .mySkills__content {
+            .collapse {
+                .card {
+                    background-color: $dark-1;
+                }
+            }
+        }
+    }
+
+    #contact {
+        .sectionTitle {
+            .title_brown {
+                color: $white-1;
+
+                &::before {
+                    background-color: $white-1;
+                }
+            }
+        }
+    }
+}

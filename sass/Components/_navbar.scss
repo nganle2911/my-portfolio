@@ -25,6 +25,7 @@
 
                 .navbar-collapse {
                     justify-content: end;
+                    align-items: center;
 
                     .navbar-nav {
                         .nav-link {
@@ -58,6 +59,13 @@
                                 font-weight: $fw-6;
                             }
                         }
+                    }
+
+                    .theme {
+                        font-size: 23px;
+                        margin-left: 15px;
+                        cursor: pointer;
+                        color: $brown-4;
                     }
                 }
 

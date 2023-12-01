@@ -28,7 +28,7 @@
       <div class="container">
         <nav class="navbar navbar-expand-lg">
           <div class="container-fluid">
-            <a class="navbar-brand" href="#">
+            <a id="myLogo" class="navbar-brand" href="#">
               <img src="./assets/img/brown-logo.png" width="45%" />
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
@@ -37,11 +37,14 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarCollapse">
               <div class="navbar-nav" id="navbarNav">
-                <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+                <a class="nav-link active" aria-current="page" href="#home">Home</a>
                 <a class="nav-link" href="#about">About</a>
                 <a class="nav-link" href="#skills">Skills</a>
                 <a class="nav-link" href="#projects">Projects</a>
                 <a class="nav-link" href="#contact">Contact</a>
+              </div>
+              <div onclick="changeTheme()" class="theme">
+                <a id="myIcon"><i class="bi bi-moon-stars-fill"></i></a>
               </div>
             </div>
           </div>
@@ -50,7 +53,7 @@
     </div>
 
     <!-- HOME -->
-    <section class="home">
+    <section class="home" id="home">
       <div class="container">
         <div class="row">
           <div class="home__left col-6">
@@ -422,17 +425,17 @@
                 </a>
               </div>
               <div class="social__item">
-                <a href="">
+                <a href="https://www.linkedin.com/in/thi-kim-ngan-le/" target="_blank">
                   <i class="bi bi-linkedin"></i>
                 </a>
               </div>
               <div class="social__item">
-                <a href="">
+                <a href="https://github.com/nganle2911" target="_blank">
                   <i class="bi bi-github"></i>
                 </a>
               </div>
               <div class="social__item">
-                <a href="">
+                <a href="https://leetcode.com/nganle2911/" target="_blank">
                   <i class="bi bi-code-slash"></i>
                 </a>
               </div>

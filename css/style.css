@@ -119,6 +119,7 @@ body {
 }
 .navMenu .container .navbar .container-fluid .navbar-collapse {
   justify-content: end;
+  align-items: center;
 }
 .navMenu .container .navbar .container-fluid .navbar-collapse .navbar-nav .nav-link {
   position: relative;
@@ -145,6 +146,12 @@ body {
   width: 82%;
   color: #704f5b;
   font-weight: 700;
+}
+.navMenu .container .navbar .container-fluid .navbar-collapse .theme {
+  font-size: 23px;
+  margin-left: 15px;
+  cursor: pointer;
+  color: #704f5b;
 }
 
 .home {
@@ -366,4 +373,51 @@ body {
   background: #F8F7F4;
   color: #704f5b;
   border: 2px solid #704f5b;
+}
+
+.dark-mode {
+  background-color: #191919;
+  color: #F8F7F4;
+}
+.dark-mode .navMenu {
+  background-color: #191919;
+  color: #F8F7F4;
+}
+.dark-mode .navMenu .navbar #navbarNav .nav-link {
+  color: #BBA7A1;
+}
+.dark-mode .navMenu .navbar #navbarNav .nav-link::before {
+  background-color: #F8F7F4;
+  color: #F8F7F4;
+}
+.dark-mode .navMenu .navbar #navbarNav .nav-link:hover::before, .dark-mode .navMenu .navbar #navbarNav .nav-link.active::before, .dark-mode .navMenu .navbar #navbarNav .nav-link.active, .dark-mode .navMenu .navbar #navbarNav .nav-link:hover {
+  color: #F8F7F4;
+}
+.dark-mode .navMenu .navbar #myIcon {
+  color: #E3D8D4;
+}
+.dark-mode #home .home__left .home__name a {
+  color: #E3D8D4;
+}
+.dark-mode #home .home__left .home__text {
+  color: #BBA7A1;
+}
+.dark-mode #home .home__left .home__text span {
+  color: #F8F7F4;
+  border-bottom: 2px solid #F8F7F4;
+}
+.dark-mode #skills .sectionTitle .title_brown {
+  color: #F8F7F4;
+}
+.dark-mode #skills .sectionTitle .title_brown::before {
+  background-color: #F8F7F4;
+}
+.dark-mode #skills .mySkills__content .collapse .card {
+  background-color: #191919;
+}
+.dark-mode #contact .sectionTitle .title_brown {
+  color: #F8F7F4;
+}
+.dark-mode #contact .sectionTitle .title_brown::before {
+  background-color: #F8F7F4;
 }

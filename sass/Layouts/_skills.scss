@@ -15,6 +15,7 @@
                             display: grid;
                             grid-template-columns: repeat(5, auto);
                             grid-gap: 20px;
+                            padding: 20px;
 
                             .mySkills__item {
                                 display: flex;
@@ -24,35 +25,21 @@
                                 padding: $num-5 $num-7;
                                 background: $white-1;
                                 border-radius: $num-4;
-                                // position: relative;
+                                position: relative;
+                                transition: all .3s ease-in-out;
 
                                 .item__text {
                                     margin-bottom: 0;
                                     margin-left: $num-3;
                                     text-transform: uppercase;
                                     font-weight: $fw-5;
-                                    font-size: $num-4 + 3;
+                                    font-size: $num-4 + 1;
                                 }
 
-                                // &::before {
-                                //     position: absolute;
-                                //     content: "";
-                                //     top: -0.25em;
-                                //     left: -0.25em;
-                                //     background: linear-gradient(51deg, #F8F7F4, #AE8D92, #BBA7A1, #704f5b);
-                                //     z-index: -1;
-                                //     width: calc(100% + 0.5em);
-                                //     height: calc(100% + 0.5em);
-                                //     border-radius: 15px;
-                                //     animation: gradient 5s ease infinite;
-                                //     background-size: 350% 350% !important;
-                                //     box-shadow: 0 8px 12px #BBA7A1;
-                                //     transition: 0.5s ease-in-out;
-                                // }
-
-                                // &:hover::before {
-                                //     animation: gradient 5s ease infinite;
-                                // }
+                                &:hover {
+                                    background-color: $brown-1;
+                                    transform: scale(1.1);
+                                }
                             }
                         }
                     }
@@ -61,21 +48,3 @@
         }
     }
 }
-
-// @keyframes gradient {
-//     0% {
-//         background-position: 0% 50%;
-//         /* box-shadow: 0px 0px 15px #4eafff; */
-//         box-shadow: 0px 0px 15px #704f5b;
-//     }
-
-//     50% {
-//         background-position: 100% 50%;
-//         box-shadow: 0 0px 10px #704f5b;
-//     }
-
-//     100% {
-//         background-position: 0% 50%;
-//         box-shadow: 0px 0px 20px #704f5b;
-//     }
-// }

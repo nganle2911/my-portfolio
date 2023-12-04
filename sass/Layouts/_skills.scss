@@ -5,66 +5,95 @@
         padding: $num-9 $num-7;
 
         .mySkills {
-            .mySkills__content {
+
+            .accordion {
                 padding: $num-9 0;
 
-                .mySkills__collapse {
+                .accordion-btnGroups {
                     display: flex;
-            
+
                     .btnSkills {
                         display: flex;
                         align-items: center;
                         text-transform: capitalize;
                         margin-right: $num-4;
-                        
-                        i {
-                            margin-left: $num-3;
-                            transition: all .3s ease;
-                        }
-                        
-                        &:hover {
-                            i {
-                                transform: translateY(8px);
+                        color: $white-1;
+                        text-decoration: none;
+                        cursor: pointer;
+
+                        .accordion-button {
+                            padding: 0;
+                            text-decoration: none;
+                            background-color: transparent;
+                            color: $white-1;
+                            font-size: $num-5;
+                            font-weight: $fw-3;
+
+                            &::after {
+                                margin-left: 10px;
+                                background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23F8F7F4' ><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>");
+
+                            }
+
+                            &:not(.collapsed) {
+                                box-shadow: none;
                             }
                         }
 
+                        &:hover {
+                            .accordion-button {
+                                color: $brown-4;
+                                font-weight: $fw-5;
+
+                                &::after {
+                                    background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23704f5b' ><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>");
+                                }
+                            }
+
+
+                        }
                     }
                 }
 
-                .collapse {
+                .accordion-contentGroups {
                     margin-top: $num-5;
 
-                    .card {
-                        display: grid;
-                        grid-template-columns: repeat(5, auto);
-                        grid-gap: $num-5;
-                        padding: $num-5;
+                    .accordion-collapse {
 
-                        .mySkills__item {
-                            display: flex;
-                            align-items: center;
-                            justify-content: center;
-                            background-color: $white-1;
-                            padding: $num-5 $num-7;
-                            background: $white-1;
-                            border-radius: $num-4;
-                            transition: all .3s ease-in-out;
+                        .card-body {
+                            display: grid;
+                            grid-template-columns: repeat(5, auto);
+                            grid-gap: $num-5;
+                            padding: $num-5;
 
-                            .item__text {
-                                margin-bottom: 0;
-                                margin-left: $num-3;
-                                text-transform: uppercase;
-                                font-weight: $fw-5;
-                                font-size: $num-4 + 1;
-                            }
+                            .mySkills__item {
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                background-color: $white-1;
+                                padding: $num-5 $num-7;
+                                background: $white-1;
+                                border-radius: $num-4;
+                                transition: all .3s ease-in-out;
 
-                            &:hover {
-                                background-color: $brown-1;
-                                transform: scale(1.1);
+                                .item__text {
+                                    margin-bottom: 0;
+                                    margin-left: $num-3;
+                                    text-transform: uppercase;
+                                    font-weight: $fw-5;
+                                    font-size: $num-4 + 1;
+                                }
+
+                                &:hover {
+                                    background-color: $brown-1;
+                                    transform: scale(1.1);
+                                }
                             }
                         }
+
                     }
                 }
+
             }
         }
     }

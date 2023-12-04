@@ -190,3 +190,34 @@
         }
     }
 }
+
+@include x-phones {
+    .skills {
+        .container {
+            .mySkills {
+                .accordion {
+                    .accordion-btnGroups {
+                        flex-wrap: wrap;
+
+                        .btnSkills {
+                            margin-bottom: $num-3;
+                            padding: $num-2 + 1 $num-3 + 2;
+                            
+                            .accordion-button {
+                                font-size: $num-4 - 1;
+                            }
+                        }
+                    }
+    
+                    .accordion-contentGroups {
+                        .accordion-collapse {
+                            .card {
+                                grid-template-columns: auto;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

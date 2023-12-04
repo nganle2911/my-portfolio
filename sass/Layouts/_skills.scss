@@ -30,7 +30,7 @@
                             font-weight: $fw-3;
 
                             &::after {
-                                margin-left: 10px;
+                                margin-left: $num-3;
                                 background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23F8F7F4' ><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>");
 
                             }
@@ -94,6 +94,98 @@
                     }
                 }
 
+            }
+        }
+    }
+}
+
+// RESPONSIVE 
+// Desktop first 
+@include desktops {
+    .skills {
+        .container {
+            .mySkills {
+                .accordion {
+                    .accordion-btnGroups {
+
+                        .btnSkills {
+                            margin-right: $num-3;
+
+                            .accordion-button {
+                                font-size: $num-4 + 2;
+
+                                &::after {
+                                    margin-left: $num-2;
+                                }
+                            }
+                        }
+                    }
+    
+                    .accordion-contentGroups {
+                        .accordion-collapse {
+                            .card {
+                                grid-template-columns: repeat(4, auto);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include tablets {
+    .skills {
+        .container {
+            .mySkills {
+                .accordion {
+                    .accordion-btnGroups {
+                        flex-wrap: wrap;
+
+                        .btnSkills {
+                            margin-bottom: $num-3;
+                        }
+                    }
+    
+                    .accordion-contentGroups {
+                        .accordion-collapse {
+                            .card {
+                                grid-template-columns: repeat(3, auto);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include phones {
+    .skills {
+        .container {
+            .mySkills {
+                .accordion {
+                    .accordion-btnGroups {
+                        flex-wrap: wrap;
+
+                        .btnSkills {
+                            margin-bottom: $num-3;
+                            padding: $num-3 $num-4;
+                            
+                            .accordion-button {
+                                font-size: $num-17;
+                            }
+                        }
+                    }
+    
+                    .accordion-contentGroups {
+                        .accordion-collapse {
+                            .card {
+                                grid-template-columns: repeat(2, auto);
+                            }
+                        }
+                    }
+                }
             }
         }
     }

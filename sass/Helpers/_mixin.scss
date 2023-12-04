@@ -48,31 +48,37 @@
 }
 
 // Responsive 
-
-// Small screen
-@mixin small-screen {
-    @media (max-width: map-get($breakpoints, sm)) {
+// x-large devices - Large desktop - 1400px
+@mixin large-desktops {
+    @media (max-width: map-get($breakpoints, xxl)) {
         @content;
     }
 }
 
-// Medium screen
-@mixin medium-screen {
-    @media (min-width: map-get($breakpoints, sm)) and (max-width: map-get($breakpoints, lg)) {
-        @content;
-    }
-}
-
-// Large screen
-@mixin large-screen {
-    @media (min-width: map-get($breakpoints, lg)) and (max-width: map-get($breakpoints, xl)) {
-        @content;
-    }
-}
-
-// Extra Large screen
-@mixin extra-large-screen {
+// large devices - desktops - 1200px 
+@mixin desktops {
     @media (max-width: map-get($breakpoints, xl)) {
+        @content;
+    }
+}
+
+// medium devices - tables - 992px
+@mixin tablets {
+    @media screen and (max-width: map-get($breakpoints, lg)) {
+        @content; 
+    }
+}
+
+// small devices - phones - 768px 
+@mixin phones {
+    @media (max-width: map-get($breakpoints, md)) {
+        @content;
+    }
+}
+
+// x-small devices - portrait phones - 576px
+@mixin x-phones {
+    @media (max-width: map-get($breakpoints, sm)) {
         @content;
     }
 }

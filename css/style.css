@@ -167,11 +167,6 @@ body {
   font-size: 48px;
   font-weight: 800;
 }
-@media (max-width: 576px) {
-  .home .container .row .home__left .home__name {
-    font-size: 28px;
-  }
-}
 .home .container .row .home__left .home__name a {
   text-decoration: none;
   color: #704f5b;
@@ -304,6 +299,46 @@ body {
   transform: scale(1.1);
 }
 
+@media (max-width: 1199.98px) {
+  .skills .container .mySkills .accordion .accordion-btnGroups .btnSkills {
+    margin-right: 10px;
+  }
+  .skills .container .mySkills .accordion .accordion-btnGroups .btnSkills .accordion-button {
+    font-size: 17px;
+  }
+  .skills .container .mySkills .accordion .accordion-btnGroups .btnSkills .accordion-button::after {
+    margin-left: 5px;
+  }
+  .skills .container .mySkills .accordion .accordion-contentGroups .accordion-collapse .card {
+    grid-template-columns: repeat(4, auto);
+  }
+}
+@media screen and (max-width: 991.98px) {
+  .skills .container .mySkills .accordion .accordion-btnGroups {
+    flex-wrap: wrap;
+  }
+  .skills .container .mySkills .accordion .accordion-btnGroups .btnSkills {
+    margin-bottom: 10px;
+  }
+  .skills .container .mySkills .accordion .accordion-contentGroups .accordion-collapse .card {
+    grid-template-columns: repeat(3, auto);
+  }
+}
+@media (max-width: 767.98px) {
+  .skills .container .mySkills .accordion .accordion-btnGroups {
+    flex-wrap: wrap;
+  }
+  .skills .container .mySkills .accordion .accordion-btnGroups .btnSkills {
+    margin-bottom: 10px;
+    padding: 10px 15px;
+  }
+  .skills .container .mySkills .accordion .accordion-btnGroups .btnSkills .accordion-button {
+    font-size: 16px;
+  }
+  .skills .container .mySkills .accordion .accordion-contentGroups .accordion-collapse .card {
+    grid-template-columns: repeat(2, auto);
+  }
+}
 .projects {
   padding-top: 100px;
   background-color: #704f5b;

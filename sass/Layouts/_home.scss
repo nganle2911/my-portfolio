@@ -13,10 +13,6 @@
                     font-size: $num-9;
                     font-weight: $fw-7;
 
-                    @include small-screen {
-                        font-size: 28px;
-                    }
-
                     a {
                         text-decoration: none;
                         color: $brown-4;

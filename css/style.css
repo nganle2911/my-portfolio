@@ -288,7 +288,7 @@ body {
   justify-content: center;
   background-color: #F8F7F4;
   padding: 20px 30px;
-  background: #F8F7F4;
+  background: #F5F7F8;
   border-radius: 15px;
   transition: all 0.3s ease-in-out;
 }
@@ -430,8 +430,11 @@ body {
 .dark-mode #skills .sectionTitle .title_brown::before {
   background-color: #F8F7F4;
 }
-.dark-mode #skills .mySkills__content .collapse .card {
-  background-color: #191919;
+.dark-mode #skills .accordion .accordion-contentGroups .accordion-collapse .card {
+  background: #AE8D92;
+}
+.dark-mode #skills .accordion .accordion-contentGroups .accordion-collapse .card .mySkills__item .item__text {
+  color: #704f5b;
 }
 .dark-mode #contact .sectionTitle .title_brown {
   color: #F8F7F4;

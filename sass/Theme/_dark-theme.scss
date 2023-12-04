@@ -57,10 +57,17 @@
                 }
             }
         }
-        .mySkills__content {
-            .collapse {
-                .card {
-                    background-color: $dark-1;
+        .accordion {
+            .accordion-contentGroups {
+                .accordion-collapse {
+                    .card {
+                        background: $brown-3;
+                        .mySkills__item {
+                            .item__text {
+                                color: $brown-4;
+                            }
+                        }
+                    }
                 }
             }
         }

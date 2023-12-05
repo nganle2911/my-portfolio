@@ -250,6 +250,7 @@ body {
 @media (max-width: 575.98px) {
   .skills .container .mySkills .sectionTitle h2.title_brown::before {
     left: 150px;
+    top: 25px;
     height: 1.5px;
   }
 }

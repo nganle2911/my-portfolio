@@ -17,6 +17,10 @@
                         text-decoration: none;
                         color: $brown-4;
                     }
+
+                    @include tablets {
+                        font-size: $num-18;
+                    }
                 }
 
                 .home__text {
@@ -29,6 +33,48 @@
                         font-weight: $fw-5;
                         border-bottom: 2px solid $brown-4;
                     }
+
+                    @include tablets {
+                        font-size: $num-17;
+                        margin-top: $num-3;
+                    }
+
+                    @include x-phones {
+                        display: none;
+                    }
+                }
+
+                .home__text2 {
+                    @include large-desktops {
+                        display: none;
+                    }
+
+                    @include desktops {
+                        display: none;
+                    }
+
+                    @include tablets {
+                        display: none;
+                    }
+
+                    @include phones {
+                        display: none;
+                    }
+
+                    @include x-phones {
+                        display: block;
+                        color: $brown-4;
+                        font-size: $num-6;
+                    }
+                }
+
+                @include phones {
+                    padding-top: 250px;
+                }
+
+                @include x-phones {
+                    padding-bottom: $num-9 + 2;
+                    text-align: center;
                 }
             }
 
@@ -41,7 +87,27 @@
                     width: 50%;
                     // @include animation(moveImage, 5s, infinite);
                 }
+
+                @include phones {
+                    justify-content: center;
+                }
+
+                @include x-phones {
+                    width: 80%;
+                }
+            }
+
+            @include x-phones {
+                justify-content: center;
             }
         }
+
+        @include x-phones {
+            padding-bottom: $num-9 + 2;
+        }
+    }
+
+    @include x-phones {
+        height: auto;
     }
 }

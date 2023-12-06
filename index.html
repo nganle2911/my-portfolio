@@ -34,20 +34,19 @@
             <a id="myLogo" class="navbar-brand" href="#">
               <img src="./assets/img/brown-logo.png" width="45%" />
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
-              aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
               <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasExample">
               <div class="navbar-nav" id="navbarNav">
                 <a class="nav-link active" aria-current="page" href="#home">Home</a>
                 <a class="nav-link" href="#about">About</a>
                 <a class="nav-link" href="#skills">Skills</a>
                 <a class="nav-link" href="#projects">Projects</a>
                 <a class="nav-link" href="#contact">Contact</a>
-              </div>
-              <div onclick="changeTheme()" class="theme">
-                <a id="myIcon"><i class="bi bi-moon-stars-fill"></i></a>
+                <div onclick="changeTheme()" class="theme">
+                  <a id="myIcon"><i class="bi bi-moon-stars-fill"></i></a>
+                </div>
               </div>
             </div>
           </div>
@@ -84,10 +83,10 @@
           </div>
           <div class="aboutMe__info">
             <div class="row">
-              <div class="col-4 info__photo">
+              <div class="col-xl-4 col-lg-4 col-md-4 col-12 info__photo">
                 <img src="./assets/img/profil-photo.png" alt="avatar" />
               </div>
-              <div class="col-8 info__content">
+              <div class="col-xl-8 col-lg-8 col-md-8 col-12 info__content">
                 <div class="info__text">
                   Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error eaque aspernatur doloremque praesentium,
                   impedit expedita. Odit expedita eveniet ducimus provident aut rerum porro quas? Minima odio deleniti
@@ -297,9 +296,9 @@
         <div class="sectionTitle">
           <h2 class="title_white">projects</h2>
         </div>
-        <div class="projects__content row">
-          <div class="col-3 projects__item">
-            <div class="card" style="width: 18rem;">
+        <div class="projects__content">
+          <div class="projects__item">
+            <div class="card">
               <img src="./assets/img/project1.png" class="card-img-top" alt="project">
               <div class="card-body">
                 <div class="desc">
@@ -321,12 +320,12 @@
               </div>
               <div class="card-footer">
                 <a href="https://diner-project.vercel.app/" target="_blank" class="btn btnBrown">view demo</a>
-                <a href="https://github.com/nganle2911/capstone-diner" target="_blank" class="btn btnBrown">source github</a>
+                <a href="https://github.com/nganle2911/capstone-diner" target="_blank" class="btn btnBrown">github</a>
               </div>
             </div>
           </div>
-          <div class="col-3 projects__item">
-            <div class="card" style="width: 18rem;">
+          <div class="projects__item">
+            <div class="card">
               <img src="./assets/img/project2.png" class="card-img-top" alt="project">
               <div class="card-body">
                 <div class="desc">
@@ -349,12 +348,12 @@
               </div>
               <div class="card-footer">
                 <a href="http://157.230.120.229:8080/swagger#/" target="_blank" class="btn btnBrown">view demo</a>
-                <a href="https://github.com/trinhhoaithanh/capstone-airbnb" target="_blank" class="btn btnBrown">source github</a>
+                <a href="https://github.com/trinhhoaithanh/capstone-airbnb" target="_blank" class="btn btnBrown">github</a>
               </div>
             </div>
           </div>
-          <div class="col-3 projects__item">
-            <div class="card" style="width: 18rem;">
+          <div class="projects__item">
+            <div class="card">
               <img src="./assets/img/project3.png" class="card-img-top" alt="project">
               <div class="card-body">
                 <div class="desc">
@@ -376,12 +375,12 @@
               </div>
               <div class="card-footer">
                 <a href="https://reactjs-shoes-shop.vercel.app/" target="_blank" class="btn btnBrown">view demo</a>
-                <a href="https://github.com/nganle2911/reactjs-shoesShop" target="_blank" class="btn btnBrown">source github</a>
+                <a href="https://github.com/nganle2911/reactjs-shoesShop" target="_blank" class="btn btnBrown">github</a>
               </div>
             </div>
           </div>
-          <div class="col-3 projects__item">
-            <div class="card" style="width: 18rem;">
+          <div class="projects__item">
+            <div class="card">
               <img src="./assets/img/project4.png" class="card-img-top" alt="project">
               <div class="card-body">
                 <div class="desc">
@@ -403,7 +402,61 @@
               </div>
               <div class="card-footer">
                 <a href="https://portfolio-nganle2911.vercel.app/" target="_blank" class="btn btnBrown">view demo</a>
-                <a href="https://github.com/nganle2911/my-portfolio" target="_blank" class="btn btnBrown">source github</a>
+                <a href="https://github.com/nganle2911/my-portfolio" target="_blank" class="btn btnBrown">github</a>
+              </div>
+            </div>
+          </div>
+          <div class="projects__item">
+            <div class="card">
+              <img src="./assets/img/project3.png" class="card-img-top" alt="project">
+              <div class="card-body">
+                <div class="desc">
+                  <p class="card-title">
+                    description:
+                    <span class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, voluptas.
+                    </span>
+                  </p>
+                </div>
+                <div class="tech">
+                  <p class="card-title">technologies:</p>
+                  <div class="tech__content">
+                    <a class="tech__item">react</a>
+                    <a class="tech__item">bootstrap 5</a>
+                    <a class="tech__item">SASS</a>
+                    <a class="tech__item">axios</a>
+                  </div>
+                </div>
+              </div>
+              <div class="card-footer">
+                <a href="https://reactjs-shoes-shop.vercel.app/" target="_blank" class="btn btnBrown">view demo</a>
+                <a href="https://github.com/nganle2911/reactjs-shoesShop" target="_blank" class="btn btnBrown">github</a>
+              </div>
+            </div>
+          </div>
+          <div class="projects__item">
+            <div class="card">
+              <img src="./assets/img/project4.png" class="card-img-top" alt="project">
+              <div class="card-body">
+                <div class="desc">
+                  <p class="card-title">
+                    description:
+                    <span class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, voluptas.
+                    </span>
+                  </p>
+                </div>
+                <div class="tech">
+                  <p class="card-title">technologies:</p>
+                  <div class="tech__content">
+                    <a class="tech__item">HTML5</a>
+                    <a class="tech__item">CSS3</a>
+                    <a class="tech__item">bootstrap 5</a>
+                    <a class="tech__item">SASS</a>
+                  </div>
+                </div>
+              </div>
+              <div class="card-footer">
+                <a href="https://portfolio-nganle2911.vercel.app/" target="_blank" class="btn btnBrown">view demo</a>
+                <a href="https://github.com/nganle2911/my-portfolio" target="_blank" class="btn btnBrown">github</a>
               </div>
             </div>
           </div>
@@ -419,19 +472,19 @@
         </div>
         <div class="contact__content">
           <div class="row">
-            <div class="contact__name col-5">
-              <h2>get in touch</h2>
-              <p>thi-kim-ngan le</p>
+            <div class="contact__name col-md-5 col-12">
+              <h2>thi-kim-ngan le</h2>
+              <p>Front-end Developer</p>
               <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo, sed?</p>
             </div>   
-            <div class="contact__social col-7">
+            <div class="contact__social col-md-7 col-12">
               <div class="social__item">
-                <a href="">
+                <a href=>
                   <i class="bi bi-envelope-at-fill"></i>
                 </a>
               </div>
               <div class="social__item">
-                <a href="">
+                <a href=>
                   <i class="bi bi-telephone-fill"></i>
                 </a>
               </div>

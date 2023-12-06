@@ -1,17 +1,29 @@
 .about {
-   padding-top: $num-12;
-   @include background;
-    
+    padding-top: $num-12;
+    @include background;
+
     .container {
         padding: $num-9 $num-7;
 
         // About Me
         .aboutMe {
+            .sectionTitle {
+                h2.title_white {
+                    &::before {
+                        @include x-phones {
+                            left: $num-12 + $num-5;
+                            top: $num-6;
+                            height: 1px;
+                        }
+                    }
+                }
+            }
+
             .aboutMe__info {
                 padding: $num-9 0;
 
                 .row {
-                    
+
                     .info__photo {
                         display: flex;
                         align-items: center;
@@ -20,6 +32,18 @@
                         img {
                             height: auto;
                             max-width: 80%;
+
+                            @include phones {
+                                width: 40%;
+                            }
+
+                            @include x-phones {
+                                width: 30%;
+                            }
+                        }
+
+                        @include tablets {
+                            align-items: flex-start;
                         }
                     }
 
@@ -27,27 +51,111 @@
                         .info__text {
                             font-size: $num-5;
                             color: $brown-1;
+                            text-align: justify;
+
+                            @include tablets {
+                                font-size: $num-5 - 2;
+                            }
+
+                            @include x-phones {
+                                font-size: $num-17;
+                            }
                         }
 
                         .info__signature {
                             display: flex;
                             align-items: center;
+                            justify-content: space-between;
                             margin-top: $num-10;
 
                             .info__cv {
-                                
-                                a {
+
+                                .btnWhite {
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: space-between;
+
                                     i {
                                         font-size: $num-5;
+                                        margin-left: $num-3;
+
+                                        @include desktops {
+                                            margin-left: 0;
+                                        }
+
+                                        @include tablets {
+                                            font-size: $num-17;
+                                        }
+
+                                        @include x-phones {
+                                            font-size: $num-4 - 1;
+                                        }
+                                    }
+
+                                    @include tablets {
+                                        font-size: $num-17;
+                                        padding: $num-3 $num-6;
+                                    }
+
+                                    @include x-phones {
+                                        font-size: $num-4 - 1;
+                                        padding: $num-3 - 2 $num-17;
+                                    }
+                                }
+
+                                @include desktops {
+                                    width: $num-19;
+                                }
+
+                                @include tablets {
+                                    width: 350px;
+                                }
+
+                                @include phones {
+                                    width: 265px;
+                                }
+
+                                @include x-phones {
+                                    width: 180px;
+                                }
+                            }
+
+                            .signature {
+                                img {
+                                    @include desktops {
+                                        margin-left: $num-12;
+                                        width: 45%;
+                                    }
+
+                                    @include tablets {
+                                        width: 60%;
+                                        margin-left: $num-9 + 2;
+                                    }
+
+                                    @include phones {
+                                        width: 50%;
+                                        margin-left: $num-10;
+                                    }
+
+                                    @include x-phones {
+                                        width: 35%;
                                     }
                                 }
                             }
-    
-                            .signature {
-                                margin-left: $num-9;
+
+                            @include tablets {
+                                margin-top: $num-8;
                             }
-                            
-                        }                        
+
+                        }
+
+                        @include phones {
+                            margin-top: $num-7;
+                        }
+
+                        @include x-phones {
+                            margin-top: $num-5;
+                        }
                     }
                 }
             }

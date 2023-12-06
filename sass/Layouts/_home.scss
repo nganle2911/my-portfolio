@@ -21,6 +21,10 @@
                     @include tablets {
                         font-size: $num-18;
                     }
+
+                    @include phones {
+                        font-size: $num-8;
+                    }
                 }
 
                 .home__text {
@@ -39,7 +43,7 @@
                         margin-top: $num-3;
                     }
 
-                    @include x-phones {
+                    @include phones {
                         display: none;
                     }
                 }
@@ -58,23 +62,15 @@
                     }
 
                     @include phones {
-                        display: none;
-                    }
-
-                    @include x-phones {
                         display: block;
-                        color: $brown-4;
-                        font-size: $num-6;
+                        color: $brown-3;
+                        font-size: $num-6 - 2;
                     }
                 }
 
                 @include phones {
-                    padding-top: 250px;
-                }
-
-                @include x-phones {
-                    padding-bottom: $num-9 + 2;
                     text-align: center;
+                    padding-bottom: $num-6;
                 }
             }
 
@@ -85,29 +81,25 @@
 
                 img {
                     width: 50%;
-                    // @include animation(moveImage, 5s, infinite);
+
+                    @include phones {
+                        width: 45%;
+                    }
+
+                    @include x-phones {
+                        width: 40%;
+                    }
                 }
 
                 @include phones {
                     justify-content: center;
                 }
 
-                @include x-phones {
-                    width: 80%;
-                }
             }
 
-            @include x-phones {
+            @include phones {
                 justify-content: center;
             }
         }
-
-        @include x-phones {
-            padding-bottom: $num-9 + 2;
-        }
-    }
-
-    @include x-phones {
-        height: auto;
     }
 }

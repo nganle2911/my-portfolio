@@ -17,17 +17,42 @@
                     font-size: $num-8;
                     font-weight: $fw-5;
                     color: $brown-4;
+
+                    img {
+                        @include x-phones {
+                            width: 35%;
+                        }
+                    }
                 }
 
                 .navbar-toggler {
-                    background-color: $white-1;
+                    background-color: $brown-1;
+
+                    span {
+                        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='%23704f5b' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+
+                        @include phones {
+                            width: 1.2em;
+                            height: 1.2em;
+                        }
+                    }
+
+                    &:focus {
+                        box-shadow: none;
+                        background: $brown-4;
+
+                        span {
+                            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='%23F8F7F4' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+                        }
+                    }
                 }
 
-                .navbar-collapse {
-                    justify-content: end;
-                    align-items: center;
+                .offcanvas {
+                    flex-grow: 0;
 
                     .navbar-nav {
+                        
+
                         .nav-link {
                             position: relative;
                             margin-right: $num-4;
@@ -58,17 +83,61 @@
                                 color: $brown-4;
                                 font-weight: $fw-6;
                             }
+
+                            @include tablets {
+                                padding-bottom: $num-4;
+
+                                &::before {
+                                    content: none;
+                                }
+                            }
+                        }
+
+                        .theme {
+                            font-size: $num-6 - 2;
+                            margin-left: $num-4;
+                            cursor: pointer;
+                            color: $brown-4;
+                            display: flex;
+                            align-items: center;
+
+                            @include tablets {
+                                justify-content: flex-end;
+                                margin-right: $num-4;
+                                padding-top: $num-3 - 2;
+                            }
+                        }
+
+                        @include tablets {
+                            justify-content: flex-end;
+                            padding-left: $num-12;
+                            text-align: end;
+                        }
+
+                        @include x-phones {
+                            padding-left: 90px;
                         }
                     }
 
-                    .theme {
-                        font-size: 23px;
-                        margin-left: 15px;
-                        cursor: pointer;
-                        color: $brown-4;
+                    @include tablets {
+                        justify-content: center;
+                        width: 25%;
+                        background-color: rgba(247, 246, 243, 0.8);
+                    }
+
+                    @include phones {
+                        width: 30%;
+                    }
+
+                    @include x-phones {
+                        width: 35%;
                     }
                 }
 
+            }
+
+            @include phones {
+                flex-wrap: nowrap;
             }
         }
     }

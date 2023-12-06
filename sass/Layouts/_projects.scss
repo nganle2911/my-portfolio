@@ -1,32 +1,46 @@
 .projects {
     padding-top: $num-12;
     @include background;
-    
+
     .container {
         padding: $num-9 $num-7;
 
         .sectionTitle {
             .title_white::before {
                 left: $num-14 + $num-6;
+
+                @include tablets {
+                    left: $num-14 + 10;
+                }
+
+                @include x-phones {
+                    left: $num-14 - 10;
+                    top: $num-6;
+                }
             }
         }
 
         .projects__content {
             padding: $num-9 0;
-            
+            display: grid;
+            grid-template-columns: repeat(4, auto);
 
             .projects__item {
                 margin-bottom: $num-6;
-                
+                display: flex;
+                justify-content: center;
+
                 .card {
                     background: $white-1;
                     border: none;
+                    width: 18rem;
 
                     img {}
 
                     .card-body {
                         div {
                             margin-bottom: $num-3;
+
                             .card-title {
                                 font-weight: $fw-5;
                                 text-transform: capitalize;
@@ -38,16 +52,14 @@
                             }
                         }
 
-                        .desc {
-                            
-                        }
+                        .desc {}
 
                         .tech {
-                            
+
                             .card-title {
                                 margin-bottom: $num-3;
                             }
-                            
+
                             .tech__content {
                                 display: flex;
                                 flex-wrap: wrap;
@@ -63,19 +75,40 @@
                                     text-transform: capitalize
                                 }
                             }
-                            
+
                         }
                     }
 
                     .card-footer {
                         background: $white-1;
+                        display: grid;
+                        grid-template-columns: repeat(2, 1fr);
+                        grid-gap: $num-4;
+
                         .btnBrown {
                             padding: $num-2 + 1 $num-3 + 2;
                             font-size: $num-4 + 1;
                             text-transform: uppercase;
                         }
+
+                    }
+
+                    @include phones {
+                        width: 28rem;
                     }
                 }
+            }
+
+            @include large-desktops {
+                grid-template-columns: repeat(3, auto);
+            }
+
+            @include tablets {
+                grid-template-columns: repeat(2, auto);
+            }
+
+            @include phones {
+                grid-template-columns: auto;
             }
         }
     }

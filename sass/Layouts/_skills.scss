@@ -14,9 +14,8 @@
                         }
 
                         @include x-phones {
-                            left: $num-13;
+                            left: $num-13 - 5;
                             top: $num-6;
-                            height: 1.5px;
                         }
                     }
                 }

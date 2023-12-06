@@ -340,13 +340,6 @@ body {
 .about .container {
   padding: 48px 30px;
 }
-@media (max-width: 575.98px) {
-  .about .container .aboutMe .sectionTitle h2.title_white::before {
-    left: 120px;
-    top: 25px;
-    height: 1px;
-  }
-}
 .about .container .aboutMe .aboutMe__info {
   padding: 48px 0;
 }
@@ -390,93 +383,39 @@ body {
   }
 }
 .about .container .aboutMe .aboutMe__info .row .info__content .info__signature {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
   margin-top: 60px;
-}
-.about .container .aboutMe .aboutMe__info .row .info__content .info__signature .info__cv .btnWhite {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   align-items: center;
-  justify-content: space-between;
-}
-.about .container .aboutMe .aboutMe__info .row .info__content .info__signature .info__cv .btnWhite i {
-  font-size: 20px;
-  margin-left: 10px;
-}
-@media (max-width: 1199.98px) {
-  .about .container .aboutMe .aboutMe__info .row .info__content .info__signature .info__cv .btnWhite i {
-    margin-left: 0;
-  }
-}
-@media screen and (max-width: 991.98px) {
-  .about .container .aboutMe .aboutMe__info .row .info__content .info__signature .info__cv .btnWhite i {
-    font-size: 16px;
-  }
-}
-@media (max-width: 575.98px) {
-  .about .container .aboutMe .aboutMe__info .row .info__content .info__signature .info__cv .btnWhite i {
-    font-size: 14px;
-  }
-}
-@media screen and (max-width: 991.98px) {
-  .about .container .aboutMe .aboutMe__info .row .info__content .info__signature .info__cv .btnWhite {
-    font-size: 16px;
-    padding: 10px 25px;
-  }
 }
 @media (max-width: 575.98px) {
   .about .container .aboutMe .aboutMe__info .row .info__content .info__signature .info__cv .btnWhite {
-    font-size: 14px;
-    padding: 8px 16px;
+    font-size: 16px;
+    padding: 10px 20px;
   }
+}
+.about .container .aboutMe .aboutMe__info .row .info__content .info__signature .signature img {
+  width: 75%;
 }
 @media (max-width: 1199.98px) {
-  .about .container .aboutMe .aboutMe__info .row .info__content .info__signature .info__cv {
-    width: 250px;
-  }
-}
-@media screen and (max-width: 991.98px) {
-  .about .container .aboutMe .aboutMe__info .row .info__content .info__signature .info__cv {
-    width: 350px;
-  }
-}
-@media (max-width: 767.98px) {
-  .about .container .aboutMe .aboutMe__info .row .info__content .info__signature .info__cv {
-    width: 265px;
-  }
-}
-@media (max-width: 575.98px) {
-  .about .container .aboutMe .aboutMe__info .row .info__content .info__signature .info__cv {
-    width: 180px;
-  }
-}
-@media (max-width: 1199.98px) {
-  .about .container .aboutMe .aboutMe__info .row .info__content .info__signature .signature img {
-    margin-left: 100px;
-    width: 45%;
-  }
-}
-@media screen and (max-width: 991.98px) {
   .about .container .aboutMe .aboutMe__info .row .info__content .info__signature .signature img {
     width: 60%;
-    margin-left: 50px;
+  }
+}
+@media (max-width: 1199.98px) {
+  .about .container .aboutMe .aboutMe__info .row .info__content .info__signature {
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 50px;
   }
 }
 @media (max-width: 767.98px) {
-  .about .container .aboutMe .aboutMe__info .row .info__content .info__signature .signature img {
-    width: 50%;
-    margin-left: 60px;
+  .about .container .aboutMe .aboutMe__info .row .info__content .info__signature {
+    text-align: center;
   }
 }
 @media (max-width: 575.98px) {
-  .about .container .aboutMe .aboutMe__info .row .info__content .info__signature .signature img {
-    width: 35%;
-  }
-}
-@media screen and (max-width: 991.98px) {
   .about .container .aboutMe .aboutMe__info .row .info__content .info__signature {
-    margin-top: 36px;
+    margin-top: 40px;
   }
 }
 @media (max-width: 767.98px) {

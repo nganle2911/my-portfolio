@@ -165,7 +165,7 @@ body {
 }
 .navMenu .container .navbar .container-fluid .offcanvas .navbar-nav .nav-link {
   position: relative;
-  margin-right: 15px;
+  margin-right: 20px;
   padding-left: 0;
   color: #AE8D92;
   font-size: 20px;
@@ -192,6 +192,8 @@ body {
 @media screen and (max-width: 991.98px) {
   .navMenu .container .navbar .container-fluid .offcanvas .navbar-nav .nav-link {
     padding-bottom: 15px;
+    text-align: end;
+    text-transform: uppercase;
   }
   .navMenu .container .navbar .container-fluid .offcanvas .navbar-nav .nav-link::before {
     content: none;
@@ -213,32 +215,11 @@ body {
   }
 }
 @media screen and (max-width: 991.98px) {
-  .navMenu .container .navbar .container-fluid .offcanvas .navbar-nav {
-    justify-content: flex-end;
-    padding-left: 100px;
-    text-align: end;
-  }
-}
-@media (max-width: 575.98px) {
-  .navMenu .container .navbar .container-fluid .offcanvas .navbar-nav {
-    padding-left: 90px;
-  }
-}
-@media screen and (max-width: 991.98px) {
-  .navMenu .container .navbar .container-fluid .offcanvas {
-    justify-content: center;
-    width: 25%;
-    background-color: rgba(247, 246, 243, 0.8);
-  }
-}
-@media (max-width: 767.98px) {
   .navMenu .container .navbar .container-fluid .offcanvas {
     width: 30%;
-  }
-}
-@media (max-width: 575.98px) {
-  .navMenu .container .navbar .container-fluid .offcanvas {
-    width: 35%;
+    justify-content: center;
+    align-items: flex-end;
+    background-color: rgba(247, 246, 243, 0.8);
   }
 }
 @media (max-width: 767.98px) {

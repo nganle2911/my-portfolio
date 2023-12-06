@@ -51,11 +51,10 @@
                     flex-grow: 0;
 
                     .navbar-nav {
-                        
 
                         .nav-link {
                             position: relative;
-                            margin-right: $num-4;
+                            margin-right: $num-5;
                             padding-left: 0;
                             color: $brown-3;
                             font-size: $num-5;
@@ -86,6 +85,8 @@
 
                             @include tablets {
                                 padding-bottom: $num-4;
+                                text-align: end;
+                                text-transform: uppercase;
 
                                 &::before {
                                     content: none;
@@ -107,30 +108,13 @@
                                 padding-top: $num-3 - 2;
                             }
                         }
-
-                        @include tablets {
-                            justify-content: flex-end;
-                            padding-left: $num-12;
-                            text-align: end;
-                        }
-
-                        @include x-phones {
-                            padding-left: 90px;
-                        }
                     }
 
                     @include tablets {
-                        justify-content: center;
-                        width: 25%;
-                        background-color: rgba(247, 246, 243, 0.8);
-                    }
-
-                    @include phones {
                         width: 30%;
-                    }
-
-                    @include x-phones {
-                        width: 35%;
+                        justify-content: center;
+                        align-items: flex-end;
+                        background-color: rgba(247, 246, 243, 0.8);
                     }
                 }
 

@@ -49,6 +49,8 @@
                 }
 
                 .home__text2 {
+                    display: none;
+
                     @include large-desktops {
                         display: none;
                     }
@@ -100,6 +102,14 @@
             @include phones {
                 justify-content: center;
             }
+        }
+
+        @include phones {
+            padding-top: $num-12;
+        }
+
+        @include x-phones {
+            padding-top: 0;
         }
     }
 }

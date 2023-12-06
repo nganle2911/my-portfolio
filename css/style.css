@@ -276,6 +276,9 @@ body {
     display: none;
   }
 }
+.home .container .row .home__left .home__text2 {
+  display: none;
+}
 @media (max-width: 1399.98px) {
   .home .container .row .home__left .home__text2 {
     display: none;
@@ -330,6 +333,16 @@ body {
 @media (max-width: 767.98px) {
   .home .container .row {
     justify-content: center;
+  }
+}
+@media (max-width: 767.98px) {
+  .home .container {
+    padding-top: 100px;
+  }
+}
+@media (max-width: 575.98px) {
+  .home .container {
+    padding-top: 0;
   }
 }
 

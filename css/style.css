@@ -20,19 +20,14 @@ body {
   letter-spacing: 2px;
   position: relative;
 }
-.sectionTitle h2.title_white::before {
+.sectionTitle h2.title_white::after {
   position: absolute;
   content: "";
   background-color: #F8F7F4;
-  width: 200px;
   height: 2px;
-  top: 30px;
-  left: 150px;
-}
-@media (max-width: 575.98px) {
-  .sectionTitle h2.title_white::before {
-    height: 1px;
-  }
+  bottom: 0;
+  left: 0;
+  width: 100%;
 }
 @media screen and (max-width: 991.98px) {
   .sectionTitle h2.title_white {
@@ -55,19 +50,14 @@ body {
   letter-spacing: 2px;
   position: relative;
 }
-.sectionTitle h2.title_brown::before {
+.sectionTitle h2.title_brown::after {
   position: absolute;
   content: "";
   background-color: #704f5b;
-  width: 200px;
   height: 2px;
-  top: 30px;
-  left: 170px;
-}
-@media (max-width: 575.98px) {
-  .sectionTitle h2.title_brown::before {
-    height: 1px;
-  }
+  bottom: 0;
+  left: 0;
+  width: 100%;
 }
 @media screen and (max-width: 991.98px) {
   .sectionTitle h2.title_brown {
@@ -928,7 +918,7 @@ body {
 .dark-mode #skills .sectionTitle .title_brown {
   color: #F8F7F4;
 }
-.dark-mode #skills .sectionTitle .title_brown::before {
+.dark-mode #skills .sectionTitle .title_brown::after {
   background-color: #F8F7F4;
 }
 .dark-mode #skills .accordion .accordion-contentGroups .accordion-collapse .card {
@@ -940,7 +930,7 @@ body {
 .dark-mode #contact .sectionTitle .title_brown {
   color: #F8F7F4;
 }
-.dark-mode #contact .sectionTitle .title_brown::before {
+.dark-mode #contact .sectionTitle .title_brown::after {
   background-color: #F8F7F4;
 }
 .dark-mode #contact .contact__content .contact__name h2 {

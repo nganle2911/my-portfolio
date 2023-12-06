@@ -1,10 +1,10 @@
 // Animation 
 @mixin animation($name-animation, $duration, $iteration-count) {
-    animation: $name-animation $duration $iteration-count; 
+    animation: $name-animation $duration $iteration-count;
 }
 
 // h2.title
-@mixin title ($left, $color) {
+@mixin title ($color) {
     font-size: $num-9;
     text-transform: capitalize;
     font-weight: $fw-4;
@@ -13,14 +13,14 @@
     letter-spacing: 2px;
     position: relative;
 
-    &::before {
+    &::after {
         position: absolute;
         content: "";
         background-color: $color;
-        width: 200px;
         height: 2px;
-        top: $num-7;
-        left: $left;
+        bottom: 0;
+        left: 0;
+        width: 100%;
     }
 }
 
@@ -65,7 +65,7 @@
 // medium devices - tables - 992px
 @mixin tablets {
     @media screen and (max-width: map-get($breakpoints, lg)) {
-        @content; 
+        @content;
     }
 }
 

@@ -11,13 +11,7 @@ body {
 
 .sectionTitle {
     h2.title_white {
-        @include title(150px, $white-1);
-
-        &::before {
-            @include x-phones {
-                height: 1px;
-            }
-        }
+        @include title($white-1);
 
         @include tablets {
             margin-bottom: $num-3;
@@ -32,13 +26,7 @@ body {
 
 .sectionTitle {
     h2.title_brown {
-        @include title(170px, $brown-4);
-        
-        &::before {
-            @include x-phones {
-                height: 1px;
-            }
-        }
+        @include title($brown-4);
 
         @include tablets {
             margin-bottom: $num-3;

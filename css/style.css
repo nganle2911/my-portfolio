@@ -216,7 +216,7 @@ body {
 }
 @media screen and (max-width: 991.98px) {
   .navMenu .container .navbar .container-fluid .offcanvas {
-    width: 30%;
+    width: 35%;
     justify-content: center;
     align-items: flex-end;
     background-color: rgba(247, 246, 243, 0.8);

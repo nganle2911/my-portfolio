@@ -1,6 +1,6 @@
 // TODO: Add active class to the current nav-link
 const navLinkItems = document.querySelectorAll(".nav-link");
-console.log(navLinkItems);
+
 navLinkItems.forEach((navLinkEle) => {
     navLinkEle.addEventListener("click", () => {
         document.querySelector(".active")?.classList.remove('active');
@@ -26,7 +26,7 @@ const changeTheme = () => {
 const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]');
 const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl));
 
-// TODO: Click to copy the content 
+// TODO: Click to copy the content on html element 
 const copyMyContent = (name) => {
     let getEleList = document.querySelectorAll("#myEmail, #myPhone");
 

@@ -22,9 +22,6 @@ const changeTheme = () => {
     }
 };
 
-// TODO: Initial popovers for contact
-let popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'));
-console.log(popoverTriggerList);
-let popoverList = popoverTriggerList.map((popoverTriggerEl) => {
-    return new bootstrap.Popover(popoverTriggerEl);
-});
+// TODO: Initial tooltips for contact icons
+const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]');
+const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl));

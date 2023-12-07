@@ -103,6 +103,10 @@ body {
   border-color: #704f5b;
 }
 
+.myCustomTooltip {
+  --bs-tooltip-bg: #704f5b;
+}
+
 @keyframes moveImage {
   0% {
     transform: rotate(3deg) translate(3px, 3px);

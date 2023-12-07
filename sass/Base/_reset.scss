@@ -46,3 +46,7 @@ body {
 .btnBrown {
     @include btnStyle($brown-4, $white-1, $white-1, $brown-4, $brown-4, $brown-4);
 }
+
+.myCustomTooltip {
+    --bs-tooltip-bg: #704f5b;
+}

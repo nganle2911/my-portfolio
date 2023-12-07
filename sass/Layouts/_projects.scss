@@ -43,11 +43,12 @@
 
                             .card-title {
                                 font-weight: $fw-5;
-                                text-transform: capitalize;
                                 margin-bottom: 0;
+                                text-transform: capitalize;
 
                                 .card-text {
                                     font-weight: $fw-3;
+                                    text-transform: none;
                                 }
                             }
                         }

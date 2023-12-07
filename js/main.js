@@ -20,4 +20,11 @@ const changeTheme = () => {
         document.getElementById("myIcon").innerHTML = `<i class="bi bi-moon-stars-fill"></i>`;
         document.getElementById("myLogo").innerHTML = `<img src="./assets/img/brown-logo.png" width="45%" />`;
     }
-}
+};
+
+// TODO: Initial popovers for contact
+let popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'));
+console.log(popoverTriggerList);
+let popoverList = popoverTriggerList.map((popoverTriggerEl) => {
+    return new bootstrap.Popover(popoverTriggerEl);
+});

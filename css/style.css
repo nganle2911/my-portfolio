@@ -677,11 +677,12 @@ body {
 }
 .projects .container .projects__content .projects__item .card .card-body div .card-title {
   font-weight: 600;
-  text-transform: capitalize;
   margin-bottom: 0;
+  text-transform: capitalize;
 }
 .projects .container .projects__content .projects__item .card .card-body div .card-title .card-text {
   font-weight: 400;
+  text-transform: none;
 }
 .projects .container .projects__content .projects__item .card .card-body .tech .card-title {
   margin-bottom: 10px;

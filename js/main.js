@@ -27,14 +27,16 @@ const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]
 const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl));
 
 // TODO: Click to copy the content 
-const copyMyContent = () => {
-    // Get the value of input 
-    let getEmail = document.getElementById("myEmail").value;
-    console.log(getEmail);
+const copyMyContent = (name) => {
+    let getEleList = document.querySelectorAll("#myEmail, #myPhone");
 
-    navigator.clipboard.writeText(getEmail).then(() => {
-        alert("Email copied: " + getEmail);
-    }).catch((err) => {
-        console.error("Failed to copy: ", err);
+    getEleList.forEach((ele) => {
+        if (ele.name === name) {
+            navigator.clipboard.writeText(ele.value).then(() => {
+                alert(`${ele.name} copied: ${ele.value}`);
+            }).catch((err) => {
+                console.error("Failed to copy: " + err);
+            });
+        }
     });
-} 
+};

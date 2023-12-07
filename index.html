@@ -428,24 +428,26 @@
             </div>   
             <div class="contact__social col-md-7 col-12">
               <div class="social__item">
-                <input type="email" id="myEmail" value="ngan.ltkn2911@gmail.com" style="display: none;">
+                <input type="email" id="myEmail" name="Email" value="ngan.ltkn2911@gmail.com" style="display: none;" />
                 <a 
                   data-bs-toggle="tooltip"
                   data-bs-custom-class="myCustomTooltip"
                   data-bs-placement="top"
                   data-bs-trigger="hover"
                   data-bs-title="Email"
-                  onclick="copyMyContent()">
+                  onclick="copyMyContent('Email')">
                   <i class="bi bi-envelope-at-fill"></i>
                 </a>
               </div>
               <div class="social__item">
+                <input type="text" id="myPhone" name="Phone" value="+33769551193" style="display: none;" />
                 <a 
                   data-bs-toggle="tooltip"
                   data-bs-custom-class="myCustomTooltip"
                   data-bs-placement="top"
                   data-bs-trigger="hover"
-                  data-bs-title="Phone">
+                  data-bs-title="Phone"
+                  onclick="copyMyContent('Phone')">
                   <i class="bi bi-telephone-fill"></i>
                 </a>
               </div>

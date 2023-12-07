@@ -25,3 +25,16 @@ const changeTheme = () => {
 // TODO: Initial tooltips for contact icons
 const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]');
 const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl));
+
+// TODO: Click to copy the content 
+const copyMyContent = () => {
+    // Get the value of input 
+    let getEmail = document.getElementById("myEmail").value;
+    console.log(getEmail);
+
+    navigator.clipboard.writeText(getEmail).then(() => {
+        alert("Email copied: " + getEmail);
+    }).catch((err) => {
+        console.error("Failed to copy: ", err);
+    });
+} 

@@ -40,3 +40,22 @@ const copyMyContent = (name) => {
         }
     });
 };
+
+// TODO: Button back to top 
+let myButton = document.getElementById("myBtn");
+window.onscroll = () => {scrollFunc()};
+
+// when user scrolls down 50px => show button 
+let scrollFunc = () => {
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        myButton.style.display = "block";
+    } else {
+        myButton.style.display = "none";
+    }
+}
+
+// when user clicks on button => scroll to the top of the page 
+let topFunc = () => {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0; 
+}

@@ -26,7 +26,7 @@ const changeTheme = () => {
 const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]');
 const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl));
 
-// TODO: Click to copy the content on html element 
+// TODO: Click to copy the content on html element - clipboard
 const copyMyContent = (name) => {
     let getEleList = document.querySelectorAll("#myEmail, #myPhone");
 

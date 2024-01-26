@@ -719,21 +719,6 @@ body {
   border: none;
   width: 18rem;
 }
-.projects .container .projects__content .projects__item .card .card-body div {
-  margin-bottom: 10px;
-}
-.projects .container .projects__content .projects__item .card .card-body div .card-title {
-  font-weight: 600;
-  margin-bottom: 0;
-  text-transform: capitalize;
-}
-.projects .container .projects__content .projects__item .card .card-body div .card-title .card-text {
-  font-weight: 400;
-  text-transform: none;
-}
-.projects .container .projects__content .projects__item .card .card-body .tech .card-title {
-  margin-bottom: 10px;
-}
 .projects .container .projects__content .projects__item .card .card-body .tech .tech__content {
   display: flex;
   flex-wrap: wrap;
@@ -742,11 +727,10 @@ body {
   background: #E3D8D4;
   text-decoration: none;
   color: #704f5b;
-  padding: 6px 12px;
+  padding: 5px 10px;
   margin-right: 5px;
   margin-bottom: 5px;
   border-radius: 10px;
-  text-transform: capitalize;
 }
 .projects .container .projects__content .projects__item .card .card-footer {
   background: #F8F7F4;

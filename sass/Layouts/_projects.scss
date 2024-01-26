@@ -41,28 +41,8 @@
                     img {}
 
                     .card-body {
-                        div {
-                            margin-bottom: $num-3;
-
-                            .card-title {
-                                font-weight: $fw-5;
-                                margin-bottom: 0;
-                                text-transform: capitalize;
-
-                                .card-text {
-                                    font-weight: $fw-3;
-                                    text-transform: none;
-                                }
-                            }
-                        }
-
-                        .desc {}
 
                         .tech {
-
-                            .card-title {
-                                margin-bottom: $num-3;
-                            }
 
                             .tech__content {
                                 display: flex;
@@ -72,11 +52,10 @@
                                     background: $brown-1;
                                     text-decoration: none;
                                     color: $brown-4;
-                                    padding: $num-2 + 1 $num-3 + 2;
+                                    padding: $num-2 $num-3;
                                     margin-right: $num-2;
                                     margin-bottom: $num-2;
                                     border-radius: $num-3;
-                                    text-transform: capitalize
                                 }
                             }
 

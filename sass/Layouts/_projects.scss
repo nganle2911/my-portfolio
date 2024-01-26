@@ -29,6 +29,9 @@
                 margin-bottom: $num-6;
                 display: flex;
                 justify-content: center;
+                opacity: 0;
+                transform: translateY(20px);
+                transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
 
                 .card {
                     background: $white-1;
@@ -94,6 +97,11 @@
 
                     }
                 }
+            }
+
+            .visible {
+                opacity: 1;
+                transform: translateY(0);
             }
 
             @include large-desktops {

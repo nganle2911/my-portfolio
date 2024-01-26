@@ -59,3 +59,23 @@ let topFunc = () => {
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0; 
 }
+
+// TODO: Animation when scrolling for projects 
+document.addEventListener("DOMContentLoaded", () => {
+    let projectsContent = document.getElementById("projectsContent");
+    let projectItemsList = document.querySelectorAll(".projects__item");
+    
+    window.addEventListener("scroll", () => {
+        let scrollPosition = window.scrollY;
+
+        projectItemsList.forEach((item) => {
+            let itemOffsetTop = item.offsetTop; 
+
+            if (scrollPosition >= itemOffsetTop - window.innerHeight / 2) {
+                item.classList.add("visible");
+            } else {
+                item.classList.remove("visible");
+            }
+        })
+    });
+});

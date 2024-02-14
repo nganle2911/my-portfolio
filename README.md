@@ -40,4 +40,4 @@ In the project section, click on the button "DEMO" or "GITHUB" to view website d
 
 ## Contact
 
-If you have any questions or suggestions, feel free to reach out to me at `ngan.ltkn2911@gmail.com`. 
+If you have any questions or suggestions, feel free to reach out to me at ngan.ltkn2911@gmail.com. 

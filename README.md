@@ -29,8 +29,15 @@ In the project section, click on the button "DEMO" or "GITHUB" to view website d
 - HTML5
 - CSS3
 - SASS 
-- JavaScript (ES6)
+- JavaScript (ES6) 
+
+## Useful Links
+
+✨ Demo link: [Click to see demo](https://portfolio-nganle2911.vercel.app/)
+
+✨ Source code: [Click to see source code](https://github.com/nganle2911/my-portfolio?tab=readme-ov-file) 
+
 
 ## Contact
 
-If you have any questions or suggestions, feel free to reach out to me at ngan.ltkn2911@gmail.com. 
+If you have any questions or suggestions, feel free to reach out to me at `ngan.ltkn2911@gmail.com`. 

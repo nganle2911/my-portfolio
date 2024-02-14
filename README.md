@@ -10,6 +10,7 @@ It is built using HTML5, CSS3, SASS, JavaScript.
 ## Features
 
 - Projects showcase with descriptions, link demo and link github.
+- 2 light / dark themes 
 - Responsive design for various screen sizes (desktop, tablets, mobiles)
 - Clean and simple layout
 

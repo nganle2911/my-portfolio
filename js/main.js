@@ -3,9 +3,41 @@ const projectsList = [
         img: "project1.png",
         name: "Diner Layout",
         desc: "Created a restaurant website to display services and products through different pages, such as 'Home, About, Contact, etc.'",
-        techList: ["HTML5", "CSS3", "Bootstrap 5", "SASS"],
+        techList: ["HTML5", "CSS3", "Bootstrap 5", "SASS", "JavaScript"],
         linkDemo: "https://diner-project.vercel.app/",
         linkGit: "https://github.com/nganle2911/capstone-diner"
+    },
+    {
+        img: "project4.png",
+        name: "my portfolio",
+        desc: "Created my own personal website, fully responsive for all devices.",
+        techList: ["HTML5", "CSS3", "Bootstrap 5", "SASS", "JavaScript"],
+        linkDemo: "https://portfolio-nganle2911.vercel.app/",
+        linkGit: "https://github.com/nganle2911/my-portfolio"
+    },
+    {
+        img: "project5.png",
+        name: "shopping cart",
+        desc: "A small website including admin & user pages with complete CRUD operations using JavaScript Local Storage.",
+        techList: ["HTML5", "CSS3", "Bootstrap 5", "SASS", "Mock API", "JavaScript"],
+        linkDemo: "https://capstone-phone-api.vercel.app/",
+        linkGit: "https://github.com/nganle2911/capstone-phone-api"
+    },
+    {
+        img: "project3.png",
+        name: "shoes shop",
+        desc: "Created a simple landing page using React to render different types of shoes. This app allows users to see a list of shoes and their detail pages.",
+        techList: ["React", "Bootstrap 5", "SASS", "Axios"],
+        linkDemo: "https://reactjs-shoes-shop.vercel.app/",
+        linkGit: "https://github.com/nganle2911/reactjs-shoesShop"
+    },
+    {
+        img: "project6.png",
+        name: "CYBERFLIX",
+        desc: "A movie app built by React JS with fully responsive. Users can view list of movies, buy movie ticket, choose movie's schedule and select seats in the cinema.",
+        techList: ["Tailwind CSS", "SASS", "Ant Design", "React", "Hooks", "Redux"],
+        linkDemo: "https://cyber-flix.vercel.app/",
+        linkGit: "https://github.com/KHA0410/CyberFlix/tree/master"
     },
     {
         img: "project2.png",
@@ -14,30 +46,6 @@ const projectsList = [
         techList: ["NestJS", "MySQL", "Prisma ORM", "Swagger", "Docker"],
         linkDemo: "http://157.230.120.229:8080/swagger#/",
         linkGit: "https://github.com/trinhhoaithanh/capstone-airbnb"
-    },
-    {
-        img: "project3.png",
-        name: "shoes shop",
-        desc: "Created a simple web app using React to render different types of shoes. This app allows users to see a list of shoes and their detail pages.",
-        techList: ["React", "Bootstrap 5", "SASS", "Axios"],
-        linkDemo: "https://reactjs-shoes-shop.vercel.app/",
-        linkGit: "https://github.com/nganle2911/reactjs-shoesShop"
-    },
-    {
-        img: "project4.png",
-        name: "my portfolio",
-        desc: "Created my own personal website, fully responsive for all devices.",
-        techList: ["HTML5", "CSS3", "Bootstrap 5", "SASS"],
-        linkDemo: "https://portfolio-nganle2911.vercel.app/",
-        linkGit: "https://github.com/nganle2911/my-portfolio"
-    },
-    {
-        img: "project5.png",
-        name: "phones store",
-        desc: "A small website including admin & user pages with complete CRUD operations using JavaScript Local Storage.",
-        techList: ["HTML5", "CSS3", "Bootstrap 5", "SASS", "API"],
-        linkDemo: "https://capstone-phone-api.vercel.app/",
-        linkGit: "https://github.com/nganle2911/capstone-phone-api"
     },
 ];
 

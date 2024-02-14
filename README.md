@@ -1,6 +1,6 @@
 # Kim-Ngan's Personal Portfolio
 
-![logo](./assets/img/white-logo.png){:height="50px" width="100px"}
+![logo](./assets/img/white-logo.png)
 
 ## Description
 
@@ -13,77 +13,24 @@ It is built using HTML5, CSS3, SASS, JavaScript.
 - Responsive design for various screen sizes (desktop, tablets, mobiles)
 - Clean and simple layout
 
-### Installing
+## Installation
 
-A step by step series of examples that tell you how to get a development
-environment running
+1. Clone the repository:
+   ```git clone https://github.com/nganle2911/my-portfolio.git```
+2. Open `index.html` in your web browser. 
 
-Say what the step will be
+## Usage
 
-    Give the example
+Simply navigating through the different sections of the website. 
+In the project section, click on the button "DEMO" or "GITHUB" to view website demo or source code about each project. 
 
-And repeat
+## Technologies Used
 
-    until finished
+- HTML5
+- CSS3
+- SASS 
+- JavaScript (ES6)
 
-End with an example of getting some data out of the system or using it
-for a little demo
+## Contact
 
-## Running the tests
-
-Explain how to run the automated tests for this system
-
-### Sample Tests
-
-Explain what these tests test and why
-
-    Give an example
-
-### Style test
-
-Checks if the best practices and the right coding style has been used.
-
-    Give an example
-
-## Deployment
-
-Add additional notes to deploy this on a live system
-
-## Built With
-
-  - [Contributor Covenant](https://www.contributor-covenant.org/) - Used
-    for the Code of Conduct
-  - [Creative Commons](https://creativecommons.org/) - Used to choose
-    the license
-
-## Contributing
-
-Please read [CONTRIBUTING.md](CONTRIBUTING.md) for details on our code
-of conduct, and the process for submitting pull requests to us.
-
-## Versioning
-
-We use [Semantic Versioning](http://semver.org/) for versioning. For the versions
-available, see the [tags on this
-repository](https://github.com/PurpleBooth/a-good-readme-template/tags).
-
-## Authors
-
-  - **Billie Thompson** - *Provided README Template* -
-    [PurpleBooth](https://github.com/PurpleBooth)
-
-See also the list of
-[contributors](https://github.com/PurpleBooth/a-good-readme-template/contributors)
-who participated in this project.
-
-## License
-
-This project is licensed under the [CC0 1.0 Universal](LICENSE.md)
-Creative Commons License - see the [LICENSE.md](LICENSE.md) file for
-details
-
-## Acknowledgments
-
-  - Hat tip to anyone whose code is used
-  - Inspiration
-  - etc
+If you have any questions or suggestions, feel free to reach out to me at ngan.ltkn2911@gmail.com. 

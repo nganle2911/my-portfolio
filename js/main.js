@@ -36,8 +36,8 @@ const projectsList = [
         name: "CYBERFLIX",
         desc: "A movie app built by React JS with fully responsive. Users can view list of movies, buy movie ticket, choose movie's schedule and select seats in the cinema.",
         techList: ["Tailwind CSS", "SASS", "Ant Design", "React", "Hooks", "Redux"],
-        linkDemo: "https://cyber-flix.vercel.app/",
-        linkGit: "https://github.com/KHA0410/CyberFlix/tree/master"
+        linkDemo: "https://cyberflix.vercel.app/",
+        linkGit: "https://github.com/nganle2911/CyberFlix"
     },
     {
         img: "project2.png",

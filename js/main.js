@@ -20,7 +20,7 @@ const projectsList = [
         name: "my portfolio",
         desc: "Created my own personal website, fully responsive for all devices.",
         techList: ["HTML5", "CSS3", "Bootstrap 5", "SASS", "JavaScript"],
-        linkDemo: "https://portfolio-nganle2911.vercel.app/",
+        linkDemo: "https://portfolio-chi-one-26.vercel.app/",
         linkGit: "https://github.com/nganle2911/my-portfolio"
     },
     {

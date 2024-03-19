@@ -1,5 +1,13 @@
 const projectsList = [
     {
+        img: "project7.png",
+        name: "Samar Layout",
+        desc: "Cloned a Samar layout by using HTML, CSS, JavaScript",
+        techList: ["HTML5", "CSS3", "JavaScript"],
+        linkDemo: "https://samar-project-omega.vercel.app/",
+        linkGit: "https://github.com/nganle2911/Samar-Project"
+    },
+    {
         img: "project1.png",
         name: "Diner Layout",
         desc: "Created a restaurant website to display services and products through different pages, such as 'Home, About, Contact, etc.'",
@@ -34,10 +42,18 @@ const projectsList = [
     {
         img: "project6.png",
         name: "CYBERFLIX",
-        desc: "A movie app built by React JS with fully responsive. Users can view list of movies, buy movie ticket, choose movie's schedule and select seats in the cinema.",
+        desc: "A movie app built by React framework with fully responsive. Users can view list of movies, buy movie ticket, choose movie's schedule and select seats in the cinema.",
         techList: ["Tailwind CSS", "SASS", "Ant Design", "React", "Hooks", "Redux"],
         linkDemo: "https://cyberflix.vercel.app/",
         linkGit: "https://github.com/nganle2911/CyberFlix"
+    },
+    {
+        img: "project8.png",
+        name: "E-Learning App",
+        desc: "This e-learning app is developed using React framework with fully responsive. Users can view list of courses, detail course, enroll course, edit profile, etc. Furthermore, admin have CRUD capabilities to manage users and courses.",
+        techList: ["Tailwind CSS", "SASS", "Ant Design", "React", "Hooks", "Redux"],
+        linkDemo: "https://elearning-capstone-seven.vercel.app/",
+        linkGit: "https://github.com/nganle2911/elearning-capstone"
     },
     {
         img: "project2.png",

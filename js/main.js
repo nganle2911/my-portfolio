@@ -60,7 +60,7 @@ const projectsList = [
         name: "airbnb api",
         desc: "Built a RESTful API for the Airbnb app - allowing users to register or login, search, book, and review rooms. Integrated JWT-based authentication.",
         techList: ["NestJS", "MySQL", "Prisma ORM", "Swagger", "Docker"],
-        linkDemo: "http://157.230.120.229:8080/swagger#/",
+        linkDemo: "https://www.youtube.com/watch?v=j3GjizkhEyY",
         linkGit: "https://github.com/trinhhoaithanh/capstone-airbnb"
     },
 ];

@@ -374,6 +374,25 @@ body {
     justify-content: center;
   }
 }
+.home .container .row .home__me {
+  display: flex;
+  justify-content: center;
+}
+.home .container .row .home__me img {
+  width: 20%;
+}
+.home .container .row .home__name {
+  display: flex;
+  justify-content: center;
+}
+.home .container .row .home__name img {
+  width: 30%;
+}
+.home .container .row .home__title {
+  text-align: center;
+  font-size: 25px;
+  color: #191919;
+}
 @media (max-width: 767.98px) {
   .home .container .row {
     justify-content: center;

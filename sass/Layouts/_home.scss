@@ -119,6 +119,30 @@
 
             }
 
+            .home__me {
+                display: flex;
+                justify-content: center;
+
+                img {
+                    width: 20%;
+                }
+            }
+
+            .home__name {
+                display: flex;
+                justify-content: center;
+
+                img {
+                    width: 30%;
+                }
+            }
+
+            .home__title {
+                text-align: center;
+                font-size: $num-6;
+                color: $dark-1;
+            }
+
             @include phones {
                 justify-content: center;
             }

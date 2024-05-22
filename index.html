@@ -58,7 +58,7 @@
     <!-- HOME -->
     <section class="home" id="home">
       <div class="container">
-        <div class="row">
+        <!-- <div class="row">
           <div class="home__left col-xl-6 col-lg-6 col-md-7 col-sm-12 col-12">
             <div class="home__welcome wow animate__animated animate__fadeInUp">
               <h4 class="home__text">step into my coding journey !</h4>
@@ -73,6 +73,17 @@
           </div>
           <div class="home__right col-xl-6 col-lg-6 col-md-5 col-sm-12 col-12">
             <img class="animate__animated animate__zoomIn animate__delay-2s" src="./assets/img/me-photo-grey.png" alt="me">
+          </div>
+        </div> -->
+        <div class="row">
+          <div class="home__me">
+            <img src="./assets/img/me-home.png" alt="me-home">
+          </div>
+          <div class="home__name">
+            <img src="./assets/img/name.png" alt="name-home">
+          </div>
+          <div class="home__title">
+            <span id="typingEff"></span>
           </div>
         </div>
       </div>
@@ -408,7 +419,7 @@
     <script src="./js/libraries/typed.umd.js"></script>
     <script>
       let typed = new Typed("#typingEff", {
-        strings: ["Hi! I'm Kim-Ngan!"],
+        strings: ["Front-end Developer"],
         typeSpeed: 120
       });
     </script>

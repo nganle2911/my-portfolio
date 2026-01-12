@@ -23,14 +23,14 @@ const projectsList = [
         linkDemo: "https://diner-project.vercel.app/",
         linkGit: "https://github.com/nganle2911/capstone-diner"
     },
-    {
-        img: "project4.png",
-        name: "my portfolio",
-        desc: "Created my own personal website, fully responsive for all devices.",
-        techList: ["HTML5", "CSS3", "Bootstrap 5", "SASS", "JavaScript"],
-        linkDemo: "https://portfolio-chi-one-26.vercel.app/",
-        linkGit: "https://github.com/nganle2911/my-portfolio"
-    },
+    // {
+    //     img: "project4.png",
+    //     name: "my portfolio",
+    //     desc: "Created my own personal website, fully responsive for all devices.",
+    //     techList: ["HTML5", "CSS3", "Bootstrap 5", "SASS", "JavaScript"],
+    //     linkDemo: "https://portfolio-chi-one-26.vercel.app/",
+    //     linkGit: "https://github.com/nganle2911/my-portfolio"
+    // },
     {
         img: "project5.png",
         name: "shopping cart",

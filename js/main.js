@@ -1,5 +1,13 @@
 const projectsList = [
     {
+        img: "morse.jpg",
+        name: "les enquêtes de morse",
+        desc: "This project comprised building a PostgreSQL database for the Endeavour series, including multi-source web data collection, data cleaning and harmonization, CDM and snowflake modeling, an ETL pipeline with FME, and SQL-based validation.",
+        techList: ["PostgreSQL", "FME", "Python", "BeautifulSoup", "CDM"],
+        linkDemo: "",
+        linkGit: ""
+    },
+    {
         img: "project7.png",
         name: "Samar Layout",
         desc: "Cloned a Samar layout by using HTML, CSS, JavaScript",

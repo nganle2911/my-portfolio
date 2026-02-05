@@ -1,5 +1,21 @@
 const projectsList = [
     {
+        img: "itineraires.png",
+        name: "Web GIS - GPS Itinerary",
+        desc: "Web GIS application for collecting GPS points, managing itineraries, and visualizing routes with Leaflet via a JSON-based API.",
+        techList: ["HTML/CSS", "JavaScript", "Leaflet", "PHP", "MySQL", "GPS"],
+        linkDemo: "http://kimngan2911.atwebpages.com/",
+        linkGit: "https://github.com/nganle2911/SAE301_CollecteAutomatisee_ProjetItineraires"
+    },
+    {
+        img: "itineraires.png",
+        name: "Web GIS - GPS Itinerary",
+        desc: "Web GIS application for collecting GPS points, managing itineraries, and visualizing routes with Leaflet via a JSON-based API.",
+        techList: ["HTML/CSS", "JavaScript", "Leaflet", "PHP", "MySQL", "GPS"],
+        linkDemo: "http://kimngan2911.atwebpages.com/",
+        linkGit: "https://github.com/nganle2911/SAE301_CollecteAutomatisee_ProjetItineraires"
+    },
+    {
         img: "morse.jpg",
         name: "les enquêtes de morse",
         desc: "This project comprised building a PostgreSQL database for the Endeavour series, including multi-source web data collection, data cleaning and harmonization, CDM and snowflake modeling, an ETL pipeline with FME, and SQL-based validation.",

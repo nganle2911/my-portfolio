@@ -8,12 +8,12 @@ const projectsList = [
         linkGit: "https://github.com/nganle2911/SAE301_CollecteAutomatisee_ProjetItineraires"
     },
     {
-        img: "itineraires.png",
-        name: "Web GIS - GPS Itinerary",
-        desc: "Web GIS application for collecting GPS points, managing itineraries, and visualizing routes with Leaflet via a JSON-based API.",
-        techList: ["HTML/CSS", "JavaScript", "Leaflet", "PHP", "MySQL", "GPS"],
-        linkDemo: "http://kimngan2911.atwebpages.com/",
-        linkGit: "https://github.com/nganle2911/SAE301_CollecteAutomatisee_ProjetItineraires"
+        img: "planIUT.png",
+        name: "Interactive IUT Campus Plan",
+        desc: "Web GIS application for interactive campus map visualization, enabling exploration of buildings, floors, and rooms using SVG and JavaScript, with associated spatial metadata.",
+        techList: ["HTML/CSS", "JavaScript", "SVG", "PostgreSQL", "Python"],
+        linkDemo: "https://www.youtube.com/watch?v=HCuubya_fgw",
+        linkGit: "https://github.com/nganle2911/SAE3_VCOD5_Visualisation_des_donnees_SIG"
     },
     {
         img: "morse.jpg",

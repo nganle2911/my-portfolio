@@ -30,6 +30,16 @@ const projectsList = [
         linkReport: "https://drive.google.com/drive/folders/1vkvhNtAGNgicw6cyyBeVtizt1R6BnJSI?usp=drive_link"
     },
     {
+        img: "covid.png",
+        name: "COVID-19 en France",
+        category: "data",
+        desc: "COVID-19 time series analysis in France with trend decomposition and short-term forecasting.",
+        techList: ["Time Series Analysis", "RStudio"],
+        linkDemo: "",
+        linkGit: "",
+        linkReport: "https://drive.google.com/drive/folders/11iQW3Wl1ncj4vR6mkN9cFOjREGiZwSA4?usp=drive_link"
+    },
+    {
         img: "project7.png",
         name: "Samar Layout",
         category: "web",

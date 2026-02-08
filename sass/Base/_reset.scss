@@ -11,7 +11,7 @@ body {
 
 .sectionTitle {
     h2.title_white {
-        @include title($white-1);
+        @include title($brown-1);
 
         @include tablets {
             margin-bottom: $num-3;
@@ -26,7 +26,7 @@ body {
 
 .sectionTitle {
     h2.title_brown {
-        @include title($brown-4);
+        @include title($brown-1);
 
         @include tablets {
             margin-bottom: $num-3;
@@ -44,9 +44,16 @@ body {
 }
 
 .btnBrown {
-    @include btnStyle($brown-4, $white-1, $white-1, $brown-4, $brown-4, $brown-4);
+    @include btnStyle($brown-1, $white-1, $white-1, $brown-1, $brown-1, $brown-1);
 }
 
 .myCustomTooltip {
-    --bs-tooltip-bg: #704f5b;
+    --bs-tooltip-bg: #662D13;
+}
+
+.dark-mode {
+    .myCustomTooltip {
+        --bs-tooltip-bg: #BBA7A1;
+        --bs-tooltip-color: #662D13;
+    }
 }

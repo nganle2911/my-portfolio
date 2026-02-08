@@ -7,7 +7,16 @@
         color: $white-1;
 
         .navbar {
-
+            .container-fluid {
+                .navbar-toggler {
+                    background-color: $brown-2; 
+                    
+                    span {
+                        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='%23662D13' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+                    }
+                }
+            }
+            
             #offcanvasExample {
                 background-color: $dark-1;
 
@@ -30,7 +39,12 @@
                 }
 
                 #myIcon {
-                    color: $brown-1;
+                    color: $brown-2;
+                    transition: all .3s ease-in-out;
+
+                    &:hover {
+                        color: $white-1;
+                    }
                 }
             }
 
@@ -68,14 +82,36 @@
         }
 
         .accordion {
+            .btnSkills {
+                background-color: $brown-2;
+                border-color: $brown-2;
+            }
+
+            .btnSkills:has(.accordion-button[aria-expanded="true"]) {
+                background-color: $white-1;
+                border: 2px solid $brown-2;
+            }
+
+            .accordion-button {
+                color: $brown-1;
+                
+                &::after {
+                    background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23662D13' ><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>");
+                }
+            }
+
             .accordion-contentGroups {
                 .accordion-collapse {
                     .card {
-                        background: $brown-3;
+                        background: $brown-2;
 
                         .mySkills__item {
+                            &:hover {
+                                background-color: $brown-4;
+                            }
+
                             .item__text {
-                                color: $brown-4;
+                                color: $brown-1;
                             }
                         }
                     }
@@ -98,11 +134,20 @@
         .contact__content {
             .contact__name {
                 h2 {
-                    color: $brown-1;
+                    color: $white-1;
                 }
 
                 p:nth-child(2) {
                     color: $brown-3;
+                }
+            }
+
+            .contact__social {
+                .social__item {
+                    a {
+                        background-color: $brown-2;
+                        color: $brown-1;
+                    }
                 }
             }
         }

@@ -32,7 +32,7 @@
                         align-items: center;
                         text-transform: capitalize;
                         margin-right: $num-4;
-                        color: $white-1;
+                        color: $brown-1;
                         text-decoration: none;
                         cursor: pointer;
 
@@ -46,7 +46,7 @@
 
                             &::after {
                                 margin-left: $num-3;
-                                background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23F8F7F4' ><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>");
+                                background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23FFFBF7' ><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>");
 
                                 @include desktops {
                                     margin-left: $num-2;
@@ -85,11 +85,11 @@
 
                         &:hover {
                             .accordion-button {
-                                color: $brown-4;
+                                color: $brown-1;
                                 font-weight: $fw-5;
 
                                 &::after {
-                                    background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23704f5b' ><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>");
+                                    background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23662D13' ><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>");
                                 }
                             }
 
@@ -117,6 +117,19 @@
                         }
                     }
 
+                    .btnSkills:has(.accordion-button[aria-expanded="true"]) {
+                        background-color: $white-1;
+                        border: 2px solid $brown-1;
+
+                        .accordion-button {
+                            color: $brown-1;
+
+                            &::after {
+                                background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23662D13' ><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>");
+                            }
+                        }
+                    }
+
                     @include tablets {
                         flex-wrap: wrap;
                     }
@@ -129,7 +142,7 @@
 
                         .card-body {
                             display: grid;
-                            grid-template-columns: repeat(5, auto);
+                            grid-template-columns: repeat(7, auto);
                             grid-gap: $num-5;
                             padding: $num-5;
 
@@ -170,7 +183,7 @@
                                 }
 
                                 &:hover {
-                                    background-color: $brown-1;
+                                    background-color: $brown-4;
                                     transform: scale(1.1);
                                 }
 
@@ -181,19 +194,19 @@
                             }
 
                             @include desktops {
+                                grid-template-columns: repeat(5, auto);
+                            }
+
+                            // @include tablets {
+                            //     grid-template-columns: repeat(5, auto);
+                            // }
+
+                            @include phones {
                                 grid-template-columns: repeat(4, auto);
                             }
 
-                            @include tablets {
-                                grid-template-columns: repeat(3, auto);
-                            }
-
-                            @include phones {
-                                grid-template-columns: repeat(2, auto);
-                            }
-
                             @include x-phones {
-                                grid-template-columns: auto;
+                                grid-template-columns: repeat(2, auto);
                             }
                         }
 

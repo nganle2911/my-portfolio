@@ -26,7 +26,7 @@
                 .contact__name {
                     h2 {
                         text-transform: capitalize;
-                        color: $brown-4;
+                        color: $brown-1;
                         font-weight: $fw-6;
                         margin-bottom: 0;
                         font-size: $num-8;
@@ -53,8 +53,10 @@
                     justify-content: space-evenly;
 
                     .social__item {
+                        cursor: pointer;
+
                         a {
-                            background: $brown-4;
+                            background: $brown-1;
                             width: $num-10 + $num-3;
                             height: $num-10 + $num-3;
                             line-height: $num-10 + $num-3;
@@ -67,8 +69,8 @@
                             
                             &:hover {
                                 background: $white-1;
-                                color: $brown-4;
-                                border: 2px solid $brown-4;
+                                color: $brown-1;
+                                border: 2px solid $brown-1;
                             }
 
                             @include tablets {

@@ -40,6 +40,16 @@ const projectsList = [
         linkReport: "https://drive.google.com/drive/folders/11iQW3Wl1ncj4vR6mkN9cFOjREGiZwSA4?usp=drive_link"
     },
     {
+        img: "car.png",
+        name: "ademe - car labelling",
+        category: "data",
+        desc: "Analyzed factors influencing vehicle sale prices using linear regression on ADEME datasets to identify significant correlations.",
+        techList: ["Linear Regression", "RStudio"],
+        linkDemo: "",
+        linkGit: "",
+        linkReport: "https://drive.google.com/drive/folders/1EMcLvsuNtCdWyfZ5oO6Uj-FRs0-xUset"
+    },
+    {
         img: "project7.png",
         name: "Samar Layout",
         category: "web",

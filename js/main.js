@@ -2,90 +2,102 @@ const projectsList = [
     {
         img: "itineraires.png",
         name: "Web GIS - GPS Itinerary",
+        category: "web",
         desc: "Web GIS application for collecting GPS points, managing itineraries, and visualizing routes with Leaflet via a JSON-based API.",
-        techList: ["HTML/CSS", "JavaScript", "Leaflet", "PHP", "MySQL", "GPS"],
+        techList: ["HTML", "CSS", "JavaScript", "Leaflet", "PHP", "MySQL", "GPS"],
         linkDemo: "http://kimngan2911.atwebpages.com/",
-        linkGit: "https://github.com/nganle2911/SAE301_CollecteAutomatisee_ProjetItineraires"
+        linkGit: "https://github.com/nganle2911/SAE301_CollecteAutomatisee_ProjetItineraires",
+        linkReport: ""
     },
     {
         img: "planIUT.png",
-        name: "Interactive IUT Campus Plan",
-        desc: "Web GIS application for interactive campus map visualization, enabling exploration of buildings, floors, and rooms using SVG and JavaScript, with associated spatial metadata.",
-        techList: ["HTML/CSS", "JavaScript", "SVG", "PostgreSQL", "Python"],
+        name: "Interactive IUT Plan",
+        category: "web",
+        desc: "Interactive Web GIS for campus map exploration using SVG and JavaScript, with spatial metadata.",
+        techList: ["HTML", "CSS", "JavaScript", "SVG", "PostgreSQL", "Python"],
         linkDemo: "https://www.youtube.com/watch?v=HCuubya_fgw",
-        linkGit: "https://github.com/nganle2911/SAE3_VCOD5_Visualisation_des_donnees_SIG"
+        linkGit: "https://github.com/nganle2911/SAE3_VCOD5_Visualisation_des_donnees_SIG",
+        linkReport: ""
     },
     {
         img: "morse.jpg",
         name: "les enquêtes de morse",
-        desc: "This project comprised building a PostgreSQL database for the Endeavour series, including multi-source web data collection, data cleaning and harmonization, CDM and snowflake modeling, an ETL pipeline with FME, and SQL-based validation.",
+        category: "data",
+        desc: "Developed an end-to-end PostgreSQL data pipeline, from multi-source data collection, cleaning, CDM modeling, ETL with FME and SQL validation.",
         techList: ["PostgreSQL", "FME", "Python", "BeautifulSoup", "CDM"],
         linkDemo: "",
-        linkGit: ""
+        linkGit: "",
+        linkReport: "https://drive.google.com/drive/folders/1vkvhNtAGNgicw6cyyBeVtizt1R6BnJSI?usp=drive_link"
     },
     {
         img: "project7.png",
         name: "Samar Layout",
+        category: "web",
         desc: "Cloned a Samar layout by using HTML, CSS, JavaScript",
         techList: ["HTML5", "CSS3", "JavaScript"],
         linkDemo: "https://samar-project-omega.vercel.app/",
-        linkGit: "https://github.com/nganle2911/Samar-Project"
+        linkGit: "https://github.com/nganle2911/Samar-Project",
+        linkReport: ""
     },
     {
         img: "project1.png",
         name: "Diner Layout",
-        desc: "Created a restaurant website to display services and products through different pages, such as 'Home, About, Contact, etc.'",
+        category: "web",
+        desc: "Cloned a restaurant website featuring multi-page navigation, including Home, About, and Contact sections.",
         techList: ["HTML5", "CSS3", "Bootstrap 5", "SASS", "JavaScript"],
         linkDemo: "https://diner-project.vercel.app/",
-        linkGit: "https://github.com/nganle2911/capstone-diner"
+        linkGit: "https://github.com/nganle2911/capstone-diner",
+        linkReport: ""
     },
-    // {
-    //     img: "project4.png",
-    //     name: "my portfolio",
-    //     desc: "Created my own personal website, fully responsive for all devices.",
-    //     techList: ["HTML5", "CSS3", "Bootstrap 5", "SASS", "JavaScript"],
-    //     linkDemo: "https://portfolio-chi-one-26.vercel.app/",
-    //     linkGit: "https://github.com/nganle2911/my-portfolio"
-    // },
     {
         img: "project5.png",
         name: "shopping cart",
+        category: "web",
         desc: "A small website including admin & user pages with complete CRUD operations using JavaScript Local Storage.",
         techList: ["HTML5", "CSS3", "Bootstrap 5", "SASS", "Mock API", "JavaScript"],
         linkDemo: "https://capstone-phone-api.vercel.app/",
-        linkGit: "https://github.com/nganle2911/capstone-phone-api"
+        linkGit: "https://github.com/nganle2911/capstone-phone-api",
+        linkReport: ""
     },
     {
         img: "project3.png",
         name: "shoes shop",
-        desc: "Created a simple landing page using React to render different types of shoes. This app allows users to see a list of shoes and their detail pages.",
+        category: "web",
+        desc: "A simple React landing page showcasing shoes listings with detailed product views.",
         techList: ["React", "Bootstrap 5", "SASS", "Axios"],
         linkDemo: "https://reactjs-shoes-shop.vercel.app/",
-        linkGit: "https://github.com/nganle2911/reactjs-shoesShop"
+        linkGit: "https://github.com/nganle2911/reactjs-shoesShop",
+        linkReport: ""
     },
     {
         img: "project6.png",
         name: "CYBERFLIX",
-        desc: "A movie app built by React framework with fully responsive. Users can view list of movies, buy movie ticket, choose movie's schedule and select seats in the cinema.",
-        techList: ["Tailwind CSS", "SASS", "Ant Design", "React", "Hooks", "Redux"],
+        category: "web",
+        desc: "A responsive React movie app featuring movie listings, showtime selection, seat booking, and ticket purchasing.",
+        techList: ["Tailwind CSS", "SASS", "Ant Design", "React", "Redux"],
         linkDemo: "https://cyberflix.vercel.app/",
-        linkGit: "https://github.com/nganle2911/CyberFlix"
+        linkGit: "https://github.com/nganle2911/CyberFlix",
+        linkReport: ""
     },
     {
         img: "project8.png",
         name: "E-Learning App",
-        desc: "This e-learning app is developed using React framework with fully responsive. Users can view list of courses, detail course, enroll course, edit profile, etc. Furthermore, admin have CRUD capabilities to manage users and courses.",
+        category: "web",
+        desc: "A responsive e-learning web app built with React, featuring course browsing, enrollment, user profiles, and admin CRUD management.",
         techList: ["Tailwind CSS", "SASS", "Ant Design", "React", "Hooks", "Redux"],
         linkDemo: "https://elearning-capstone-seven.vercel.app/",
-        linkGit: "https://github.com/nganle2911/elearning-capstone"
+        linkGit: "https://github.com/nganle2911/elearning-capstone",
+        linkReport: ""
     },
     {
         img: "project2.png",
         name: "airbnb api",
-        desc: "Built a RESTful API for the Airbnb app - allowing users to register or login, search, book, and review rooms. Integrated JWT-based authentication.",
+        category: "web",
+        desc: "Developed a RESTful API inspired by Airbnb, supporting user authentication, room search, booking, and reviews. Integrated JWT-based authentification.",
         techList: ["NestJS", "MySQL", "Prisma ORM", "Swagger", "Docker"],
         linkDemo: "https://www.youtube.com/watch?v=j3GjizkhEyY",
-        linkGit: "https://github.com/trinhhoaithanh/capstone-airbnb"
+        linkGit: "https://github.com/trinhhoaithanh/capstone-airbnb",
+        linkReport: ""
     },
 ];
 
@@ -126,13 +138,35 @@ const renderProjectsList = () => {
 
     projectsList.map((item, index) => {
         let techSkills = "";
+        let actionButtons = "";
+        let cat = "";
 
-        // to render techList 
+        // To render techList 
         item.techList.forEach((tech) => {
             techSkills += `
                 <a class="tech__item">${tech}</a>
             `;
         });
+
+        // To render buttons conditionally
+        if (item.linkDemo) {
+            actionButtons += `<a href=${item.linkDemo} target="_blank" class="btn btnBrown">demo</a>`;
+        }
+
+        if (item.linkGit) {
+            actionButtons += `<a href=${item.linkGit} target="_blank" class="btn btnBrown">github</a>`;
+        }
+
+        if (item.linkReport) {
+            actionButtons += `<a href=${item.linkReport} target="_blank" class="btn btnBrown">report</a>`;
+        }
+
+        // To render category for project
+        if (item.category === "web") {
+            cat = "Web Development";
+        } else {
+            cat = "Data Analysis";
+        }
 
         contentHTML += `
             <div class="projects__item" key=${index}>
@@ -140,6 +174,7 @@ const renderProjectsList = () => {
                     <img src="./assets/img/${item.img}" class="card-img-top" alt="project">
                     <div class="card-body">
                         <p class="text-uppercase mb-0 fs-5 fw-semibold">${item.name}</p>
+                        <p class="category ${item.category}">${cat}</p>
                         <p class="card-text">${item.desc}</p>
                         <div class="tech">
                             <div class="tech__content" id="techContent">
@@ -148,8 +183,7 @@ const renderProjectsList = () => {
                         </div>
                     </div>
                     <div class="card-footer">
-                        <a href=${item.linkDemo} target="_blank" class="btn btnBrown">demo</a>
-                        <a href=${item.linkGit} target="_blank" class="btn btnBrown">github</a>
+                        ${actionButtons}
                     </div>
                 </div>
             </div>

@@ -41,9 +41,26 @@
                     img {}
 
                     .card-body {
+                        .category {
+                            background-color: $brown-4;
+                            padding: $num-2 $num-3;
+                            border-radius: $num-3;
+                            display: inline-block;
+                        }
+
+                        .category.web {
+                            background-color: $blue-1;
+                        }
+
+                        .category.data {
+                            background-color: $green-1;
+                        }
+
+                        .card-text {
+                            text-align: justify;
+                        }
 
                         .tech {
-
                             .tech__content {
                                 display: flex;
                                 flex-wrap: wrap;
@@ -65,8 +82,8 @@
                     .card-footer {
                         background: $white-1;
                         display: grid;
-                        grid-template-columns: repeat(2, 1fr);
-                        grid-gap: $num-4;
+                        grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+                        grid-gap: $num-2;
 
                         .btnBrown {
                             padding: $num-2 + 1 $num-3 + 2;

@@ -31,6 +31,7 @@ In the project section, click on the button "DEMO" or "GITHUB" to view website d
 - CSS3
 - SASS 
 - JavaScript (ES6) 
+- Bootstrap 5
 
 ## Useful Links
 

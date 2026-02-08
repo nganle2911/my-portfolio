@@ -1,6 +1,6 @@
 # Kim-Ngan's Personal Portfolio
 
-![logo](./assets/img/white-logo.png)
+![logo](./assets/img/white-logo.svg)
 
 ## Description
 

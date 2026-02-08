@@ -40,6 +40,16 @@ const projectsList = [
         linkReport: "https://drive.google.com/drive/folders/11iQW3Wl1ncj4vR6mkN9cFOjREGiZwSA4?usp=drive_link"
     },
     {
+        img: "portfolio-iut.png",
+        name: "Personal Website",
+        category: "web",
+        desc: "Designed and developed a three-page personal website, focusing on layout organization, navigation, and CSS-based styling.",
+        techList: ["HTML", "CSS", "JavaScript"],
+        linkDemo: "https://mon-portfolio-iut-perpignan.vercel.app/",
+        linkGit: "https://github.com/nganle2911/mon-portfolio-IUT-Perpignan",
+        linkReport: ""
+    },
+    {
         img: "car.png",
         name: "ademe - car labelling",
         category: "data",

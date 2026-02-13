@@ -1,0 +1,30 @@
+.projectsList{
+    padding-top: $num-12;
+    @include background;
+
+    .container {
+        padding: $num-9 $num-7;
+
+        .sectionTitle {
+            .title_white::before {
+                left: $num-14 + $num-6;
+            }
+        }
+
+        .projectsList__content {
+            padding: $num-9 0;
+        }
+
+        .projecsList__dynamicTitle {
+            margin-top: $num-6;
+            text-align: center;
+
+            .dynamicTitle {
+                margin-bottom: $num-21;
+                font-size: $num-6;
+                color: $brown-1;
+                font-weight: $fw-4;
+            }
+        }
+    }
+}

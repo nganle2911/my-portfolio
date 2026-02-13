@@ -390,11 +390,28 @@
         </div>
         <div class="projectsList__content" id="projectsListContent">
           <!-- projects item here -->
-          <div class="projectList__item" key="0">
-            <div class="item__card">
-              <img src="./assets/img/itineraires.png" alt="project" class="card__img">
-              <div class="card__category">
-                <p class="cat__title">Web Development</p>
+          <!-- Card item -->
+          <div class="projectList__item" key="0" data-bs-toggle="modal" data-bs-target="#projectModal">
+            <img src="./assets/img/portfolio-iut.png" alt="project" class="card__img">
+            <div class="card__category">
+              <p class="cat__title web">Web Development</p>
+            </div>
+          </div>
+          <!-- Modal -->
+          <div class="modal fade" id="projectModal" tabindex="-1" aria-labelledby="projectModal" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  ...
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
               </div>
             </div>
           </div>

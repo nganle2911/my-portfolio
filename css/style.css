@@ -474,6 +474,12 @@ body {
     font-size: 20px;
   }
 }
+.home .container .row .home__title .home__search {
+  font-size: 20px;
+  font-style: italic;
+  color: #662D13;
+  padding-top: 10px;
+}
 @media (max-width: 767.98px) {
   .home .container .row {
     justify-content: center;
@@ -1040,6 +1046,9 @@ body {
 .dark-mode #home .home__left .home__text span {
   color: #FFFBF7;
   border-bottom: 2px solid #FFFBF7;
+}
+.dark-mode #home .home__search {
+  color: #FFFBF7;
 }
 .dark-mode #skills .sectionTitle .title_brown {
   color: #FFFBF7;

@@ -157,6 +157,13 @@
                         font-size: $num-5;
                     }
                 }
+
+                .home__search {
+                    font-size: $num-5;
+                    font-style: italic;
+                    color: $brown-1;
+                    padding-top: $num-3;
+                }
             }
 
             @include phones {

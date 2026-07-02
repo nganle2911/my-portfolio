@@ -18,5 +18,12 @@
                 }
             }
         }
+
+        .projects__content {
+            margin-top: $num-7;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            
+        }
     }
 }

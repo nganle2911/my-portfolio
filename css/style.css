@@ -811,6 +811,11 @@ body {
   font-weight: 600;
   font-size: 18px;
 }
+.projects .container .projects__content {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
 
 .contact {
   padding-top: 100px;

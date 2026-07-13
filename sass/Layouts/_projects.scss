@@ -10,10 +10,22 @@
             .nav-item {
                 margin-right: $num-9 + 2;
 
+                @include tablets {
+                    margin-right: $num-9;
+                }
+
+                @include phones {
+                    margin-right: $num-17;
+                }
+
                 .nav-link {
                     color: $brown-1;
                     font-weight: $fw-5;
                     font-size: $num-5 - 2;
+
+                    @include phones {
+                        font-size: $num-17;
+                    }
                 }
             }
         }
@@ -112,6 +124,19 @@
             .visible {
                 opacity: 1;
                 transform: translateY(0);
+            }
+
+            // Responsive 
+            @include large-desktops {
+                grid-template-columns: repeat(3, auto);
+            }
+
+            @include tablets {
+                grid-template-columns: repeat(2, auto);
+            }
+
+            @include phones {
+                grid-template-columns: auto;
             }
         }
     }

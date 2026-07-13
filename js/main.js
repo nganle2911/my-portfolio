@@ -190,10 +190,7 @@ const getCategoryLabels = (key) => {
         return item.key === key;
     });
     
-    if (category) {
-        return category.label;
-    }
-    return key;
+    return category ? category.label : key;
 }
 
 // Projects Filters 
@@ -204,7 +201,7 @@ const renderProjectsFilters = () => {
     projectsFilters.map((item, index) => {
         contentHTML += `
             <li class="nav-item">
-                <a class="nav-link" data-filter="${item.key}">
+                <a class="nav-link ${item.key === "all" ? "active" : ""}" data-filter="${item.key}">
                     <i class="${item.icon}"></i>
                     ${item.label}
                 </a>
@@ -221,27 +218,24 @@ const renderProjectsList = (filter = "all") => {
     let contentHTML = "";
 
     const filteredProjects = projectsList.filter((item) => {
-        const categories = getCategoryLabels(item.category);
-
         if (filter === "all") {
-            return true;
+          return true;
         }
-
-        return categories.includes(filter);
+    
+        return item.category.includes(filter);
     });
 
-    filteredProjects.map((item, index) => {
+    filteredProjects.forEach((item, index) => {
         let techSkills = "";
         let actionButtons = "";
         let categoryBadges = "";
-        const categories = getCategoryLabels(item.category);
 
-        // Render categories
-        categories.forEach((cat) => {
+        // Render categories badges
+        item.category.forEach((catKey) => {
             categoryBadges += `
-                <span class="category ${cat}">
-                    ${getCategoryLabels(cat)}
-                </span>
+            <span class="category__item ${catKey}">
+                ${getCategoryLabels(catKey)}
+            </span>
             `;
         });
 
@@ -270,7 +264,8 @@ const renderProjectsList = (filter = "all") => {
                 <div class="card">
                     <img src="./assets/img/${item.img}" class="card-img-top" alt="${item.name}">
                     <div class="card-body">
-                        <p class="text-uppercase mb-0 fs-5 fw-semibold">${item.name}</p>
+                        <p class="card__title text-uppercase">${item.name}</p>
+                        <p class="category ${item.category}">${categoryBadges}</p>
                         <p class="card-text">${item.desc}</p>
                         <div class="tech">
                             <div class="tech__content" id="techContent">
@@ -287,6 +282,10 @@ const renderProjectsList = (filter = "all") => {
     });
 
     document.getElementById("projectsContent").innerHTML = contentHTML;
+
+    setTimeout(() => {
+        handleProjectsVisibility();
+    }, 50);
 }
 
 // Filter click event
@@ -308,66 +307,57 @@ const initProjectsFilters = () => {
     });
 };
 
-// Init projects section
-renderProjectsFilters();
-renderProjectsList();
-initProjectsFilters();
-
 // TODO: Animation when scrolling for projects 
-document.addEventListener("DOMContentLoaded", () => {
-    let projectsContent = document.getElementById("projectsContent");
-    let projectItemsList = document.querySelectorAll(".projects__item");
-    
-    window.addEventListener("scroll", () => {
-        let scrollPosition = window.scrollY;
+const handleProjectsVisibility = () => {
+    const projectItemsList = document.querySelectorAll(".projects__item");
 
-        projectItemsList.forEach((item) => {
-            let itemOffsetTop = item.offsetTop; 
+    projectItemsList.forEach((item) => {
+        const itemTop = item.getBoundingClientRect().top;
 
-            if (scrollPosition >= itemOffsetTop - window.innerHeight / 2) {
-                item.classList.add("visible");
-            } else {
-                item.classList.remove("visible");
-            }
-        })
-    });
-});
-
-// Footer
-// TODO: Initial tooltips for contact icons
-const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]');
-const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl));
-
-// TODO: Click to copy the content on html element - clipboard
-const copyMyContent = (name) => {
-    let getEleList = document.querySelectorAll("#myEmail, #myPhone");
-
-    getEleList.forEach((ele) => {
-        if (ele.name === name) {
-            navigator.clipboard.writeText(ele.value).then(() => {
-                alert(`${ele.name} copied: ${ele.value}`);
-            }).catch((err) => {
-                console.error("Failed to copy: " + err);
-            });
+        if (itemTop < window.innerHeight - 100) {
+            item.classList.add("visible");
+        } else {
+            item.classList.remove("visible");
         }
     });
 };
 
 // TODO: Button back to top 
-let myButton = document.getElementById("myBtn");
-window.onscroll = () => {scrollFunc()};
+const myButton = document.getElementById("myBtn");
 
-// when user scrolls down 50px => show button 
-let scrollFunc = () => {
-    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+const scrollFunc = () => {
+    if (!myButton) return;
+
+    if (window.scrollY > 100) {
         myButton.style.display = "block";
     } else {
         myButton.style.display = "none";
     }
-}
+};
+
+const handleScroll = () => {
+    handleProjectsVisibility();
+    scrollFunc();
+};
+
+// Init projects section
+renderProjectsFilters();
+renderProjectsList("all");
+initProjectsFilters();
+
+// Initial check after rendering projects
+setTimeout(() => {
+    handleProjectsVisibility();
+    scrollFunc();
+}, 100);
+
+// Scroll events
+window.addEventListener("scroll", handleScroll);
 
 // when user clicks on button => scroll to the top of the page 
-let topFunc = () => {
-    document.body.scrollTop = 0;
-    document.documentElement.scrollTop = 0; 
-}
+const topFunc = () => {
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
+};

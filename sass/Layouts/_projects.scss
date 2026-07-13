@@ -6,7 +6,6 @@
         padding: $num-9 $num-7;
 
         .projects__filters {
-            // padding-bottom: $num-5;
 
             .nav-item {
                 margin-right: $num-9 + 2;
@@ -22,8 +21,98 @@
         .projects__content {
             margin-top: $num-7;
             display: grid;
-            grid-template-columns: repeat(4, 1fr);
+            grid-template-columns: repeat(4, auto);
             grid-gap: $num-5;
+            justify-content: center;
+
+            .projects__item {
+                display: flex;
+                justify-content: center;
+                opacity: 0;
+                transform: translateY(20px);
+                transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+                
+                .card {
+                    background: $white-1;
+                    border: none;
+                    width: 18rem;
+
+                    img {}
+
+                    .card-body {
+                        .card__title {
+                            font-weight: $fw-6;
+                            font-size: $num-17;
+                            margin-bottom: $num-2;
+                        }
+
+                        .card-text {
+                            font-size: $num-4 - 1;
+                        }
+
+                        .category {
+                            .category__item {
+                                padding: $num-2 $num-3;
+                                border-radius: $num-3;
+                                display: inline-block;
+                                font-size: $num-4 - 1;
+                            }
+
+                            .category__item.web {
+                                background-color: $blue-1;
+                            }
+    
+                            .category__item.data {
+                                background-color: $violet-1;
+                            }
+    
+                            .category__item.gis {
+                                background-color: $green-1;
+                            }
+                        }
+
+                        .card-text {
+                            text-align: justify;
+                        }
+
+                        .tech {
+                            .tech__content {
+                                display: flex;
+                                flex-wrap: wrap;
+
+                                .tech__item {
+                                    background: $brown-4;
+                                    text-decoration: none;
+                                    color: $brown-1;
+                                    padding: $num-2 $num-3;
+                                    margin-right: $num-2;
+                                    margin-bottom: $num-2;
+                                    border-radius: $num-3;
+                                    font-size: $num-4 - 1;
+                                }
+                            }
+                        }
+                    }
+
+                    .card-footer {
+                        background: $white-1;
+                        display: grid;
+                        grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+                        grid-gap: $num-2;
+
+                        .btnBrown {
+                            padding: $num-2 + 1 $num-3 + 2;
+                            font-size: $num-4 + 1;
+                            text-transform: uppercase;
+                        }
+                    }
+                }
+            }
+
+            .visible {
+                opacity: 1;
+                transform: translateY(0);
+            }
         }
     }
 }

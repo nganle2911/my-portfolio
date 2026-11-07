@@ -10,6 +10,11 @@ const projectsFilters = [
         icon: "bi bi-geo"
     },
     {
+        key: "etl",
+        label: "Data Engineering",
+        icon: "bi bi-database"
+    },
+    {
         key: "data",
         label: "Data Analysis",
         icon: "bi bi-graph-up-arrow"
@@ -44,9 +49,9 @@ const projectsList = [
     },
     {
         img: "morse.jpg",
-        name: "les enquêtes de morse",
-        category: ["data"],
-        desc: "Developed an end-to-end PostgreSQL data pipeline, from multi-source data collection, cleaning, CDM modeling, ETL with FME and SQL validation.",
+        name: "les enquêtes de morse - ETL",
+        category: ["etl"],
+        desc: "Built an ETL pipeline with FME to clean, transform, and load TV series data into PostgreSQL, following web scraping with Python and relational data modeling.",
         techList: ["PostgreSQL", "FME", "Python", "BeautifulSoup", "CDM"],
         linkDemo: "",
         linkGit: "",
@@ -189,7 +194,7 @@ const getCategoryLabels = (key) => {
     const category = projectsFilters.find((item) => {
         return item.key === key;
     });
-    
+
     return category ? category.label : key;
 }
 
@@ -219,9 +224,9 @@ const renderProjectsList = (filter = "all") => {
 
     const filteredProjects = projectsList.filter((item) => {
         if (filter === "all") {
-          return true;
+            return true;
         }
-    
+
         return item.category.includes(filter);
     });
 

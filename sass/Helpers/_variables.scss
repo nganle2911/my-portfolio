@@ -1,32 +1,33 @@
 // COLORS
-// Palette de couleur 
-$white-1: #FFFBF7;
-$white-2: #F5F7F8;
-$brown-1: #662D13;
-$brown-2: #BBA7A1;
-$brown-3: #B2937F;
-$brown-4: #E3D2C8;
+// Palette de couleur
+$white-1: #fffbf7;
+$white-2: #f5f7f8;
+$brown-1: #662d13;
+$brown-2: #bba7a1;
+$brown-3: #b2937f;
+$brown-4: #e3d2c8;
 $dark-1: #191919;
-$blue-1: #9EC6F3;
-$green-1: #CAE8BD;
+$blue-1: #9ec6f3;
+$green-1: #cae8bd;
 $violet-1: #d7c3f1;
+$yellow-1: #ffddb0;
 
 // NUMBERS
 $num-1: 3px;
 $num-2: 5px;
 $num-3: 10px;
 $num-4: 15px;
-$num-5: 20px; 
+$num-5: 20px;
 $num-6: 25px;
 $num-7: 30px;
-$num-8: 36px; 
+$num-8: 36px;
 $num-9: 48px;
 $num-10: 60px;
 $num-11: 80px;
 $num-12: 100px;
 $num-13: 150px;
 $num-14: 200px;
-$num-15: 45px; 
+$num-15: 45px;
 $num-16: 160px;
 $num-17: 16px;
 $num-18: 40px;
@@ -43,12 +44,11 @@ $fw-5: 600;
 $fw-6: 700;
 $fw-7: 800;
 
-
-// RESPONSIVE BREAKPOINTS 
+// RESPONSIVE BREAKPOINTS
 $breakpoints: (
   sm: 575.98px,
   md: 767.98px,
   lg: 991.98px,
   xl: 1199.98px,
-  xxl: 1399.98px
+  xxl: 1399.98px,
 );

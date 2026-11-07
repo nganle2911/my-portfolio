@@ -1,106 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- Google fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;400;500;600;700;800&display=swap"
-      rel="stylesheet">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- BS5 CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" />
+  <!-- Google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet">
 
-    <!-- BS5 Icons -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+  <!-- BS5 CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" />
 
-    <!-- Animate CSS -->
-    <link rel="stylesheet" href="./css/libraries/animate.min.css">
+  <!-- BS5 Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
 
-    <!-- Style css -->
-    <link rel="stylesheet" href="./css/style.min.css" />
+  <!-- Animate CSS -->
+  <link rel="stylesheet" href="./css/libraries/animate.min.css">
 
-    <link rel="icon" type="image/x-icon" href="./assets/img/cute.png" />
-    <title>Kim-Ngan</title>
-  </head>
-  <body>
-    <!-- NAVBAR -->
-    <div class="navMenu">
-      <div class="container">
-        <nav class="navbar navbar-expand-lg">
-          <div class="container-fluid">
-            <a id="myLogo" class="navbar-brand" href="#">
-              <img src="./assets/img/brown-logo.svg" width="55%" />
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasExample">
-              <div class="navbar-nav" id="navbarNav">
-                <a class="nav-link active" aria-current="page" href="#home">Home</a>
-                <a class="nav-link" href="#about">About</a>
-                <a class="nav-link" href="#skills">Skills</a>
-                <a class="nav-link" href="#projects">Projects</a>
-                <a class="nav-link" href="#contact">Contact</a>
-                <div onclick="changeTheme()" class="theme">
-                  <a id="myIcon"><i class="bi bi-moon-stars-fill"></i></a>
-                </div>
+  <!-- Style css -->
+  <link rel="stylesheet" href="./css/style.min.css" />
+
+  <link rel="icon" type="image/x-icon" href="./assets/img/cute.png" />
+  <title>Kim-Ngan</title>
+</head>
+
+<body>
+  <!-- NAVBAR -->
+  <div class="navMenu">
+    <div class="container">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <a id="myLogo" class="navbar-brand" href="#">
+            <img src="./assets/img/brown-logo.svg" width="55%" />
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample"
+            aria-controls="offcanvasExample">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasExample">
+            <div class="navbar-nav" id="navbarNav">
+              <a class="nav-link active" aria-current="page" href="#home">Home</a>
+              <a class="nav-link" href="#about">About</a>
+              <a class="nav-link" href="#skills">Skills</a>
+              <a class="nav-link" href="#projects">Projects</a>
+              <a class="nav-link" href="#contact">Contact</a>
+              <div onclick="changeTheme()" class="theme">
+                <a id="myIcon"><i class="bi bi-moon-stars-fill"></i></a>
               </div>
             </div>
           </div>
-        </nav>
-      </div>
+        </div>
+      </nav>
     </div>
+  </div>
 
-    <!-- HOME -->
-    <section class="home" id="home">
-      <div class="container">
-        <div class="row">
-          <div class="home__me">
-            <img src="./assets/img/cat-photo.png" alt="me-home">
-          </div>
-          <div class="home__name" id="my-signature">
-            <img src="./assets/img/name.png" alt="name-home">
-          </div>
-          <div class="home__title">
-            <span id="typingEff"></span>
-            <p class="home__search">Looking for a <span>GEOMATICS APPRENTICESHIP</span> - September 2026</p>
-          </div>
+  <!-- HOME -->
+  <section class="home" id="home">
+    <div class="container">
+      <div class="row">
+        <div class="home__me">
+          <img src="./assets/img/cat-photo.png" alt="me-home">
+        </div>
+        <div class="home__name" id="my-signature">
+          <img src="./assets/img/name.png" alt="name-home">
+        </div>
+        <div class="home__title">
+          <span id="typingEff"></span>
+          <p class="home__search">Seeking a Geomatics / GIS Internship from March 2027 or an Alternance Opportunity</p>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- ABOUT -->
-    <section class="about" id="about">
-      <div class="container">
-        <div class="aboutMe">
-          <div class="sectionTitle">
-            <h2 class="title_white">about</h2>
-          </div>
-          <div class="aboutMe__info">
-            <div class="row">
-              <div class="col-xl-4 col-lg-4 col-md-4 col-12 info__photo wow animate__animated animate__fadeInLeft">
-                <img src="./assets/img/profil-photo.png" alt="avatar" />
+  <!-- ABOUT -->
+  <section class="about" id="about">
+    <div class="container">
+      <div class="aboutMe">
+        <div class="sectionTitle">
+          <h2 class="title_white">about</h2>
+        </div>
+        <div class="aboutMe__info">
+          <div class="row">
+            <div class="col-xl-4 col-lg-4 col-md-4 col-12 info__photo wow animate__animated animate__fadeInLeft">
+              <img src="./assets/img/profil-photo.png" alt="avatar" />
+            </div>
+            <div class="col-xl-8 col-lg-8 col-md-8 col-12 info__content">
+              <div class="info__text wow animate__animated animate__fadeInRight">
+                Hi! Call me Kim, a first-year Master's student in Geomatics (SIGMA), a programme jointly accredited by
+                Université Toulouse – Jean Jaurès (UT2J) and Toulouse INP – ENSAT, France.
+                <br /><br />
+                My journey into tech began in 2021 with Front-end Development, driven by my curiosity about programming
+                and my passion for creativity, bullet journaling, and colorful design.
+                <br />
+                Over time, I developed a growing interest in data, analytics and geospatial technologies, which led me
+                to study Data Science and explore the field of Geomatics.
+                <br /><br />
+                Since September 2026, I've been studying towards a Master's degree in Geomatics (SIGMA) in Toulouse,
+                building on my background in Web Development and Data Science. I'm currently developing my skills in
+                Python, SQL, data analysis, GIS and geospatial data processing.
+                <br />
+                I'm actively seeking <b>A GEOMATICS INTERNSHIP</b> starting in March
+                2027, and I'm also open to <b>A WORK-STUDY (ALTERNANCE)</b> opportunities.
+                <br /><br />
+                My long-term goal is to build a career in Geomatics, particularly in Web GIS development and geospatial
+                data engineering. I'm especially interested in developing reliable geospatial data pipelines and
+                applications that support mapping, spatial analysis and territorial planning projects.
+                <br /><br />
+                A coffee lover <<i class="bi bi-cup-hot-fill"></i>/> who finds joy <<i
+                    class="bi bi-emoji-heart-eyes-fill"></i>/> in programming, maps <<i class="bi bi-pin-map-fill">
+                      </i>/> and problem-solving <<i class="bi-puzzle-fill"></i>/>.
               </div>
-              <div class="col-xl-8 col-lg-8 col-md-8 col-12 info__content">
-                <div class="info__text wow animate__animated animate__fadeInRight">
-                  Hi! Call me Kim, a Data Science student (BUT Science des Données) at the University of Perpignan, currently based in Carcassonne, France.
-                  <br /><br />
-                  My journey in tech started in 2021 with Front-end Development, driven by my curiosity for programming and my passion for creativity, bullet journaling, and designing colorful things. 
-                  <br />
-                  Over time, I discovered a growing interest in data, analytics and geospatial technologies, which led me to transition into the field of Data Science and explore the field of Geomatics.
-                  <br /><br />
-                  In September 2026, I will be joining the Master's program in Geomatics at the University of Toulouse Jean Jaurès. I'm currently strengthening my skills in Python, SQL, data analysis, GIS, and geospatial data processing, and I'm actively looking for <b>AN ALTERNANCE IN GEOMATICS</b> starting in September 2026 for my first year of Master's. 
-                  <br /><br/>
-                  My long-term goal is to become a Geomatics Data Engineer focused on geospatial data, building reliable geospatial data pipelines and infrastructures to support mapping, spatial analysis, and territorial projects.
-                  <br/><br/>
-                  A coffee lover <<i class="bi bi-cup-hot-fill"></i>/> who finds joy <<i class="bi bi-emoji-heart-eyes-fill"></i>/> in programming, maps <<i class="bi bi-pin-map-fill"></i>/> and problem-solving <<i class="bi-puzzle-fill"></i>/>.
-                </div>
-                <div class="info__signature wow animate__animated animate__fadeInUp animate__delay-1s">
-                  <!-- <div class="info__cv">
+              <div class="info__signature wow animate__animated animate__fadeInUp animate__delay-1s">
+                <!-- <div class="info__cv">
                     <a class="btn btnWhite" type="button"
                       href=""
                       target="_blank">
@@ -108,366 +123,357 @@
                       <i class="bi bi-filetype-pdf"></i>
                     </a>
                   </div> -->
-                  <div class="signature">
-                    <img src="./assets/img/brown-logo.svg"/>
-                  </div>
+                <div class="signature">
+                  <img src="./assets/img/brown-logo.svg" />
                 </div>
               </div>
             </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- SKILLS -->
-    <section id="skills" class="skills">
-      <div class="container">
-        <div class="mySkills">
-          <div class="sectionTitle">
-            <h2 class="title_brown">skills</h2>
-          </div>
-          <div class="accordion" id="accordion__skills">
-            <!-- Skills's Title -->
-            <div class="accordion-btnGroups  wow animate__animated animate__fadeInUp">
-              <h2 class="accordion-header btnBrown btnSkills">
-                <a class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                  data-bs-target="#collapseGis" aria-expanded="false" aria-controls="collapseDatabase">
-                  GIS
-                </a>
-              </h2>
-              <h2 class="accordion-header btnBrown btnSkills">
-                <a class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                  data-bs-target="#collapseProgram" aria-expanded="false" aria-controls="collapseOthers">
-                  Programming
-                </a>
-              </h2>
-              <h2 class="accordion-header btnBrown btnSkills">
-                <a class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                  data-bs-target="#collapseWebDev" aria-expanded="false" aria-controls="collapseFrontEnd">
-                  Web Dev
-                </a>
-              </h2>
-              <h2 class="accordion-header btnBrown btnSkills">
-                <a class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                  data-bs-target="#collapseStats" aria-expanded="false" aria-controls="collapseOthers">
-                  Statistics
-                </a>
-              </h2>
-              <h2 class="accordion-header btnBrown btnSkills">
-                <a class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                  data-bs-target="#collapseDatabase" aria-expanded="false" aria-controls="collapseDatabase">
-                  database
-                </a>
-              </h2>
-              <h2 class="accordion-header btnBrown btnSkills">
-                <a class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                  data-bs-target="#collapseTools" aria-expanded="false" aria-controls="collapseTools">
-                  tools
-                </a>
-              </h2>
-              <h2 class="accordion-header btnBrown btnSkills">
-                <a class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                  data-bs-target="#collapseGraphics" aria-expanded="false" aria-controls="collapseGraphics">
-                  graphics
-                </a>
-              </h2>
-            </div>
-    
-            <!-- Sub-skills -->
-            <div class="accordion-contentGroups">
-              <div id="collapseProgram" class="accordion-collapse collapse mt-2">
-                <div class="card card-body">
-                  <div class="mySkills__item">
-                    <img class="item__logo" src="./assets/img/python.png" alt="logo" width="50px">
-                    <!-- <p class="item__text">python</p> -->
-                  </div>
-                  <div class="mySkills__item">
-                    <img class="item__logo" src="./assets/img/sql-logo.png" alt="logo" width="50px">
-                    <!-- <p class="item__text">sql</p> -->
-                  </div>
-                  <div class="mySkills__item">
-                    <img class="item__logo" src="./assets/img/sas-logo.png" alt="logo" width="50px">
-                    <!-- <p class="item__text">sas</p> -->
-                  </div>
-                  <div class="mySkills__item">
-                    <img class="item__logo" src="./assets/img/R-logo.png" alt="logo" width="50px">
-                    <!-- <p class="item__text">r</p> -->
-                  </div>
-                  <div class="mySkills__item">
-                    <img class="item__logo" src="./assets/img/java.png" alt="logo" width="50px">
-                    <!-- <p class="item__text">basic java</p> -->
-                  </div>
-                </div>
-              </div>
-              <div id="collapseWebDev" class="accordion-collapse collapse mt-2">
-                <div class="card card-body">
-                  <div class="mySkills__item">
-                    <img class="item__logo" src="./assets/img/html.png" alt="logo" width="50px">
-                    <!-- <p class="item__text">html5</p> -->
-                  </div>
-                  <div class="mySkills__item">
-                    <img class="item__logo" src="./assets/img/css.png" alt="logo" width="50px">
-                    <!-- <p class="item__text">css3</p> -->
-                  </div>
-                  <div class="mySkills__item">
-                    <img class="item__logo" src="./assets/img/bs.png" alt="logo" width="50px">
-                    <!-- <p class="item__text">bootstrap</p> -->
-                  </div>
-                  <div class="mySkills__item">
-                    <img class="item__logo" src="./assets/img/sass.png" alt="logo" width="50px">
-                    <!-- <p class="item__text">sass</p> -->
-                  </div>
-                  <div class="mySkills__item">
-                    <img class="item__logo" src="./assets/img/tailwind.png" alt="logo" width="50px">
-                    <!-- <p class="item__text">Tailwind CSS</p> -->
-                  </div>
-                  <div class="mySkills__item">
-                    <img class="item__logo" src="./assets/img/antd.png" alt="logo" width="50px">
-                    <!-- <p class="item__text">Ant Design</p> -->
-                  </div>
-                  <div class="mySkills__item">
-                    <img class="item__logo" src="./assets/img/js.png" alt="logo" width="50px">
-                    <!-- <p class="item__text">javascript</p> -->
-                  </div>
-                  <div class="mySkills__item">
-                    <img class="item__logo" src="./assets/img/react.png" alt="logo" width="50px">
-                    <!-- <p class="item__text">react</p> -->
-                  </div>
-                  <div class="mySkills__item">
-                    <img class="item__logo" src="./assets/img/redux.png" alt="logo" width="50px">
-                    <!-- <p class="item__text">redux</p> -->
-                  </div>
-                  <div class="mySkills__item">
-                    <img class="item__logo" src="./assets/img/ts.png" alt="logo" width="50px">
-                    <!-- <p class="item__text">typescript</p> -->
-                  </div>
-                  <div class="mySkills__item">
-                    <img class="item__logo" src="./assets/img/node.png" alt="logo" width="50px">
-                    <!-- <p class="item__text">node.js</p> -->
-                  </div>
-                  <div class="mySkills__item">
-                    <img class="item__logo" src="./assets/img/express.png" alt="logo" width="50px">
-                    <!-- <p class="item__text">express.js</p> -->
-                  </div>
-                  <div class="mySkills__item">
-                    <img class="item__logo" src="./assets/img/nestjs.png" alt="logo" width="50px">
-                    <!-- <p class="item__text">nestjs</p> -->
-                  </div>
-                  <div class="mySkills__item">
-                    <img class="item__logo" src="./assets/img/PHP-logo.svg.png" alt="logo" width="50px">
-                    <!-- <p class="item__text">php</p> -->
-                  </div>
-                </div>
-              </div>
-              <div id="collapseDatabase" class="accordion-collapse collapse mt-2">
-                <div class="card card-body">
-                  <div class="mySkills__item">
-                    <img class="item__logo" src="./assets/img/mysql.png" alt="logo" width="50px">
-                    <!-- <p class="item__text">mysql</p> -->
-                  </div>
-                  <div class="mySkills__item">
-                    <img class="item__logo" src="./assets/img/postgres-logo.png" alt="logo" width="50px">
-                    <!-- <p class="item__text">postgres</p> -->
-                  </div>
-                  <div class="mySkills__item">
-                    <img class="item__logo" src="./assets/img/postgis-logo.png" alt="logo" width="50px">
-                    <!-- <p class="item__text">postgis</p> -->
-                  </div>
-                </div>
-              </div>
-              <div id="collapseTools" class="accordion-collapse collapse mt-2">
-                <div class="card card-body">
-                  <div class="mySkills__item">
-                    <img class="item__logo" src="./assets/img/git.png" alt="logo" width="50px">
-                    <!-- <p class="item__text">git</p> -->
-                  </div>
-                  <div class="mySkills__item">
-                    <img class="item__logo" src="./assets/img/github.png" alt="logo" width="50px">
-                    <!-- <p class="item__text">github</p> -->
-                  </div>
-                  <div class="mySkills__item">
-                    <img class="item__logo" src="./assets/img/vscode.png" alt="logo" width="50px">
-                    <!-- <p class="item__text">vs code</p> -->
-                  </div>
-                  <div class="mySkills__item">
-                    <img class="item__logo" src="../assets/img/postman.png" alt="logo" width="50px">
-                    <!-- <p class="item__text">postman</p> -->
-                  </div>
-                  <div class="mySkills__item">
-                    <img class="item__logo" src="../assets/img/swagger.png" alt="logo" width="50px">
-                    <!-- <p class="item__text">swagger</p> -->
-                  </div>
-                  <div class="mySkills__item">
-                    <img class="item__logo" src="../assets/img/prisma.png" alt="logo" width="50px">
-                    <!-- <p class="item__text">prisma</p> -->
-                  </div>
-                  <div class="mySkills__item">
-                    <img class="item__logo" src="../assets/img/docker.png" alt="logo" width="50px">
-                    <!-- <p class="item__text">docker</p> -->
-                  </div>
-                  <div class="mySkills__item">
-                    <img class="item__logo" src="../assets/img/powerbi-logo.png" alt="logo" width="50px">
-                    <!-- <p class="item__text">power bi</p> -->
-                  </div>
-                  <div class="mySkills__item">
-                    <img class="item__logo" src="../assets/img/fme-logo.png" alt="logo" width="50px">
-                    <!-- <p class="item__text">fme</p> -->
-                  </div>
-                  <div class="mySkills__item">
-                    <img class="item__logo" src="../assets/img/shiny-logo.png" alt="logo" width="50px">
-                    <!-- <p class="item__text">r shiny</p> -->
-                  </div>
-                </div>
-              </div>
-              <div id="collapseGraphics" class="accordion-collapse collapse mt-2">
-                <div class="card card-body">
-                  <div class="mySkills__item">
-                    <img class="item__logo" src="./assets/img/figma.png" alt="logo" width="50px">
-                    <!-- <p class="item__text">figma</p> -->
-                  </div>
-                  <div class="mySkills__item">
-                    <img class="item__logo" src="./assets/img/ps.png" alt="logo" width="50px">
-                    <!-- <p class="item__text">photoshop</p> -->
-                  </div>
-                  <div class="mySkills__item">
-                    <img class="item__logo" src="./assets/img/ai.png" alt="logo" width="50px">
-                    <!-- <p class="item__text">illustrator</p> -->
-                  </div>
-                  <div class="mySkills__item">
-                    <img class="item__logo" src="./assets/img/canva.png" alt="logo" width="50px">
-                    <!-- <p class="item__text">canva</p> -->
-                  </div>
-                </div>
-              </div>
-              <div id="collapseGis" class="accordion-collapse collapse mt-2">
-                <div class="card card-body">
-                  <div class="mySkills__item">
-                    <img class="item__logo" src="./assets/img/qgis-logo.png" alt="logo" width="50px">
-                    <!-- <p class="item__text">qgis</p> -->
-                  </div>
-                  <div class="mySkills__item">
-                    <img class="item__logo" src="./assets/img/arcgis-logo.png" alt="logo" width="50px">
-                    <!-- <p class="item__text">arcgis</p> -->
-                  </div>
-                  <div class="mySkills__item">
-                    <img class="item__logo" src="./assets/img/leaflet.png" alt="logo" width="50px">
-                    <!-- <p class="item__text">leaflet</p> -->
-                  </div>
-                  <div class="mySkills__item">
-                    <img class="item__logo" src="./assets/img/postgis-logo.png" alt="logo" width="50px">
-                    <!-- <p class="item__text">postgis</p> -->
-                  </div>
-                </div>
-              </div>
-              <div id="collapseStats" class="accordion-collapse collapse mt-2">
-                <div class="card card-body">
-                  <div class="mySkills__item">
-                    <p class="item__text">Descriptive & Inferential Statistics</p>
-                  </div>
-                  <div class="mySkills__item">
-                    <p class="item__text">Hypothesis testing and confidence intervals</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- PROJECTS -->
-    <section class="projects" id="projects">
-      <div class="container">
-        <div class="sectionTitle">
-          <h2 class="title_white">projects</h2>
-        </div>
-        <div class="projects__content" id="projectsContent">
-          <!-- projects item here -->
-        </div>
-      </div>
-    </section>
-
-    <!-- CONTACT -->
-    <div class="contact" id="contact">
-      <div class="container">
-        <div class="sectionTitle">
-          <h2 class="title_brown">contact</h2>
-        </div>
-        <div class="contact__content">
-          <div class="row">
-            <div class="contact__name col-md-5 col-12 wow animate__animated animate__fadeInLeft">
-              <h2>thi-kim-ngan LE</h2>
-              <p>Data Science Student (BUT SD - 2nd year, France)</p>
-              <p>Connect with me! I'm always excited to collaborate on new opportunities and engage in meaningful discussions.</p>
-            </div>   
-            <div class="contact__social col-md-7 col-12 wow animate__animated animate__fadeInRight">
-              <div class="social__item">
-                <input type="email" id="myEmail" name="Email" value="ngan.ltkn2911@gmail.com" style="display: none;" />
-                <a 
-                  data-bs-toggle="tooltip"
-                  data-bs-custom-class="myCustomTooltip"
-                  data-bs-placement="top"
-                  data-bs-trigger="hover"
-                  data-bs-title="Email"
-                  onclick="copyMyContent('Email')">
-                  <i class="bi bi-envelope-at-fill"></i>
-                </a>
-              </div>
-              <div class="social__item">
-                <a 
-                  href="https://www.linkedin.com/in/thi-kim-ngan-le/" 
-                  target="_blank"
-                  data-bs-toggle="tooltip"
-                  data-bs-custom-class="myCustomTooltip"
-                  data-bs-placement="top"
-                  data-bs-trigger="hover"
-                  data-bs-title="Linkedin">
-                  <i class="bi bi-linkedin"></i>
-                </a>
-              </div>
-              <div class="social__item">
-                <a 
-                  href="https://github.com/nganle2911" target="_blank"
-                  data-bs-toggle="tooltip"
-                  data-bs-custom-class="myCustomTooltip"
-                  data-bs-placement="top"
-                  data-bs-trigger="hover"
-                  data-bs-title="Github">
-                  <i class="bi bi-github"></i>
-                </a>
-              </div>
-            </div>   
           </div>
         </div>
       </div>
     </div>
+  </section>
 
-    <!-- Back to top button -->
-    <button onclick="topFunc()" id="myBtn" title="Back to top"><i class="bi bi-arrow-up"></i></button>
-    
-    <!-- BS5 JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- SKILLS -->
+  <section id="skills" class="skills">
+    <div class="container">
+      <div class="mySkills">
+        <div class="sectionTitle">
+          <h2 class="title_brown">skills</h2>
+        </div>
+        <div class="accordion" id="accordion__skills">
+          <!-- Skills's Title -->
+          <div class="accordion-btnGroups  wow animate__animated animate__fadeInUp">
+            <h2 class="accordion-header btnBrown btnSkills">
+              <a class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseGis" aria-expanded="false" aria-controls="collapseDatabase">
+                GIS
+              </a>
+            </h2>
+            <h2 class="accordion-header btnBrown btnSkills">
+              <a class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseProgram" aria-expanded="false" aria-controls="collapseOthers">
+                Programming
+              </a>
+            </h2>
+            <h2 class="accordion-header btnBrown btnSkills">
+              <a class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseWebDev" aria-expanded="false" aria-controls="collapseFrontEnd">
+                Web Dev
+              </a>
+            </h2>
+            <h2 class="accordion-header btnBrown btnSkills">
+              <a class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseStats" aria-expanded="false" aria-controls="collapseOthers">
+                Statistics
+              </a>
+            </h2>
+            <h2 class="accordion-header btnBrown btnSkills">
+              <a class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseDatabase" aria-expanded="false" aria-controls="collapseDatabase">
+                database
+              </a>
+            </h2>
+            <h2 class="accordion-header btnBrown btnSkills">
+              <a class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseTools" aria-expanded="false" aria-controls="collapseTools">
+                tools
+              </a>
+            </h2>
+            <h2 class="accordion-header btnBrown btnSkills">
+              <a class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseGraphics" aria-expanded="false" aria-controls="collapseGraphics">
+                graphics
+              </a>
+            </h2>
+          </div>
 
-    <!-- Typed JS - for typing effects -->
-    <script src="./js/libraries/typed.umd.js"></script>
-    <script>
-      let typed = new Typed("#typingEff", {
-        // strings: [
-        //   "Data Science Student",
-        //   "Future Geomatics Master's Student"
-        // ],
-        strings: ["Data Science Student - Future Geomatics Master's Student"],
-        typeSpeed: 120
-      });
-    </script>
+          <!-- Sub-skills -->
+          <div class="accordion-contentGroups">
+            <div id="collapseProgram" class="accordion-collapse collapse mt-2">
+              <div class="card card-body">
+                <div class="mySkills__item">
+                  <img class="item__logo" src="./assets/img/python.png" alt="logo" width="50px">
+                  <!-- <p class="item__text">python</p> -->
+                </div>
+                <div class="mySkills__item">
+                  <img class="item__logo" src="./assets/img/sql-logo.png" alt="logo" width="50px">
+                  <!-- <p class="item__text">sql</p> -->
+                </div>
+                <div class="mySkills__item">
+                  <img class="item__logo" src="./assets/img/sas-logo.png" alt="logo" width="50px">
+                  <!-- <p class="item__text">sas</p> -->
+                </div>
+                <div class="mySkills__item">
+                  <img class="item__logo" src="./assets/img/R-logo.png" alt="logo" width="50px">
+                  <!-- <p class="item__text">r</p> -->
+                </div>
+                <div class="mySkills__item">
+                  <img class="item__logo" src="./assets/img/java.png" alt="logo" width="50px">
+                  <!-- <p class="item__text">basic java</p> -->
+                </div>
+              </div>
+            </div>
+            <div id="collapseWebDev" class="accordion-collapse collapse mt-2">
+              <div class="card card-body">
+                <div class="mySkills__item">
+                  <img class="item__logo" src="./assets/img/html.png" alt="logo" width="50px">
+                  <!-- <p class="item__text">html5</p> -->
+                </div>
+                <div class="mySkills__item">
+                  <img class="item__logo" src="./assets/img/css.png" alt="logo" width="50px">
+                  <!-- <p class="item__text">css3</p> -->
+                </div>
+                <div class="mySkills__item">
+                  <img class="item__logo" src="./assets/img/bs.png" alt="logo" width="50px">
+                  <!-- <p class="item__text">bootstrap</p> -->
+                </div>
+                <div class="mySkills__item">
+                  <img class="item__logo" src="./assets/img/sass.png" alt="logo" width="50px">
+                  <!-- <p class="item__text">sass</p> -->
+                </div>
+                <div class="mySkills__item">
+                  <img class="item__logo" src="./assets/img/tailwind.png" alt="logo" width="50px">
+                  <!-- <p class="item__text">Tailwind CSS</p> -->
+                </div>
+                <div class="mySkills__item">
+                  <img class="item__logo" src="./assets/img/antd.png" alt="logo" width="50px">
+                  <!-- <p class="item__text">Ant Design</p> -->
+                </div>
+                <div class="mySkills__item">
+                  <img class="item__logo" src="./assets/img/js.png" alt="logo" width="50px">
+                  <!-- <p class="item__text">javascript</p> -->
+                </div>
+                <div class="mySkills__item">
+                  <img class="item__logo" src="./assets/img/react.png" alt="logo" width="50px">
+                  <!-- <p class="item__text">react</p> -->
+                </div>
+                <div class="mySkills__item">
+                  <img class="item__logo" src="./assets/img/redux.png" alt="logo" width="50px">
+                  <!-- <p class="item__text">redux</p> -->
+                </div>
+                <div class="mySkills__item">
+                  <img class="item__logo" src="./assets/img/ts.png" alt="logo" width="50px">
+                  <!-- <p class="item__text">typescript</p> -->
+                </div>
+                <div class="mySkills__item">
+                  <img class="item__logo" src="./assets/img/node.png" alt="logo" width="50px">
+                  <!-- <p class="item__text">node.js</p> -->
+                </div>
+                <div class="mySkills__item">
+                  <img class="item__logo" src="./assets/img/express.png" alt="logo" width="50px">
+                  <!-- <p class="item__text">express.js</p> -->
+                </div>
+                <div class="mySkills__item">
+                  <img class="item__logo" src="./assets/img/nestjs.png" alt="logo" width="50px">
+                  <!-- <p class="item__text">nestjs</p> -->
+                </div>
+                <div class="mySkills__item">
+                  <img class="item__logo" src="./assets/img/PHP-logo.svg.png" alt="logo" width="50px">
+                  <!-- <p class="item__text">php</p> -->
+                </div>
+              </div>
+            </div>
+            <div id="collapseDatabase" class="accordion-collapse collapse mt-2">
+              <div class="card card-body">
+                <div class="mySkills__item">
+                  <img class="item__logo" src="./assets/img/mysql.png" alt="logo" width="50px">
+                  <!-- <p class="item__text">mysql</p> -->
+                </div>
+                <div class="mySkills__item">
+                  <img class="item__logo" src="./assets/img/postgres-logo.png" alt="logo" width="50px">
+                  <!-- <p class="item__text">postgres</p> -->
+                </div>
+                <div class="mySkills__item">
+                  <img class="item__logo" src="./assets/img/postgis-logo.png" alt="logo" width="50px">
+                  <!-- <p class="item__text">postgis</p> -->
+                </div>
+              </div>
+            </div>
+            <div id="collapseTools" class="accordion-collapse collapse mt-2">
+              <div class="card card-body">
+                <div class="mySkills__item">
+                  <img class="item__logo" src="./assets/img/git.png" alt="logo" width="50px">
+                  <!-- <p class="item__text">git</p> -->
+                </div>
+                <div class="mySkills__item">
+                  <img class="item__logo" src="./assets/img/github.png" alt="logo" width="50px">
+                  <!-- <p class="item__text">github</p> -->
+                </div>
+                <div class="mySkills__item">
+                  <img class="item__logo" src="./assets/img/vscode.png" alt="logo" width="50px">
+                  <!-- <p class="item__text">vs code</p> -->
+                </div>
+                <div class="mySkills__item">
+                  <img class="item__logo" src="../assets/img/postman.png" alt="logo" width="50px">
+                  <!-- <p class="item__text">postman</p> -->
+                </div>
+                <div class="mySkills__item">
+                  <img class="item__logo" src="../assets/img/swagger.png" alt="logo" width="50px">
+                  <!-- <p class="item__text">swagger</p> -->
+                </div>
+                <div class="mySkills__item">
+                  <img class="item__logo" src="../assets/img/prisma.png" alt="logo" width="50px">
+                  <!-- <p class="item__text">prisma</p> -->
+                </div>
+                <div class="mySkills__item">
+                  <img class="item__logo" src="../assets/img/docker.png" alt="logo" width="50px">
+                  <!-- <p class="item__text">docker</p> -->
+                </div>
+                <div class="mySkills__item">
+                  <img class="item__logo" src="../assets/img/powerbi-logo.png" alt="logo" width="50px">
+                  <!-- <p class="item__text">power bi</p> -->
+                </div>
+                <div class="mySkills__item">
+                  <img class="item__logo" src="../assets/img/fme-logo.png" alt="logo" width="50px">
+                  <!-- <p class="item__text">fme</p> -->
+                </div>
+                <div class="mySkills__item">
+                  <img class="item__logo" src="../assets/img/shiny-logo.png" alt="logo" width="50px">
+                  <!-- <p class="item__text">r shiny</p> -->
+                </div>
+              </div>
+            </div>
+            <div id="collapseGraphics" class="accordion-collapse collapse mt-2">
+              <div class="card card-body">
+                <div class="mySkills__item">
+                  <img class="item__logo" src="./assets/img/figma.png" alt="logo" width="50px">
+                  <!-- <p class="item__text">figma</p> -->
+                </div>
+                <div class="mySkills__item">
+                  <img class="item__logo" src="./assets/img/ps.png" alt="logo" width="50px">
+                  <!-- <p class="item__text">photoshop</p> -->
+                </div>
+                <div class="mySkills__item">
+                  <img class="item__logo" src="./assets/img/ai.png" alt="logo" width="50px">
+                  <!-- <p class="item__text">illustrator</p> -->
+                </div>
+                <div class="mySkills__item">
+                  <img class="item__logo" src="./assets/img/canva.png" alt="logo" width="50px">
+                  <!-- <p class="item__text">canva</p> -->
+                </div>
+              </div>
+            </div>
+            <div id="collapseGis" class="accordion-collapse collapse mt-2">
+              <div class="card card-body">
+                <div class="mySkills__item">
+                  <img class="item__logo" src="./assets/img/qgis-logo.png" alt="logo" width="50px">
+                  <!-- <p class="item__text">qgis</p> -->
+                </div>
+                <div class="mySkills__item">
+                  <img class="item__logo" src="./assets/img/arcgis-logo.png" alt="logo" width="50px">
+                  <!-- <p class="item__text">arcgis</p> -->
+                </div>
+                <div class="mySkills__item">
+                  <img class="item__logo" src="./assets/img/leaflet.png" alt="logo" width="50px">
+                  <!-- <p class="item__text">leaflet</p> -->
+                </div>
+                <div class="mySkills__item">
+                  <img class="item__logo" src="./assets/img/postgis-logo.png" alt="logo" width="50px">
+                  <!-- <p class="item__text">postgis</p> -->
+                </div>
+              </div>
+            </div>
+            <div id="collapseStats" class="accordion-collapse collapse mt-2">
+              <div class="card card-body">
+                <div class="mySkills__item">
+                  <p class="item__text">Descriptive & Inferential Statistics</p>
+                </div>
+                <div class="mySkills__item">
+                  <p class="item__text">Hypothesis testing and confidence intervals</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <!-- Wow JS - for animation -->
-    <script src="./js/libraries/wow.min.js"></script>
-    <script>
-      new WOW().init();
-    </script>
+  <!-- PROJECTS -->
+  <div class="projects" id="projects">
+    <div class="container">
+      <div class="sectionTitle">
+        <h2 class="title_white">projects</h2>
+      </div>
 
-    <!-- Main JS -->
-    <script src="./js/main.js"></script>
-  </body>
-</html> 
+      <!-- Filters / tabs navigation -->
+      <ul class="nav nav-underline projects__filters" id="projectsFilters">
+        <!-- filters rendered by JS -->
+      </ul>
+
+      <!-- Projects cards -->
+      <div class="projects__content" id="projectsContent">
+        <!-- projects cards rendered by JS -->
+      </div>
+    </div>
+  </div>
+
+  <!-- CONTACT -->
+  <div class="contact" id="contact">
+    <div class="container">
+      <div class="sectionTitle">
+        <h2 class="title_brown">contact</h2>
+      </div>
+      <div class="contact__content">
+        <div class="row">
+          <div class="contact__name col-md-5 col-12 wow animate__animated animate__fadeInLeft">
+            <h2>thi-kim-ngan LE</h2>
+            <p>Data Science Student (BUT SD - 2nd year, France)</p>
+            <p>Connect with me! I'm always excited to collaborate on new opportunities and engage in meaningful
+              discussions.</p>
+          </div>
+          <div class="contact__social col-md-7 col-12 wow animate__animated animate__fadeInRight">
+            <div class="social__item">
+              <input type="email" id="myEmail" name="Email" value="ngan.ltkn2911@gmail.com" style="display: none;" />
+              <a data-bs-toggle="tooltip" data-bs-custom-class="myCustomTooltip" data-bs-placement="top"
+                data-bs-trigger="hover" data-bs-title="Email" onclick="copyMyContent('Email')">
+                <i class="bi bi-envelope-at-fill"></i>
+              </a>
+            </div>
+            <div class="social__item">
+              <a href="https://www.linkedin.com/in/thi-kim-ngan-le/" target="_blank" data-bs-toggle="tooltip"
+                data-bs-custom-class="myCustomTooltip" data-bs-placement="top" data-bs-trigger="hover"
+                data-bs-title="Linkedin">
+                <i class="bi bi-linkedin"></i>
+              </a>
+            </div>
+            <div class="social__item">
+              <a href="https://github.com/nganle2911" target="_blank" data-bs-toggle="tooltip"
+                data-bs-custom-class="myCustomTooltip" data-bs-placement="top" data-bs-trigger="hover"
+                data-bs-title="Github">
+                <i class="bi bi-github"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Back to top button -->
+  <button onclick="topFunc()" id="myBtn" title="Back to top"><i class="bi bi-arrow-up"></i></button>
+
+  <!-- BS5 JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Typed JS - for typing effects -->
+  <script src="./js/libraries/typed.umd.js"></script>
+  <script>
+    let typed = new Typed("#typingEff", {
+      strings: ["Master's Student in Geomatics (SIGMA)"],
+      typeSpeed: 120
+    });
+  </script>
+
+  <!-- Wow JS - for animation -->
+  <script src="./js/libraries/wow.min.js"></script>
+  <script>
+    new WOW().init();
+  </script>
+
+  <!-- Main JS -->
+  <script src="./js/main.js"></script>
+</body>
+
+</html>

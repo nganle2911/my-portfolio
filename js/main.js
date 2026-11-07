@@ -1,8 +1,31 @@
+const projectsFilters = [
+    {
+        key: "all",
+        label: "All",
+        icon: "bi bi-grid"
+    },
+    {
+        key: "gis",
+        label: "SIG",
+        icon: "bi bi-geo"
+    },
+    {
+        key: "data",
+        label: "Data Analysis",
+        icon: "bi bi-graph-up-arrow"
+    },
+    {
+        key: "web",
+        label: "Web Development",
+        icon: "bi bi-code-slash"
+    }
+];
+
 const projectsList = [
     {
         img: "itineraires.png",
         name: "Web GIS - GPS Itinerary",
-        category: "web",
+        category: ["web", "gis"],
         desc: "Web GIS application for collecting GPS points, managing itineraries, and visualizing routes with Leaflet via a JSON-based API.",
         techList: ["HTML", "CSS", "JavaScript", "Leaflet", "PHP", "MySQL", "GPS"],
         linkDemo: "http://kimngan2911.atwebpages.com/",
@@ -12,7 +35,7 @@ const projectsList = [
     {
         img: "planIUT.png",
         name: "Interactive IUT Plan",
-        category: "web",
+        category: ["web", "gis"],
         desc: "Interactive Web GIS for campus map exploration using SVG and JavaScript, with spatial metadata.",
         techList: ["HTML", "CSS", "JavaScript", "SVG", "PostgreSQL", "Python"],
         linkDemo: "https://www.youtube.com/watch?v=HCuubya_fgw",
@@ -22,7 +45,7 @@ const projectsList = [
     {
         img: "morse.jpg",
         name: "les enquêtes de morse",
-        category: "data",
+        category: ["data"],
         desc: "Developed an end-to-end PostgreSQL data pipeline, from multi-source data collection, cleaning, CDM modeling, ETL with FME and SQL validation.",
         techList: ["PostgreSQL", "FME", "Python", "BeautifulSoup", "CDM"],
         linkDemo: "",
@@ -32,7 +55,7 @@ const projectsList = [
     {
         img: "covid.png",
         name: "COVID-19 en France",
-        category: "data",
+        category: ["data"],
         desc: "COVID-19 time series analysis in France with trend decomposition and short-term forecasting.",
         techList: ["Time Series Analysis", "RStudio"],
         linkDemo: "",
@@ -42,7 +65,7 @@ const projectsList = [
     {
         img: "portfolio-iut.png",
         name: "Personal Website",
-        category: "web",
+        category: ["web"],
         desc: "Designed and developed a three-page personal website, focusing on layout organization, navigation, and CSS-based styling.",
         techList: ["HTML", "CSS", "JavaScript"],
         linkDemo: "https://mon-portfolio-iut-perpignan.vercel.app/",
@@ -52,7 +75,7 @@ const projectsList = [
     {
         img: "car.png",
         name: "ademe - car labelling",
-        category: "data",
+        category: ["data"],
         desc: "Analyzed factors influencing vehicle sale prices using linear regression on ADEME datasets to identify significant correlations.",
         techList: ["Linear Regression", "RStudio"],
         linkDemo: "",
@@ -62,7 +85,7 @@ const projectsList = [
     {
         img: "project7.png",
         name: "Samar Layout",
-        category: "web",
+        category: ["web"],
         desc: "Cloned a Samar layout by using HTML, CSS, JavaScript",
         techList: ["HTML5", "CSS3", "JavaScript"],
         linkDemo: "https://samar-project-omega.vercel.app/",
@@ -72,7 +95,7 @@ const projectsList = [
     {
         img: "project1.png",
         name: "Diner Layout",
-        category: "web",
+        category: ["web"],
         desc: "Cloned a restaurant website featuring multi-page navigation, including Home, About, and Contact sections.",
         techList: ["HTML5", "CSS3", "Bootstrap 5", "SASS", "JavaScript"],
         linkDemo: "https://diner-project.vercel.app/",
@@ -82,7 +105,7 @@ const projectsList = [
     {
         img: "project5.png",
         name: "shopping cart",
-        category: "web",
+        category: ["web"],
         desc: "A small website including admin & user pages with complete CRUD operations using JavaScript Local Storage.",
         techList: ["HTML5", "CSS3", "Bootstrap 5", "SASS", "Mock API", "JavaScript"],
         linkDemo: "https://capstone-phone-api.vercel.app/",
@@ -92,7 +115,7 @@ const projectsList = [
     {
         img: "project3.png",
         name: "shoes shop",
-        category: "web",
+        category: ["web"],
         desc: "A simple React landing page showcasing shoes listings with detailed product views.",
         techList: ["React", "Bootstrap 5", "SASS", "Axios"],
         linkDemo: "https://reactjs-shoes-shop.vercel.app/",
@@ -102,7 +125,7 @@ const projectsList = [
     {
         img: "project6.png",
         name: "CYBERFLIX",
-        category: "web",
+        category: ["web"],
         desc: "A responsive React movie app featuring movie listings, showtime selection, seat booking, and ticket purchasing.",
         techList: ["Tailwind CSS", "SASS", "Ant Design", "React", "Redux"],
         linkDemo: "https://cyberflix.vercel.app/",
@@ -112,7 +135,7 @@ const projectsList = [
     {
         img: "project8.png",
         name: "E-Learning App",
-        category: "web",
+        category: ["web"],
         desc: "A responsive e-learning web app built with React, featuring course browsing, enrollment, user profiles, and admin CRUD management.",
         techList: ["Tailwind CSS", "SASS", "Ant Design", "React", "Hooks", "Redux"],
         linkDemo: "https://elearning-capstone-seven.vercel.app/",
@@ -122,7 +145,7 @@ const projectsList = [
     {
         img: "project2.png",
         name: "airbnb api",
-        category: "web",
+        category: ["web"],
         desc: "Developed a RESTful API inspired by Airbnb, supporting user authentication, room search, booking, and reviews. Integrated JWT-based authentification.",
         techList: ["NestJS", "MySQL", "Prisma ORM", "Swagger", "Docker"],
         linkDemo: "https://www.youtube.com/watch?v=j3GjizkhEyY",
@@ -161,15 +184,60 @@ navLinkItems.forEach((navLinkEle) => {
     })
 });
 
-// Projects 
-// TODO: Render project items 
-const renderProjectsList = () => {
+// Get category labels
+const getCategoryLabels = (key) => {
+    const category = projectsFilters.find((item) => {
+        return item.key === key;
+    });
+    
+    return category ? category.label : key;
+}
+
+// Projects Filters 
+// TODO: Render projects filters 
+const renderProjectsFilters = () => {
     let contentHTML = "";
 
-    projectsList.map((item, index) => {
+    projectsFilters.map((item, index) => {
+        contentHTML += `
+            <li class="nav-item">
+                <a class="nav-link ${item.key === "all" ? "active" : ""}" data-filter="${item.key}">
+                    <i class="${item.icon}"></i>
+                    ${item.label}
+                </a>
+            </li>
+        `;
+    });
+
+    document.getElementById("projectsFilters").innerHTML = contentHTML;
+}
+
+// Projects cards
+// TODO: Render project cards / items  
+const renderProjectsList = (filter = "all") => {
+    let contentHTML = "";
+
+    const filteredProjects = projectsList.filter((item) => {
+        if (filter === "all") {
+          return true;
+        }
+    
+        return item.category.includes(filter);
+    });
+
+    filteredProjects.forEach((item, index) => {
         let techSkills = "";
         let actionButtons = "";
-        let cat = "";
+        let categoryBadges = "";
+
+        // Render categories badges
+        item.category.forEach((catKey) => {
+            categoryBadges += `
+            <span class="category__item ${catKey}">
+                ${getCategoryLabels(catKey)}
+            </span>
+            `;
+        });
 
         // To render techList 
         item.techList.forEach((tech) => {
@@ -191,20 +259,13 @@ const renderProjectsList = () => {
             actionButtons += `<a href=${item.linkReport} target="_blank" class="btn btnBrown">report</a>`;
         }
 
-        // To render category for project
-        if (item.category === "web") {
-            cat = "Web Development";
-        } else {
-            cat = "Data Analysis";
-        }
-
         contentHTML += `
             <div class="projects__item" key=${index}>
                 <div class="card">
-                    <img src="./assets/img/${item.img}" class="card-img-top" alt="project">
+                    <img src="./assets/img/${item.img}" class="card-img-top" alt="${item.name}">
                     <div class="card-body">
-                        <p class="text-uppercase mb-0 fs-5 fw-semibold">${item.name}</p>
-                        <p class="category ${item.category}">${cat}</p>
+                        <p class="card__title text-uppercase">${item.name}</p>
+                        <p class="category ${item.category}">${categoryBadges}</p>
                         <p class="card-text">${item.desc}</p>
                         <div class="tech">
                             <div class="tech__content" id="techContent">
@@ -221,64 +282,82 @@ const renderProjectsList = () => {
     });
 
     document.getElementById("projectsContent").innerHTML = contentHTML;
+
+    setTimeout(() => {
+        handleProjectsVisibility();
+    }, 50);
 }
-renderProjectsList();
+
+// Filter click event
+const initProjectsFilters = () => {
+    const filterButtons = document.querySelectorAll("#projectsFilters .nav-link");
+
+    filterButtons.forEach((button) => {
+        button.addEventListener("click", () => {
+            const selectedFilter = button.dataset.filter;
+
+            filterButtons.forEach((btn) => {
+                btn.classList.remove("active");
+            });
+
+            button.classList.add("active");
+
+            renderProjectsList(selectedFilter);
+        });
+    });
+};
 
 // TODO: Animation when scrolling for projects 
-document.addEventListener("DOMContentLoaded", () => {
-    let projectsContent = document.getElementById("projectsContent");
-    let projectItemsList = document.querySelectorAll(".projects__item");
-    
-    window.addEventListener("scroll", () => {
-        let scrollPosition = window.scrollY;
+const handleProjectsVisibility = () => {
+    const projectItemsList = document.querySelectorAll(".projects__item");
 
-        projectItemsList.forEach((item) => {
-            let itemOffsetTop = item.offsetTop; 
+    projectItemsList.forEach((item) => {
+        const itemTop = item.getBoundingClientRect().top;
 
-            if (scrollPosition >= itemOffsetTop - window.innerHeight / 2) {
-                item.classList.add("visible");
-            } else {
-                item.classList.remove("visible");
-            }
-        })
-    });
-});
-
-// Footer
-// TODO: Initial tooltips for contact icons
-const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]');
-const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl));
-
-// TODO: Click to copy the content on html element - clipboard
-const copyMyContent = (name) => {
-    let getEleList = document.querySelectorAll("#myEmail, #myPhone");
-
-    getEleList.forEach((ele) => {
-        if (ele.name === name) {
-            navigator.clipboard.writeText(ele.value).then(() => {
-                alert(`${ele.name} copied: ${ele.value}`);
-            }).catch((err) => {
-                console.error("Failed to copy: " + err);
-            });
+        if (itemTop < window.innerHeight - 100) {
+            item.classList.add("visible");
+        } else {
+            item.classList.remove("visible");
         }
     });
 };
 
 // TODO: Button back to top 
-let myButton = document.getElementById("myBtn");
-window.onscroll = () => {scrollFunc()};
+const myButton = document.getElementById("myBtn");
 
-// when user scrolls down 50px => show button 
-let scrollFunc = () => {
-    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+const scrollFunc = () => {
+    if (!myButton) return;
+
+    if (window.scrollY > 100) {
         myButton.style.display = "block";
     } else {
         myButton.style.display = "none";
     }
-}
+};
+
+const handleScroll = () => {
+    handleProjectsVisibility();
+    scrollFunc();
+};
+
+// Init projects section
+renderProjectsFilters();
+renderProjectsList("all");
+initProjectsFilters();
+
+// Initial check after rendering projects
+setTimeout(() => {
+    handleProjectsVisibility();
+    scrollFunc();
+}, 100);
+
+// Scroll events
+window.addEventListener("scroll", handleScroll);
 
 // when user clicks on button => scroll to the top of the page 
-let topFunc = () => {
-    document.body.scrollTop = 0;
-    document.documentElement.scrollTop = 0; 
-}
+const topFunc = () => {
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
+};

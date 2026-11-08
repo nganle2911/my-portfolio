@@ -909,6 +909,7 @@ body {
 }
 .contact .container .contact__content .row .contact__name p:nth-child(3) {
   font-size: 18px;
+  text-align: justify;
 }
 .contact .container .contact__content .row .contact__social {
   display: flex;

@@ -794,6 +794,13 @@ body {
   border: none;
   width: 18rem;
 }
+.projects .container .projects__content .projects__item .card img {
+  width: 100%;
+  aspect-ratio: 1.85/1;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
 .projects .container .projects__content .projects__item .card .card-body .card__title {
   font-weight: 700;
   font-size: 16px;

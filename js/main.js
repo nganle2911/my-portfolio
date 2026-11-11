@@ -28,6 +28,16 @@ const projectsFilters = [
 
 const projectsList = [
     {
+        img: "accidents.png",
+        name: "Cycling accidents in France",
+        category: ["gis"],
+        desc: "Python desktop application for mapping cycling accidents by severity, with interactive Folium maps, CSV data processing, and PostgreSQL integration.",
+        techList: ["Python", "Tkinter", "Folium", "PostgreSQL"],
+        linkDemo: "https://www.youtube.com/watch?v=L-L7ORvBiIc",
+        linkGit: "https://github.com/nganle2911/Cartographie_accidents_velo_France",
+        linkReport: ""
+    },
+    {
         img: "itineraires.png",
         name: "Web GIS - GPS Itinerary",
         category: ["web", "gis"],
